@@ -1,0 +1,44 @@
+---
+layout: default
+title: Blog
+description: Blog
+featured_image: /images/social.jpg
+---
+
+<section class="intro">
+  <div class="wrap">
+    <h1 style="font-size: 55px; font-weight: 900">
+      👋 Hello! I am Yu Ji Hoon, <br />Product Designer based in Seoul.
+    </h1>
+    <p style="color: #636c73; line-height: 1.6">
+      I believe that good design is not a means of making a product
+      beautiful,but a value.
+      <br />
+      I pursue intuitive design with typography, layout, and color harmony,and I
+      am very active in <br />learning technology and culture for this.
+    </p>
+  </div>
+</section>
+
+<section class="portfolio">
+  <div class="content-wrap portfolio-wrap">
+    {% for project in site.projects reversed %}
+
+    <div class="portfolio-item">
+      <a class="portfolio-item__link" href="{{ project.url }}">
+        <div class="portfolio-item__image">
+          <img src="{{ project.featured_image  }}" alt="{{ project.title }}" />
+        </div>
+
+        <div class="portfolio-item__content">
+          <div class="portfolio-item__info">
+            <h2 class="portfolio-item__title">{{ project.title }}</h2>
+            <p class="portfolio-item__subtitle">{{ project.subtitle }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    {% endfor %}
+  </div>
+</section>
