@@ -42,7 +42,6 @@ h1,
   font-weight: $h1-weight;
   line-height: $h1-lineheight;
   letter-spacing: $h1-spacing;
-  white-space: normal;
 
   @include mq(tabletp) {
     font-size: $h1-medium;
@@ -389,6 +388,30 @@ section {
   margin: 0 auto;
   padding: 0 30px;
   max-width: 500px;
+
+  @include mq(tabletp) {
+    padding: 0;
+    max-width: 70%;
+  }
+
+  @include mq(tabletl) {
+    max-width: 65%;
+  }
+
+  @include mq(laptop) {
+    max-width: 60%;
+  }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Index design
+.Index__wrap {
+  //----텍스트 정렬 추가
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 500px;
+  //---- 공백 스타일 추가
   white-space: normal;
 
   @include mq(tabletp) {
@@ -398,6 +421,55 @@ section {
 
   @include mq(tabletl) {
     max-width: 65%;
+  }
+
+  @include mq(laptop) {
+    max-width: 60%;
+  }
+}
+
+.Index__Title {
+  font-family: $title-font;
+  letter-spacing: $h1-spacing;
+  font-size: 55px;
+  font-weight: 600;
+  white-space: normal;
+  color: #ffffff;
+
+  @include mq(tablet) {
+    padding: 0;
+    max-width: 70%;
+    font-size: 40px;
+  }
+
+  @include mq(tabletl) {
+    max-width: 65%;
+    font-size: 40px;
+  }
+
+  @include mq(laptop) {
+    max-width: 60%;
+  }
+}
+
+.Index__Body {
+  font-family: $title-font;
+  letter-spacing: $p-spacing;
+  font-size: 24px;
+  font-weight: 400;
+  padding-top: 32px;
+  color: #636c73;
+  line-height: 1.5;
+
+  @include mq(tablet) {
+    padding: 0;
+    max-width: 70%;
+    font-size: 16px;
+  }
+
+  @include mq(tabletl) {
+    max-width: 65%;
+    font-size: 16px;
   }
 
   @include mq(laptop) {
