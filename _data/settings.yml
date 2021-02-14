@@ -82,8 +82,8 @@ font_settings:
   site_title:
     small_size: 25
     medium_size: 30
-    large_size: 34
-    weight: 600
+    large_size: 25
+    weight: 700
     letter_spacing: -0.02
   menu:
     small_size: 30
@@ -103,6 +103,7 @@ font_settings:
     large_size: 19
     weight: 400
     letter_spacing: 0
+
   h1:
     small_size: 25
     medium_size: 35
