@@ -42,7 +42,6 @@ h1,
   font-weight: $h1-weight;
   line-height: $h1-lineheight;
   letter-spacing: $h1-spacing;
-  white-space: normal;
 
   @include mq(tabletp) {
     font-size: $h1-medium;
