@@ -4,21 +4,8 @@
 
 // - - - - - - - - - - - - - - - - - -
 
-//----포트폴리오 컨텐츠 그리드 테스트
 .portfolio {
   padding: 0 $grid-spacing/2;
-  @include mq(phonel) {
-    padding: 0 $grid-spacing/1;
-  }
-  @include mq(tabletp) {
-    padding: 0 $grid-spacing/2;
-  }
-  @include mq(tabletl) {
-    padding: 0 $grid-spacing/2;
-  }
-  @include mq(laptop) {
-    padding: 0 $grid-spacing/2;
-  }
 }
 
 .portfolio-wrap {
@@ -26,7 +13,7 @@
 
 .portfolio-item {
   position: relative;
-  padding: $grid-spacing/2;
+  padding: $grid-spacing/1;
   float: left;
   width: 50%;
 }
