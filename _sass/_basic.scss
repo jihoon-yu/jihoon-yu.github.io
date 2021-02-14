@@ -42,6 +42,7 @@ h1,
   font-weight: $h1-weight;
   line-height: $h1-lineheight;
   letter-spacing: $h1-spacing;
+  white-space: normal;
 
   @include mq(tabletp) {
     font-size: $h1-medium;
@@ -388,6 +389,7 @@ section {
   margin: 0 auto;
   padding: 0 30px;
   max-width: 500px;
+  white-space: normal;
 
   @include mq(tabletp) {
     padding: 0;
