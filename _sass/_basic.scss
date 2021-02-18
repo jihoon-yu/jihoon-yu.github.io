@@ -328,8 +328,8 @@ body.loading {
   .page {
     opacity: 0;
     visibility: hidden;
-    //@include transition(all 0.4s ease-in-out, transform 0s ease-in-out 0.4s);
-    //@include translate(0, 20px);
+    @include transition(all 0.4s ease-in-out, transform 0s ease-in-out 0.4s);
+    @include translate(0, 20px);
   }
 
   .footer {
