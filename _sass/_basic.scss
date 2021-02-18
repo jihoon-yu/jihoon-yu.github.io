@@ -315,7 +315,7 @@ hr {
 }
 
 .page {
-  @include transition(all 0.6s cubic-bezier(0.87, -0.41, 0.19, 1.44));
+  //@include transition(all 0.6s cubic-bezier(0.87, -0.41, 0.19, 1.44));
 }
 
 body.loading {
@@ -328,8 +328,8 @@ body.loading {
   .page {
     opacity: 0;
     visibility: hidden;
-    @include transition(all 0.4s ease-in-out, transform 0s ease-in-out 0.4s);
-    @include translate(0, 20px);
+    //@include transition(all 0.4s ease-in-out, transform 0s ease-in-out 0.4s);
+    //@include translate(0, 20px);
   }
 
   .footer {
