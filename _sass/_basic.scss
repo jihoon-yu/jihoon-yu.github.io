@@ -209,6 +209,7 @@ a {
   text-decoration: none;
   color: $text-dark-color;
   font-weight: $bold-weight;
+  //---- A-tag 애니메이션
   //@include transition(all 0.15s ease-in-out);
 
   &:hover {
