@@ -191,7 +191,7 @@
 .menu__list__item {
   @include mq(tabletl) {
     display: inline-block;
-    margin-left: 26px;
+    margin-left: 32px;
 
     &:first-child {
       margin-left: 0;
@@ -253,5 +253,26 @@
     @include mq(tabletl) {
       border-radius: 21px;
     }
+  }
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header design
+.Header__Warp {
+  //Header Desktop width 값 수정
+  position: relative;
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 500px;
+
+  @include mq(tabletp) {
+    padding: 0;
+    max-width: 70%;
+  }
+
+  @include mq(tabletl) {
+    max-width: 65%;
+  }
+
+  @include mq(laptop) {
+    max-width: 90%;
   }
 }

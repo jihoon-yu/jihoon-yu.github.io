@@ -74,8 +74,8 @@ color_settings:
   error_color: "#FF453A"
 
 font_settings:
-  font_embed: '<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100,300,400,500,700,900" rel="stylesheet">'
-  title_font: '"Noto Sans KR", sans-serif'
+  font_embed: '<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900" rel="stylesheet">'
+  title_font: '"Roboto", sans-serif'
   body_font: '"Noto Sans KR", sans-serif'
   regular_weight: 400
   bold_weight: 700
