@@ -19,6 +19,8 @@
   padding: 0;
 
   @include mq(laptop) {
+    max-width: 90%;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
