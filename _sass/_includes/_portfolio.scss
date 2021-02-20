@@ -5,11 +5,11 @@
 // - - - - - - - - - - - - - - - - - -
 
 .portfolio {
-  //padding: 0 $grid-spacing/2;
+  padding: 0 $grid-spacing/2;
 }
 
-//.portfolio-wrap {
-//}
+.portfolio-wrap {
+}
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Portfolio design
 
@@ -29,32 +29,32 @@
 
 .portfolio-item {
   //----Index Portfolilo list
-  //position: relative;
-  //padding: $grid-spacing/2;
-  //float: left;
-  //width: 50%;
+  position: relative;
+  padding: $grid-spacing/2;
+  float: left;
+  width: 50%;
 
-  //@include mq(phonel) {
-  //----320px 이상일 경우 적용
-  //position: relative;
-  //left: 0px;
-  //top: 0px;
-  //float: left;
-  //width: 100%;
-  //padding: 10px;
-  //}
+  @include mq(phonel) {
+    //----320px 이상일 경우 적용
+    position: relative;
+    left: 0px;
+    top: 0px;
+    float: left;
+    width: 100%;
+    padding: 10px;
+  }
 
-  //@include mq(tabletp) {
-  //----768px 이상일  경우 적용
-  //position: relative;
-  //padding: $grid-spacing/2;
-  //float: left;
-  //width: 50%;
-  //}
-  //@include mq(laptop) {
-  //----1220px 이상일 경우 적용
-  //position: relative;
-  //}
+  @include mq(tabletp) {
+    //----768px 이상일  경우 적용
+    position: relative;
+    padding: $grid-spacing/2;
+    float: left;
+    width: 50%;
+  }
+  @include mq(laptop) {
+    //----1220px 이상일 경우 적용
+    position: relative;
+  }
 }
 
 .portfolio-item__link {
