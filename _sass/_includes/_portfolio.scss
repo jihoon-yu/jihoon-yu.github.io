@@ -8,9 +8,6 @@
   padding: 0 $grid-spacing/2;
 }
 
-.portfolio-wrap {
-}
-
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Portfolio design
 
 .portfolio-wrap {
@@ -19,9 +16,7 @@
   padding: 0;
 
   @include mq(laptop) {
-    max-width: 90%;
-    margin: 0 auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
   }
@@ -29,8 +24,8 @@
 
 .portfolio-item {
   //----Index Portfolilo list
-  position: relative;
-  padding: $grid-spacing/2;
+  //position: relative;
+  //padding: $grid-spacing/2;
   float: left;
   width: 50%;
 
@@ -53,7 +48,8 @@
   }
   @include mq(laptop) {
     //----1220px 이상일 경우 적용
-    position: relative;
+    //position: relative;
+    width: 25%;
   }
 }
 
@@ -75,6 +71,7 @@
   width: 100%;
 }
 
+//---- portfolio 정보 (hover시 노출)
 .portfolio-item__content {
   position: absolute;
   top: 0;
