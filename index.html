@@ -29,10 +29,10 @@ featured_image: /images/social.jpg
 <!--Portfolio 스타일은 Portfolio scss에서 관리-->
 <!--content-wrap 제거-->
 <section class="portfolio">
-  <div class="portfolio-wrap">
+  <ul class="portfolio-wrap">
     {% for project in site.projects reversed %}
 
-    <div class="portfolio-item">
+    <li class="portfolio-item">
       <a class="portfolio-item__link" href="{{ project.url }}">
         <div class="portfolio-item__image">
           <img src="{{ project.featured_image  }}" alt="{{ project.title }}" />
@@ -45,8 +45,7 @@ featured_image: /images/social.jpg
           </div>
         </div>
       </a>
-    </div>
-
-    {% endfor %}
-  </div>
+    </li>
+    > {% endfor %}
+  </ul>
 </section>
