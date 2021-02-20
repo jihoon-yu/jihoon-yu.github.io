@@ -8,7 +8,20 @@
   padding: 0 $grid-spacing/2;
 }
 
+//.portfolio-wrap {
+//}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Portfolio design
+
 .portfolio-wrap {
+  font-size: 0;
+  display: grid;
+
+  @include mq(laptop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  }
 }
 
 .portfolio-item {
@@ -34,6 +47,10 @@
     padding: $grid-spacing/2;
     float: left;
     width: 50%;
+  }
+  @include mq(laptop) {
+    //----1220px 이상일 경우 적용
+    position: relative;
   }
 }
 
