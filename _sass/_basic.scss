@@ -514,7 +514,7 @@ section {
 
 @keyframes portfolio-show {
   from {
-    transform: translateY(-100px) scale(0.5);
+    transform: translateY(100px) scale(0.5);
     opacity: 0;
     color: #222222;
   }
@@ -536,17 +536,17 @@ section {
   animation-name: portfolio-show;
   animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.5s;
+  animation-delay: 0.7s;
 }
 .portfolio-item:nth-child(3) {
   animation-name: portfolio-show;
   animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.5s;
+  animation-delay: 0.9s;
 }
 .portfolio-item:nth-child(4) {
   animation-name: portfolio-show;
   animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.5s;
+  animation-delay: 1.1s;
 }
