@@ -43,31 +43,31 @@
     position: relative;
     width: 25%;
     padding: 25px;
+    overflow: hidden;
   }
 }
 
 //---- hover
 .portfolio-item__image {
   width: 100%;
-  overflow: hidden;
 }
 
-.portfolio-item__image:after {
+.portfolio-item:after {
   position: absolute;
   box-shadow: inset 0 0 0 0 rgba($color: #000000, $alpha: 1);
   transition: box-shadow 0.5s ease-in-out;
 }
-.portfolio-item__image:hover:after {
+.portfolio-item:hover:after {
   box-shadow: inset 0 0 0 45px rgba($color: #000000, $alpha: 1);
 }
 
-.portfolio-item__image img {
+.portfolio-item img {
   width: 100%;
   transform: scale(1);
   transition: 3s ease-in-out;
 }
 
-.portfolio-item__image:hover img {
+.portfolio-item:hover img {
   transform: scale(1.1);
 }
 //----
