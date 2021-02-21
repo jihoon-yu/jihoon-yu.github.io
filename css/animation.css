@@ -1,1 +1,6 @@
-/* 애니메이션 추가 예정?
+/* 애니메이션 추가 예정
+
+/*portfolio 호버 이펙트 */
+.portfolio-itme__image {
+  transform: scale(1);
+}
