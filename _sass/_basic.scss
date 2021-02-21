@@ -433,7 +433,7 @@ section {
 //min-width = 해당 값 이상일 경우 적용 -> 현재 상태 값
 //max-width = 해당 값 이하일 경우 적용
 
-.Index__Title01 {
+.Index__Title__One {
   //----기본 값
   font-family: $title-font;
   letter-spacing: $h1-spacing;
@@ -471,7 +471,7 @@ section {
   }
 }
 
-.Index__Title02 {
+.Index__Title__Two {
   //----기본 값
   font-family: $title-font;
   letter-spacing: $h1-spacing;
