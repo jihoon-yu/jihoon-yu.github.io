@@ -564,7 +564,7 @@ section {
   animation-name: index-title-show;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.3s;
+  animation-delay: 0.5s;
   animation-fill-mode: both;
 }
 
@@ -572,7 +572,7 @@ section {
   animation-name: index-title-show;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.4s;
+  animation-delay: 0.65s;
   animation-fill-mode: both;
 }
 
@@ -580,7 +580,7 @@ section {
   animation-name: index-title-show;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.5s;
+  animation-delay: 0.75s;
   animation-fill-mode: both;
 }
 
@@ -599,29 +599,78 @@ section {
 
 .portfolio-item:nth-child(1) {
   animation-name: portfolio-show;
-  animation-duration: 1s;
+  animation-duration: 0.6s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation-delay: 0.5s;
   animation-fill-mode: both;
 }
 .portfolio-item:nth-child(2) {
   animation-name: portfolio-show;
-  animation-duration: 1s;
+  animation-duration: 0.6s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation-delay: 0.65s;
   animation-fill-mode: both;
 }
 .portfolio-item:nth-child(3) {
   animation-name: portfolio-show;
-  animation-duration: 1s;
+  animation-duration: 0.6s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation-delay: 0.8s;
   animation-fill-mode: both;
 }
 .portfolio-item:nth-child(4) {
   animation-name: portfolio-show;
-  animation-duration: 1s;
+  animation-duration: 0.6s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation-delay: 0.95s;
+  animation-fill-mode: both;
+}
+
+@keyframes header-show {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.header__title {
+  animation-name: header-show;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.menu__list__item:nth-child(1) {
+  animation-name: header-show;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+.menu__list__item:nth-child(2) {
+  animation-name: header-show;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-delay: 0.6s;
+  animation-fill-mode: both;
+}
+.menu__list__item:nth-child(3) {
+  animation-name: header-show;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-delay: 0.7s;
+  animation-fill-mode: both;
+}
+.menu__list__item:nth-child(4) {
+  animation-name: header-show;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-delay: 0.8s;
   animation-fill-mode: both;
 }
