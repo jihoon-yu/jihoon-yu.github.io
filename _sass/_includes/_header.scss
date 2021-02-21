@@ -273,6 +273,6 @@
   }
 
   @include mq(laptop) {
-    max-width: 90%;
+    max-width: calc(90% - 50px);
   }
 }
