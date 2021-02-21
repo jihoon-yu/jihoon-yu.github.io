@@ -54,6 +54,7 @@
 
 .portfolio-item__image:after {
   position: absolute;
+  content: "";
   top: 0;
   right: 0;
   bottom: 0;
