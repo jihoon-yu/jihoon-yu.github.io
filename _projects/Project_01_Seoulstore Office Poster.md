@@ -3,7 +3,7 @@ title: "Seoulstore Office Poster"
 subtitle: "Graphic, Typograpy, Print <br>2018.01 - 2019.08"
 date: 2021-01-31 00:00:00
 description: This page is a demo that shows everything you can do inside portfolio and blog posts.
-featured_image: "/images/01_Project/Project_01/thumbnail.jpg"
+featured_image: "/images/Test/01.png"
 ---
 
 ![](/images/01_Project/Project_01/Hero_00.jpg)
