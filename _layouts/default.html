@@ -61,8 +61,6 @@
 	{{ site.data.settings.advanced_settings.header_js }}
 	{% endif %}
 
-	<!--스크롤 애니메이션 추가-->
-	<script src="https://unpkg.com/scrollreveal"></script>
 	
 </head>
 
@@ -95,6 +93,9 @@
 	<!-- Javascript Assets -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<!--스크롤 애니메이션 추가-->
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script>ScrollReveal().reveal('.portfolio-item')</script>
 
 	{% if site.data.settings.advanced_settings.footer_js %}
 	<!-- Extra Footer JS Code -->
