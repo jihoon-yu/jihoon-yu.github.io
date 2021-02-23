@@ -7,6 +7,10 @@
 .portfolio {
   padding: 0 $grid-spacing/2;
   margin-top: 65px;
+
+  @include mq(tabletl) {
+    margin-top: 130px;
+  }
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Portfolio design
