@@ -86,8 +86,10 @@
   display: none;
 
   @include mq(tabletl) {
+    position: absolute;
     display: flex;
     width: 20%;
+    left: 130%;
     -webkit-box-pack: end;
     justify-content: flex-end;
   }
