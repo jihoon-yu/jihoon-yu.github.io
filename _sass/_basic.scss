@@ -704,7 +704,7 @@ section {
   animation-fill-mode: both;
 }
 
-.menu__list__sub__item:nth-child(4) {
+.menu__list__sub__item {
   animation-name: header-show;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
