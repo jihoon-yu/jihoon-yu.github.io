@@ -105,7 +105,14 @@
 		usedelay:'onload',
 		interval: 80,
 		reset:true,
-		})</script>
+		})
+		ScrollReveal().reveal('.portfolio-item:first-child .portfolio-item__image', {
+			delay: 0,
+			interval: 80
+		})
+		</script>
+
+
 
 	{% if site.data.settings.advanced_settings.footer_js %}
 	<!-- Extra Footer JS Code -->
