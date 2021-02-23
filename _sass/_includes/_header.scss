@@ -82,6 +82,17 @@
   }
 }
 
+.sub__menu {
+  display: none;
+
+  @include mq(tabletl) {
+    display: flex;
+    width: 20%;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+  }
+}
+
 .menu__toggle {
   position: absolute;
   z-index: 100;
@@ -179,6 +190,12 @@
   }
 }
 
+.menu__sub__wrap {
+  @include mq(tabletl) {
+    float: right;
+  }
+}
+
 .menu--open .menu__wrap {
   visibility: visible;
   opacity: 1;
@@ -204,10 +221,15 @@
 .menu__list__item {
   @include mq(tabletl) {
     display: inline-block;
-    margin-left: 32px;
+    margin-left: 40px;
 
     &:first-child {
       margin-left: 0;
+    }
+    &:last-child {
+      @include mq(tabletl) {
+        display: none;
+      }
     }
   }
 }
