@@ -236,6 +236,13 @@
   }
 }
 
+.menu__list__sub__item {
+  @include mq(tabletl) {
+    display: flex;
+    margin-left: 40px;
+  }
+}
+
 .menu__list__item__link {
   font-size: $menu-small;
   font-weight: $menu-weight;
