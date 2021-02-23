@@ -8,6 +8,7 @@
 
 .header {
   margin-top: 40px;
+  z-index: 1;
 
   @include mq(tabletp) {
     margin-top: 50px;
@@ -55,6 +56,9 @@
 
   @include mq(laptop) {
     font-size: $sitetitle-large;
+    top: 50%;
+    width: 20%;
+    position: absolute;
   }
 }
 
@@ -63,9 +67,16 @@
 .menu {
   @include mq(tabletl) {
     position: absolute;
-    top: 50%;
+    top: 57%;
     left: 50%;
-    //right: 20px;
+    width: 50%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    flex: 1;
     @include translate(-50%, -50%);
   }
 }
@@ -222,7 +233,8 @@
   }
 
   @include mq(laptop) {
-    font-size: $menu-large;
+    font-size: 18px;
+    font-weight: 500;
   }
 
   &.active-link {
@@ -231,6 +243,7 @@
     @include mq(tabletl) {
       color: $text-dark-color;
       border-color: $accent-color;
+      font-weight: 700;
     }
   }
 }
@@ -274,6 +287,10 @@
   }
 
   @include mq(laptop) {
-    max-width: calc(90% - 50px);
+    max-width: 95%;
+    height: 120px;
+    display: block;
+    overflow: visible;
+    background-image: linear-gradient(180deg, #000 25%, transparent);
   }
 }
