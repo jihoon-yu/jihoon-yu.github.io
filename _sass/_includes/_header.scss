@@ -64,8 +64,9 @@
   @include mq(tabletl) {
     position: absolute;
     top: 50%;
-    right: 20px;
-    @include translate(0, -50%);
+    left: 50%;
+    //right: 20px;
+    @include translate(-50%, -50%);
   }
 }
 
@@ -274,123 +275,5 @@
 
   @include mq(laptop) {
     max-width: calc(90% - 50px);
-  }
-}
-
-.new__menu__wrap {
-  //메인 메뉴 wrap
-  position: fixed;
-  z-index: 90;
-  margin: 0 auto;
-  background: rgba($overlay-background-color, 0.95);
-  overflow: auto;
-
-  visibility: hidden;
-  opacity: 0;
-  @include transition(all 0.2s ease-in-out);
-
-  @include mq(tabletl) {
-    position: relative;
-    background: transparent;
-    visibility: visible;
-    overflow: visible;
-    opacity: 1;
-    @include transition(none);
-  }
-}
-
-.menu--open .new__menu__wrap {
-  visibility: visible;
-  opacity: 1;
-}
-
-.new__menu__list {
-  list-style: none;
-  margin: 0 auto;
-  padding: 30px;
-
-  @include mq(tabletp) {
-    padding: 40px 0 0;
-    max-width: 70%;
-  }
-
-  @include mq(tabletl) {
-    max-width: none;
-    margin: 0;
-    padding: 0;
-  }
-}
-.new__menu__item {
-  @include mq(tabletl) {
-    display: inline-block;
-    margin-left: 32px;
-
-    &:first-child {
-      margin-left: 0;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-}
-
-.new__menu__item__link {
-  font-size: $menu-small;
-  font-weight: $menu-weight;
-  color: $overlay-text-color;
-  padding: 10px 0;
-
-  &:hover {
-    color: $overlay-accent-color;
-  }
-
-  @include mq(tabletl) {
-    padding: 0 0 4px;
-    font-size: $menu-medium;
-    color: $text-dark-color;
-    border-bottom: 3px solid transparent;
-
-    &:hover {
-      color: $accent-color;
-    }
-  }
-
-  @include mq(laptop) {
-    font-size: 16px;
-    font-weight: 500;
-  }
-
-  &.active-link {
-    color: $overlay-accent-color;
-
-    @include mq(tabletl) {
-      color: $text-dark-color;
-      border-color: $accent-color;
-      font-weight: 700;
-    }
-  }
-}
-
-.new__sub__wrap {
-  position: fixed;
-  z-index: 90;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba($overlay-background-color, 0.95);
-  overflow: auto;
-
-  visibility: hidden;
-  opacity: 0;
-  @include transition(all 0.2s ease-in-out);
-
-  @include mq(tabletl) {
-    position: relative;
-    background: transparent;
-    visibility: visible;
-    overflow: visible;
-    opacity: 1;
-    @include transition(none);
   }
 }
