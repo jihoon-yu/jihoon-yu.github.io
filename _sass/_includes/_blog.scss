@@ -15,6 +15,8 @@
   grid-auto-rows: auto;
   grid-column-gap: 50px;
   grid-row-gap: 60px;
+  position: relative;
+  height: auto;
 }
 
 .blog-post {
@@ -235,11 +237,14 @@
   font-family: $body-font;
   font-weight: 700;
   font-size: 24px;
-  font-weight: 1.5;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-right: 20px;
 }
 
 .new__blog-post__subtitle {
-  color: #ffffff;
+  color: #636c73;
   font-family: $body-font;
   font-weight: 500;
   font-size: 16px;
