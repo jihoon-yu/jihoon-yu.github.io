@@ -63,6 +63,12 @@
   }
 }
 
+.random__title {
+  margin-left: 5px;
+  &:hover {
+    color: &accent-color;
+  }
+}
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Menu
 
 .menu {
