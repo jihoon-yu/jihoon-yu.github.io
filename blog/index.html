@@ -20,25 +20,25 @@ featured_image: /images/social.jpg
 </section>
 
 <section class="blog">
-  <div class="content-wrap blog-wrap blog-grid">
-    {% for post in paginator.posts %}
-
-    <article class="new__blog-post">
-      <a class="new__blog-post__link" href="{{ post.url }}">
-        <div class="new__blog-post__image">
-          <img src="{{ post.featured_image  }}" alt="{{ post.title }}" />
-        </div>
-        <div class="new__blog-post__contents">
-          <div class="new__blog-post__info">
-            <div class="new__blog-post__title">{{ post.title }}</div>
-            <div class="new__blog-post__subtitle">
-              {{ post.date | date_to_long_string }}
+  <div class="content-wrap blog-wrap">
+    <div class="blog-grid">
+      {% for post in paginator.posts %}
+      <article class="new__blog-post">
+        <a class="new__blog-post__link" href="{{ post.url }}">
+          <div class="new__blog-post__image">
+            <img src="{{ post.featured_image  }}" alt="{{ post.title }}" />
+          </div>
+          <div class="new__blog-post__contents">
+            <div class="new__blog-post__info">
+              <div class="new__blog-post__title">{{ post.title }}</div>
+              <div class="new__blog-post__subtitle">
+                {{ post.date | date_to_long_string }}
+              </div>
             </div>
           </div>
-        </div>
-      </a>
-    </article>
-
+        </a>
+      </article>
+    </div>
     <!--
     <article class="blog-post">
       <a class="blog-post__link" href="{{ post.url }}">
@@ -57,7 +57,6 @@ featured_image: /images/social.jpg
       </a>
     </article>
     -->
-
     {% endfor %}
   </div>
 </section>
