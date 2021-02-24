@@ -38,26 +38,8 @@ featured_image: /images/social.jpg
           </div>
         </a>
       </article>
+      {% endfor %}
     </div>
-    <!--
-    <article class="blog-post">
-      <a class="blog-post__link" href="{{ post.url }}">
-        <div class="blog-post__image">
-          <img src="{{ post.featured_image  }}" alt="{{ post.title }}" />
-        </div>
-
-        <div class="blog-post__content">
-          <div class="blog-post__info">
-            <h2 class="blog-post__title">{{ post.title }}</h2>
-            <p class="blog-post__subtitle">
-              {{ post.date | date_to_long_string }}
-            </p>
-          </div>
-        </div>
-      </a>
-    </article>
-    -->
-    {% endfor %}
   </div>
 </section>
 
@@ -84,3 +66,22 @@ featured_image: /images/social.jpg
 </section>
 
 {% endif %}
+
+<!--
+    <article class="blog-post">
+      <a class="blog-post__link" href="{{ post.url }}">
+        <div class="blog-post__image">
+          <img src="{{ post.featured_image  }}" alt="{{ post.title }}" />
+        </div>
+
+        <div class="blog-post__content">
+          <div class="blog-post__info">
+            <h2 class="blog-post__title">{{ post.title }}</h2>
+            <p class="blog-post__subtitle">
+              {{ post.date | date_to_long_string }}
+            </p>
+          </div>
+        </div>
+      </a>
+    </article>
+    -->
