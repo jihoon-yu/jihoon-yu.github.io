@@ -5,17 +5,15 @@
 // - - - - - - - - - - - - - - - - - -
 
 .blog {
-  padding: 0 $grid-spacing/2;
-}
-
-.blog-wrap {
   font-size: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: auto;
   grid-column-gap: 50px;
   grid-row-gap: 60px;
-  position: relative;
+}
+
+.blog-wrap {
 }
 
 .blog-post {
