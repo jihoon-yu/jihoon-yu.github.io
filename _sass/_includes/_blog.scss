@@ -14,6 +14,7 @@
 }
 
 .blog-wrap {
+  //---- 이상하게, div 자체에 스타일이 적용되서 !important로 우선 적용
   position: relative !important;
   height: 100% !important;
 }
@@ -215,7 +216,7 @@
 
   @include mq(laptop) {
     //----1220px 이상일 경우 적용
-    padding-top: 24px;
+    padding-top: 14px;
     font-size: 24px;
     line-height: 1.7;
   }
