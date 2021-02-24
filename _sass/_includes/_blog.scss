@@ -236,9 +236,6 @@
   font-weight: 700;
   font-size: 24px;
   font-weight: 1.5;
-  @include mq(tabletp) {
-    font-size: $grid-item-title-medium;
-  }
 }
 
 .new__blog-post__subtitle {
@@ -246,7 +243,4 @@
   font-family: $body-font;
   font-weight: 500;
   font-size: 16px;
-  @include mq(tabletp) {
-    font-size: $grid-item-title-medium;
-  }
 }
