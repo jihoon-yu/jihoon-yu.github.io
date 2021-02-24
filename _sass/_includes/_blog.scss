@@ -9,15 +9,15 @@
 }
 
 .blog-wrap {
-  position: relative !important;
-  height: 100% !important;
+  //position: relative !important;
+  //height: 100% !important;
 }
 
 .blog-grid {
   font-size: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: auto;
+  grid-auto-rows: 100%;
   grid-column-gap: 50px;
   grid-row-gap: 60px;
   position: relative;
