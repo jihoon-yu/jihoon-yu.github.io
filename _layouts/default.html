@@ -101,7 +101,7 @@
 class TextScramble {
   constructor(el) {
     this.el = el
-    this.chars = '!<>-_\\/[]{}—=+*^?#________'
+    this.chars = 'Km90lxGfW83jVD75'
     this.update = this.update.bind(this)
   }
   setText(newText) {
@@ -157,13 +157,13 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-  'Neo,',
-  'sooner or later',
-  'you\'re going to realize',
-  'just as I did',
-  'that there\'s a difference',
-  'between knowing the path',
-  'and walking the path'
+  'Works',
+  'Designs',
+  'Graphic',
+  'Interface',
+  'Thoughts',
+  'Interaction',
+  'Code'
 ]
 
 const el = document.querySelector('.random__title')
@@ -172,7 +172,7 @@ const fx = new TextScramble(el)
 let counter = 0
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 5000)
+    setTimeout(next, 4000)
   })
   counter = (counter + 1) % phrases.length
 }
