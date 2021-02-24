@@ -23,6 +23,23 @@ featured_image: /images/social.jpg
   <div class="content-wrap blog-wrap">
     {% for post in paginator.posts %}
 
+    <article class="new__blog-post">
+      <a class="new__blog-post__link">
+        <div class="new__blog-post__image">
+          <img src="{{ post.featured_image  }}" alt="{{ post.title }}" />
+        </div>
+        <div class="new__blog-post__contents">
+          <div class="new__blog-post__info">
+            <div class="new__blog-post__title">{{ post.title }}</div>
+            <div class="new__blog-post__subtitle">
+              {{ post.date | date_to_long_string }}
+            </div>
+          </div>
+        </div>
+      </a>
+    </article>
+
+    <!--
     <article class="blog-post">
       <a class="blog-post__link" href="{{ post.url }}">
         <div class="blog-post__image">
@@ -39,6 +56,7 @@ featured_image: /images/social.jpg
         </div>
       </a>
     </article>
+    -->
 
     {% endfor %}
   </div>
