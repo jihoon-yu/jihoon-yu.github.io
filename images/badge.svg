@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="153px" height="87px" viewBox="0 0 153 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="index-copy-4" transform="translate(-884.000000, -187.000000)">
+            <g id="Group-7" transform="translate(884.000000, 187.500000)">
+                <text id="Review-Of-The" font-family="BauerBodoniStd-BoldItalic, Bauer Bodoni Std 1" font-size="18" font-style="italic" font-weight="bold" letter-spacing="-0.227692" fill="#FFFFFF">
+                    <tspan x="18.541844" y="40.5">Review Of  The</tspan>
+                </text>
+                <g id="Group-5" transform="translate(35.000000, 49.500000)" fill="#FFFFFF">
+                    <text id="2017" font-family="FuturaStd-Light, Futura Std" font-size="13" font-weight="300" letter-spacing="-0.627692308">
+                        <tspan x="0.135384615" y="11">2017</tspan>
+                    </text>
+                    <text id="2021" font-family="FuturaStd-Light, Futura Std" font-size="13" font-weight="300" letter-spacing="-0.627692308">
+                        <tspan x="52.1353846" y="11">2021</tspan>
+                    </text>
+                    <rect id="Rectangle" x="33.5" y="6" width="15" height="1"></rect>
+                </g>
+                <ellipse id="Oval" stroke="#FFFFFF" cx="76.5" cy="43" rx="76" ry="42.5"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>
