@@ -8,7 +8,7 @@
 
 .header {
   margin-top: 40px;
-  z-index: 1;
+  z-index: 99999;
 
   @include mq(tabletp) {
     margin-top: 50px;
