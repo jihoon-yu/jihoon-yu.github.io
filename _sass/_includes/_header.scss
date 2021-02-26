@@ -10,6 +10,11 @@
   margin-top: 40px;
   z-index: 99999;
 
+  @include mq(phonel) {
+    margin-top: 0;
+    position: fixed;
+  }
+
   @include mq(tabletp) {
     margin-top: 50px;
   }
@@ -317,6 +322,14 @@
   margin: 0 auto;
   padding: 0 30px;
   max-width: 500px;
+
+  @include mq(phonel) {
+    max-width: 100%;
+    height: 84px;
+    display: block;
+    overflow: visible;
+    background-image: linear-gradient(180deg, #000 25%, transparent);
+  }
 
   @include mq(tabletp) {
     padding: 0;
