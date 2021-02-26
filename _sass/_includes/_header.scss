@@ -57,6 +57,8 @@
   }
   @include mq(phonel) {
     font-size: 20px;
+    top: 40%;
+    position: absolute;
   }
 
   @include mq(tabletp) {
