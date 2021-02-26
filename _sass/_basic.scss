@@ -692,8 +692,8 @@ section {
     margin-left: auto;
   }
   @include mq(tabletl) {
-    width: 70px;
-    height: 4px;
+    width: 90px;
+    height: 1px;
     margin-top: 70px;
     margin-right: auto;
     margin-left: auto;
@@ -768,7 +768,7 @@ section {
   @include mq(tabletl) {
     width: 700px;
     height: 700px;
-    margin-top: -610px;
+    margin-top: -590px;
     margin-right: auto;
     margin-left: auto;
   }
