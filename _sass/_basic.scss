@@ -712,21 +712,18 @@ section {
 
   @include mq(phonel) {
     //----320px 이상일 경우 적용
-    padding-top: 40px;
     font-size: 16px;
     line-height: 1.7;
   }
 
   @include mq(tabletp) {
     //----768px 이상일 경우 적용
-    padding-top: 28px;
     font-size: 16px;
     line-height: 1.7;
   }
 
   @include mq(tabletl) {
     //----1024px 이상일 경우 적용
-    padding-top: 24px;
     font-size: 16px;
     line-height: 1.7;
   }
