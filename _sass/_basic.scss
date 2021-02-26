@@ -687,10 +687,16 @@ section {
   @include mq(phonel) {
     width: 70px;
     height: 4px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
   }
   @include mq(tabletl) {
     width: 70px;
     height: 4px;
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -739,7 +745,7 @@ section {
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  z-index: 99999;
+  z-index: 1;
 }
 
 .index-circle {
@@ -767,7 +773,7 @@ section {
     width: 650px;
     height: 650px;
     margin: 0 auto;
-    margin-top: -650px;
+    margin-top: -590px;
   }
 }
 
