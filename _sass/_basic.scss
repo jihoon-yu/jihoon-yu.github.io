@@ -733,7 +733,6 @@ section {
 
   @include mq(laptop) {
     //----1220px 이상일 경우 적용
-    padding-top: 48px;
     font-size: 26px;
     line-height: 1.7;
   }
@@ -770,10 +769,11 @@ section {
   }
 
   @include mq(tabletl) {
-    width: 650px;
-    height: 650px;
-    margin: 0 auto;
-    margin-top: -590px;
+    width: 700px;
+    height: 700px;
+    margin-top: -630px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
