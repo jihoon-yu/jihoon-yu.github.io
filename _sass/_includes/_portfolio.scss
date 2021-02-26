@@ -8,6 +8,10 @@
   padding: 0 $grid-spacing/2;
   margin-top: 60px;
 
+  @include mq(phonel) {
+    margin-top: 230px;
+  }
+
   @include mq(tabletl) {
     margin-top: 60px;
   }

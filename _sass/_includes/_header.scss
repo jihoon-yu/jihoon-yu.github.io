@@ -50,6 +50,9 @@
   &:hover {
     color: $accent-color;
   }
+  @include mq(phonel) {
+    font-size: 20px;
+  }
 
   @include mq(tabletp) {
     font-size: $sitetitle-medium;

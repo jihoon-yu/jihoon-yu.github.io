@@ -561,9 +561,11 @@ section {
 .badge-item {
   @include mq(phonel) {
     position: relative;
-    width: 103px;
+    width: 90px;
     height: auto;
-    margin: 0 auto;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
   }
   @include mq(tabletl) {
     position: relative;
@@ -583,6 +585,9 @@ section {
   z-index: 2;
   //---- 공백 스타일 추가
   white-space: normal;
+
+  @include mq(phonel) {
+  }
 
   @include mq(tabletp) {
     padding: 0;
@@ -614,8 +619,9 @@ section {
   @include mq(phonel) {
     //----320px 이상일 경우 적용
     padding: 0;
-    font-size: 47px;
+    font-size: 40px;
     line-height: 1.2;
+    margin-top: 30px;
   }
 
   @include mq(tabletp) {
@@ -651,7 +657,7 @@ section {
   @include mq(phonel) {
     //----320px 이상일 경우 적용
     padding: 0;
-    font-size: 47px;
+    font-size: 40px;
     line-height: 1.2;
   }
 
@@ -686,8 +692,8 @@ section {
 
   @include mq(phonel) {
     width: 70px;
-    height: 4px;
-    margin-top: 40px;
+    height: 1px;
+    margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -714,6 +720,7 @@ section {
     //----320px 이상일 경우 적용
     font-size: 16px;
     line-height: 1.7;
+    margin-top: 40px;
   }
 
   @include mq(tabletp) {
@@ -760,9 +767,9 @@ section {
   margin: 0 auto;
 
   @include mq(phonel) {
-    width: 430px;
-    height: 430px;
-    margin-top: 0 auto;
+    width: 360px;
+    height: 360px;
+    margin-top: -520px;
   }
 
   @include mq(tabletl) {
