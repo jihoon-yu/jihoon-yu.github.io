@@ -763,9 +763,9 @@ section {
 .index-circle-one {
   width: 648px;
   height: 648px;
-  border-radius: 50%;
+  //border-radius: 50%;
   //padding: 72.5px 267px 223px 268px;
-  -webkit-backdrop-filter: blur(7px);
+  /* -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
   border-style: solid;
   border-width: 0.6px;
@@ -781,14 +781,14 @@ section {
     #003abb,
     #965087 50%,
     #ff5b52 84%
-  );
+  ); */
 
   @include mq(phonel) {
     visibility: hidden;
   }
 
   @include mq(laptop) {
-    position: relative;
+    position: absolute;
     visibility: visible;
     width: 648px;
     height: 648px;
@@ -796,13 +796,15 @@ section {
     top: 142px;
     margin-top: 0;
     z-index: 7;
+    backdrop-filter: blur(7px);
+    backdrop-filter: opacity(60%);
   }
 }
 
 .index-circle-two {
   width: 472px;
   height: 472px;
-  border-radius: 50%;
+  /* border-radius: 50%;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   border-style: solid;
@@ -818,15 +820,15 @@ section {
     302deg,
     #000000 87%,
     #1300ac 51%,
-    #7d00aa 13%
-  );
+    #7d00aa 13% 
+  ); */
 
   @include mq(phonel) {
     visibility: hidden;
   }
 
   @include mq(laptop) {
-    position: relative;
+    position: absolute;
     visibility: visible;
     width: 472px;
     height: 472px;
@@ -834,13 +836,15 @@ section {
     top: 396px;
     margin-top: 0;
     z-index: 6;
+    backdrop-filter: blur(7px);
+    backdrop-filter: opacity(60%);
   }
 }
 
 .index-circle-three {
   width: 299px;
   height: 299px;
-  border-radius: 50%;
+  /* border-radius: 50%;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   border-style: solid;
@@ -856,15 +860,15 @@ section {
     133deg,
     #00cdae 13%,
     #2755b2 51%,
-    #000000 84%
-  );
+    #000000 84% 
+  ); */
 
   @include mq(phonel) {
     visibility: hidden;
   }
 
   @include mq(laptop) {
-    position: relative;
+    position: absolute;
     visibility: visible;
     width: 299px;
     height: 299px;
@@ -872,13 +876,15 @@ section {
     top: 369px;
     margin-top: 0;
     z-index: 5;
+    backdrop-filter: blur(7px);
+    backdrop-filter: opacity(60%);
   }
 }
 
 .index-circle-four {
   width: 263px;
   height: 263px;
-  border-radius: 50%;
+  /* border-radius: 50%;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   background-image: linear-gradient(
@@ -886,14 +892,14 @@ section {
     #000000 79%,
     #380041 50%,
     #79bcff 12%
-  );
+  ); */
 
   @include mq(phonel) {
     visibility: hidden;
   }
 
   @include mq(laptop) {
-    position: relative;
+    position: absolute;
     visibility: visible;
     width: 263px;
     height: 263px;
@@ -901,13 +907,15 @@ section {
     top: 181px;
     margin-top: 0;
     z-index: 4;
+    backdrop-filter: blur(7px);
+    backdrop-filter: opacity(60%);
   }
 }
 
 .index-circle-five {
   width: 464px;
   height: 444px;
-  border-radius: 50%;
+  /* border-radius: 50%;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   border-style: solid;
@@ -924,14 +932,14 @@ section {
     #000000 17%,
     #950074 57%,
     #ff0d0d 85%
-  );
+  );*/
 
   @include mq(phonel) {
     visibility: hidden;
   }
 
   @include mq(laptop) {
-    position: relative;
+    position: absolute;
     visibility: visible;
     width: 464px;
     height: 464px;
@@ -939,13 +947,15 @@ section {
     top: 0px;
     margin-top: 0;
     z-index: 3;
+    backdrop-filter: blur(7px);
+    backdrop-filter: opacity(60%);
   }
 }
 
 .index-circle-six {
   width: 248px;
   height: 248px;
-  border-radius: 50%;
+  /* border-radius: 50%;
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   border-style: solid;
@@ -962,14 +972,14 @@ section {
     #000000 89%,
     #aa423d 44%,
     #f00000 15%
-  );
+  ); */
 
   @include mq(phonel) {
     visibility: hidden;
   }
 
   @include mq(laptop) {
-    position: relative;
+    position: absolute;
     visibility: visible;
     width: 248px;
     height: 248px;
@@ -977,13 +987,15 @@ section {
     top: 204px;
     margin-top: 0;
     z-index: 2;
+    backdrop-filter: blur(7px);
+    backdrop-filter: opacity(60%);
   }
 }
 
 .index-circle-seven {
   width: 172px;
   height: 172px;
-  border-radius: 50%;
+  /* border-radius: 50%;
   -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
   border-style: solid;
@@ -1000,14 +1012,14 @@ section {
     rgba(96, 37, 89, 0.5) 15%,
     rgba(41, 29, 63, 0.5) 58%,
     rgba(0, 0, 0, 0.5) 90%
-  );
+  ); */
 
   @include mq(phonel) {
     visibility: hidden;
   }
 
   @include mq(laptop) {
-    position: relative;
+    position: absolute;
     visibility: visible;
     width: 172px;
     height: 172px;
@@ -1015,6 +1027,8 @@ section {
     top: 430px;
     margin-top: 0;
     z-index: 1;
+    backdrop-filter: blur(7px);
+    backdrop-filter: opacity(60%);
   }
 }
 
