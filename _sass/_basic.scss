@@ -985,37 +985,16 @@ section {
     opacity: 100%;
   }
 }
-
-.index-circle__perspective {
-  @include mq(laptop) {
-    perspective: 10000px;
-    transform-style: preserve-3d;
-  }
-}
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - new index animation
 @keyframes index-circle-show {
-  0% {
-    transform: translateY(60px);
-    transform: rotateY(340deg);
+  from {
+    transform: translateY(100px);
     opacity: 0;
   }
 
-  25% {
-    transform: rotateY(250deg);
-  }
-
-  50% {
-    transform: rotateY(160deg);
-  }
-
-  75% {
-    transform: rotateY(70deg);
-  }
-
-  100% {
+  to {
     transform: translateY(0px);
-    transform: rotateY(0deg);
-    opacity: 100%;
+    opacity: 70%;
   }
 }
 
