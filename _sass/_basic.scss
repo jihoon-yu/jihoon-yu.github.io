@@ -787,6 +787,8 @@ section {
   }
 
   @include mq(laptop) {
+    position: relative;
+    visibility: visible;
     width: 648px;
     height: 648px;
     left: 471px;
@@ -822,6 +824,8 @@ section {
   }
 
   @include mq(laptop) {
+    position: relative;
+    visibility: visible;
     width: 472px;
     height: 472px;
     left: 899px;
@@ -857,6 +861,8 @@ section {
   }
 
   @include mq(laptop) {
+    position: relative;
+    visibility: visible;
     width: 299px;
     height: 299px;
     left: 260px;
@@ -883,6 +889,8 @@ section {
   }
 
   @include mq(laptop) {
+    position: relative;
+    visibility: visible;
     width: 263px;
     height: 263px;
     left: 974px;
@@ -918,6 +926,8 @@ section {
   }
 
   @include mq(laptop) {
+    position: relative;
+    visibility: visible;
     width: 464px;
     height: 464px;
     left: 133px;
@@ -953,6 +963,8 @@ section {
   }
 
   @include mq(laptop) {
+    position: relative;
+    visibility: visible;
     width: 248px;
     height: 248px;
     left: 0px;
@@ -988,6 +1000,8 @@ section {
   }
 
   @include mq(laptop) {
+    position: relative;
+    visibility: visible;
     width: 172px;
     height: 172px;
     left: 1287px;
