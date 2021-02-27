@@ -552,6 +552,13 @@ section {
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Index new design
+
+.intro__wraper {
+  @include mq(laptop) {
+    margin-top: 30px;
+  }
+}
+
 .badge__wraper {
   position: relative;
   -webkit-box-pack: center;
@@ -606,7 +613,7 @@ section {
 
   @include mq(laptop) {
     max-width: 60%;
-    margin-top: 50px;
+    margin-top: 40px;
   }
 }
 
@@ -615,7 +622,7 @@ section {
   font-family: $title-font;
   letter-spacing: $h1-spacing;
   //font-size: 55px;
-  font-weight: 300;
+  font-weight: 100;
   white-space: normal;
   color: #ffffff;
   max-width: 100%;
@@ -653,7 +660,7 @@ section {
   font-family: $title-font;
   letter-spacing: $h1-spacing;
   //font-size: 55px;
-  font-weight: 300;
+  font-weight: 100;
   white-space: normal;
   color: #ffffff;
   max-width: 100%;
@@ -704,7 +711,7 @@ section {
   @include mq(tabletl) {
     width: 90px;
     height: 4px;
-    margin-top: 70px;
+    margin-top: 76px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -745,6 +752,7 @@ section {
     font-size: 24px;
     line-height: 1.7;
     color: #ffffff;
+    padding-top: 30px;
   }
 }
 
