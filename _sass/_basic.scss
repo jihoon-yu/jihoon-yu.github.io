@@ -737,12 +737,14 @@ section {
     //----1024px 이상일 경우 적용
     font-size: 16px;
     line-height: 1.7;
+    color: #ffffff;
   }
 
   @include mq(laptop) {
     //----1220px 이상일 경우 적용
     font-size: 24px;
     line-height: 1.7;
+    color: #ffffff;
   }
 }
 
@@ -753,19 +755,18 @@ section {
   -webkit-box-align: center;
   align-items: center;
   z-index: 1;
+  width: 100%;
 }
 
-.index-circle {
+.index-circle-one {
   width: 500px;
   height: 500%;
   border-radius: 50%;
-  background-image: linear-gradient(
-    135deg,
-    #000000 13%,
-    #002d47 49%,
-    #003988 80%,
-    #003b93 85%,
-    #003da1 85%
+  background-image: radial-gradient(
+    circle at 12% 20%,
+    #000000,
+    #950074 52%,
+    #ff0d0d 88%
   );
   z-index: 1;
   margin: 0 auto;
@@ -779,9 +780,59 @@ section {
   @include mq(tabletl) {
     width: 700px;
     height: 700px;
-    margin-top: -590px;
-    margin-right: auto;
-    margin-left: auto;
+    top: -90px;
+  }
+}
+
+.index-circle-two {
+  width: 500px;
+  height: 500%;
+  border-radius: 50%;
+  background-image: radial-gradient(
+    circle at 14% 19%,
+    #003abb,
+    #965087 50%,
+    #ff5b52 83%
+  );
+  z-index: 1;
+  margin: 0 auto;
+
+  @include mq(phonel) {
+    width: 360px;
+    height: 360px;
+    margin-top: -520px;
+  }
+
+  @include mq(tabletl) {
+    width: 700px;
+    height: 700px;
+    top: -90px;
+  }
+}
+
+.index-circle-three {
+  width: 500px;
+  height: 500%;
+  border-radius: 50%;
+  background-image: radial-gradient(
+    circle at 21% 23%,
+    #0a1b14,
+    #1300ac 39%,
+    #6e0095 81%
+  );
+  z-index: 1;
+  margin: 0 auto;
+
+  @include mq(phonel) {
+    width: 360px;
+    height: 360px;
+    margin-top: -520px;
+  }
+
+  @include mq(tabletl) {
+    width: 700px;
+    height: 700px;
+    top: -90px;
   }
 }
 
