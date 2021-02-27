@@ -14,6 +14,6 @@
         </linearGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <circle id="circle-one" stroke="url(#linearGradient-2)" stroke-width="0.6" fill="url(#radialGradient-1)" cx="324" cy="324" r="323.7"></circle>
+        <circle id="circle-one" stroke="url(#linearGradient-2)" fill="url(#radialGradient-1)" cx="324" cy="324" r="323.5"></circle>
     </g>
 </svg>
