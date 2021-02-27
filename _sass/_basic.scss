@@ -801,7 +801,7 @@ section {
     visibility: visible;
     width: 648px;
     height: 648px;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%, 0%);
     top: 142px;
     box-shadow: 10px 30px 40px 10px rgba(0, 0, 0, 0.25);
@@ -986,7 +986,43 @@ section {
   }
 }
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - new index animation
-@keyframes index-circle-show {
+@keyframes index-circle-show-one {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 52%;
+  }
+}
+
+@keyframes index-circle-show-two {
+  from {
+    transform: translateY(120px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 57%;
+  }
+}
+
+@keyframes index-circle-show-three {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 46%;
+  }
+}
+
+@keyframes index-circle-show-four {
   from {
     transform: translateY(100px);
     opacity: 0;
@@ -998,24 +1034,60 @@ section {
   }
 }
 
+@keyframes index-circle-show-five {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 60%;
+  }
+}
+
+@keyframes index-circle-show-six {
+  from {
+    transform: translateY(190px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 27%;
+  }
+}
+
+@keyframes index-circle-show-seven {
+  from {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+
 .index-circle-one {
-  animation-name: index-circle-show;
+  animation-name: index-circle-show-one;
   animation-duration: 0.5s;
   animation-delay: 0.5s;
-  animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
+  animation-timing-function: cubic-bezier(0.15, 1.6, 0.79, 0.7);
   animation-fill-mode: both;
 }
 
 .index-circle-two {
-  animation-name: index-circle-show;
-  animation-duration: 0.5s;
+  animation-name: index-circle-show-two;
+  animation-duration: 0.6s;
   animation-delay: 0.6s;
   animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
   animation-fill-mode: both;
 }
 
 .index-circle-three {
-  animation-name: index-circle-show;
+  animation-name: index-circle-show-three;
   animation-duration: 0.5s;
   animation-delay: 0.7s;
   animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
@@ -1023,7 +1095,7 @@ section {
 }
 
 .index-circle-four {
-  animation-name: index-circle-show;
+  animation-name: index-circle-show-four;
   animation-duration: 0.5s;
   animation-delay: 0.7s;
   animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
@@ -1031,15 +1103,15 @@ section {
 }
 
 .index-circle-five {
-  animation-name: index-circle-show;
-  animation-duration: 0.5s;
+  animation-name: index-circle-show-five;
+  animation-duration: 0.6s;
   animation-delay: 0.8s;
-  animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
+  animation-timing-function: cubic-bezier(0.15, 1.6, 0.79, 0.7);
   animation-fill-mode: both;
 }
 
 .index-circle-six {
-  animation-name: index-circle-show;
+  animation-name: index-circle-show-six;
   animation-duration: 0.5s;
   animation-delay: 0.9s;
   animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
@@ -1047,7 +1119,7 @@ section {
 }
 
 .index-circle-seven {
-  animation-name: index-circle-show;
+  animation-name: index-circle-show-seven;
   animation-duration: 0.5s;
   animation-delay: 0.9s;
   animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
