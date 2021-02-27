@@ -988,7 +988,8 @@ section {
 
 .index-circle__perspective {
   @include mq(laptop) {
-    perspective: 50px;
+    perspective: 10000px;
+    transform-style: preserve-3d;
   }
 }
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - new index animation
