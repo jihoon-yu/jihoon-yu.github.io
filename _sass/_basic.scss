@@ -580,7 +580,7 @@ section {
   }
   @include mq(tabletl) {
     position: relative;
-    width: 76px;
+    width: 60px;
     height: auto;
     margin: 0 auto;
   }
@@ -689,6 +689,7 @@ section {
     //----1220px 이상일 경우 적용
     font-size: 78px;
     line-height: 1.2;
+    margin-top: -6px;
   }
 }
 
@@ -749,8 +750,8 @@ section {
 
   @include mq(laptop) {
     //----1220px 이상일 경우 적용
-    font-size: 24px;
-    line-height: 1.7;
+    font-size: 22px;
+    line-height: 1.9;
     color: #ffffff;
     padding-top: 30px;
   }
