@@ -703,7 +703,7 @@ section {
   }
   @include mq(tabletl) {
     width: 90px;
-    height: 1px;
+    height: 4px;
     margin-top: 70px;
     margin-right: auto;
     margin-left: auto;
@@ -749,11 +749,7 @@ section {
 }
 
 .index-circle__wraper {
-  position: relative;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
+  position: absolute;
   z-index: 1;
   width: 100%;
 }
@@ -778,9 +774,13 @@ section {
   }
 
   @include mq(tabletl) {
-    width: 700px;
-    height: 700px;
-    top: -90px;
+    position: relative;
+    width: 610px;
+    height: 610px;
+    top: -760px;
+    left: -440px;
+    z-index: 3;
+    margin-top: 0;
   }
 }
 
@@ -804,9 +804,12 @@ section {
   }
 
   @include mq(tabletl) {
-    width: 700px;
-    height: 700px;
-    top: -90px;
+    position: relative;
+    width: 610px;
+    height: 610px;
+    top: -1195px;
+    z-index: 2;
+    margin-top: 0;
   }
 }
 
@@ -830,9 +833,13 @@ section {
   }
 
   @include mq(tabletl) {
-    width: 700px;
-    height: 700px;
-    top: -90px;
+    position: relative;
+    width: 610px;
+    height: 610px;
+    top: -1680px;
+    left: 410px;
+    z-index: 3;
+    margin-top: 0;
   }
 }
 
