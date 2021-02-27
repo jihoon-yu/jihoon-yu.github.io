@@ -729,7 +729,7 @@ section {
     //----320px 이상일 경우 적용
     font-size: 16px;
     line-height: 1.7;
-    margin-top: 40px;
+    margin-top: 60px;
   }
 
   @include mq(tabletp) {
@@ -784,7 +784,8 @@ section {
     visibility: visible;
     width: 345px;
     height: 345px;
-    left: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
     top: 100px;
     box-shadow: 10px 30px 40px 10px rgba(0, 0, 0, 0.25);
     margin-top: 0;
@@ -821,7 +822,7 @@ section {
     position: absolute;
     width: 236px;
     height: 236px;
-    left: 139px;
+    right: 15px;
     top: 273px;
     box-shadow: 10px 30px 40px 10px rgba(0, 0, 0, 0.25);
     margin-top: 0;
