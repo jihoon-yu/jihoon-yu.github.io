@@ -558,7 +558,7 @@ section {
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  z-index: 2;
+  z-index: 10;
   margin: 0 auto;
 }
 
@@ -586,7 +586,7 @@ section {
   margin: 0 auto;
   padding: 0 30px;
   max-width: 500px;
-  z-index: 2;
+  z-index: 10;
   //---- 공백 스타일 추가
   white-space: normal;
 
@@ -750,96 +750,250 @@ section {
 
 .index-circle__wraper {
   position: absolute;
-  z-index: 1;
-  width: 100%;
+  background-color: #000000;
+
+  @include mq(laptop) {
+    width: 1590px;
+    height: 868px;
+    top: -200px;
+    left: 165px;
+  }
 }
 
 .index-circle-one {
-  width: 500px;
-  height: 500%;
-  border-radius: 50%;
-  background-image: radial-gradient(
-    circle at 12% 20%,
-    #000000,
-    #950074 52%,
-    #ff0d0d 88%
+  width: 648px;
+  height: 648px;
+  //padding: 72.5px 267px 223px 268px;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  border-style: solid;
+  border-width: 0.6px;
+  border-image-source: linear-gradient(
+    141deg,
+    rgba(255, 255, 255, 0.35) 14%,
+    rgba(255, 255, 255, 0.3) 36%,
+    rgba(85, 85, 85, 0) 86%
   );
-  z-index: 1;
-  margin: 0 auto;
-
-  @include mq(phonel) {
-    width: 360px;
-    height: 360px;
-    margin-top: -520px;
-  }
-
-  @include mq(tabletl) {
-    position: relative;
-    width: 610px;
-    height: 610px;
-    top: -760px;
-    left: -440px;
-    z-index: 3;
-    margin-top: 0;
-  }
-}
-
-.index-circle-two {
-  width: 500px;
-  height: 500%;
-  border-radius: 50%;
+  border-image-slice: 1;
   background-image: radial-gradient(
     circle at 14% 19%,
     #003abb,
     #965087 50%,
-    #ff5b52 83%
+    #ff5b52 84%
   );
-  z-index: 1;
-  margin: 0 auto;
 
   @include mq(phonel) {
-    width: 360px;
-    height: 360px;
-    margin-top: -520px;
+    visibility: hidden;
   }
 
-  @include mq(tabletl) {
-    position: relative;
-    width: 610px;
-    height: 610px;
-    top: -1195px;
-    z-index: 2;
+  @include mq(laptop) {
+    width: 648px;
+    height: 648px;
+    left: 471px;
+    top: 142px;
     margin-top: 0;
+    z-index: 7;
+  }
+}
+
+.index-circle-two {
+  width: 472px;
+  height: 472px;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border-style: solid;
+  border-width: 0.6px;
+  border-image-source: linear-gradient(
+    137deg,
+    rgba(255, 255, 255, 0.6) 13%,
+    rgba(255, 255, 255, 0.3) 30%,
+    rgba(85, 85, 85, 0) 86%
+  );
+  border-image-slice: 1;
+  background-image: linear-gradient(
+    302deg,
+    #000000 87%,
+    #1300ac 51%,
+    #7d00aa 13%
+  );
+
+  @include mq(phonel) {
+    visibility: hidden;
+  }
+
+  @include mq(laptop) {
+    width: 472px;
+    height: 472px;
+    left: 899px;
+    top: 396px;
+    margin-top: 0;
+    z-index: 6;
   }
 }
 
 .index-circle-three {
-  width: 500px;
-  height: 500%;
-  border-radius: 50%;
-  background-image: radial-gradient(
-    circle at 21% 23%,
-    #0a1b14,
-    #1300ac 39%,
-    #6e0095 81%
+  width: 299px;
+  height: 299px;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border-style: solid;
+  border-width: 0.6px;
+  border-image-source: linear-gradient(
+    141deg,
+    rgba(255, 255, 255, 0.41) 14%,
+    rgba(255, 255, 255, 0.3) 34%,
+    rgba(85, 85, 85, 0) 86%
   );
-  z-index: 1;
-  margin: 0 auto;
+  border-image-slice: 1;
+  background-image: linear-gradient(
+    133deg,
+    #00cdae 13%,
+    #2755b2 51%,
+    #000000 84%
+  );
 
   @include mq(phonel) {
-    width: 360px;
-    height: 360px;
-    margin-top: -520px;
+    visibility: hidden;
   }
 
-  @include mq(tabletl) {
-    position: relative;
-    width: 610px;
-    height: 610px;
-    top: -1680px;
-    left: 410px;
-    z-index: 3;
+  @include mq(laptop) {
+    width: 299px;
+    height: 299px;
+    left: 260px;
+    top: 369px;
     margin-top: 0;
+    z-index: 5;
+  }
+}
+
+.index-circle-four {
+  width: 263px;
+  height: 263px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-image: linear-gradient(
+    211deg,
+    #000000 79%,
+    #380041 50%,
+    #79bcff 12%
+  );
+
+  @include mq(phonel) {
+    visibility: hidden;
+  }
+
+  @include mq(laptop) {
+    width: 263px;
+    height: 263px;
+    left: 974px;
+    top: 181px;
+    margin-top: 0;
+    z-index: 4;
+  }
+}
+
+.index-circle-five {
+  width: 464px;
+  height: 444px;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border-style: solid;
+  border-width: 0.6px;
+  border-image-source: linear-gradient(
+    103deg,
+    rgba(255, 255, 255, 0.16) 7%,
+    rgba(255, 255, 255, 0.3) 15%,
+    rgba(85, 85, 85, 0) 91%
+  );
+  border-image-slice: 1;
+  background-image: linear-gradient(
+    140deg,
+    #000000 17%,
+    #950074 57%,
+    #ff0d0d 85%
+  );
+
+  @include mq(phonel) {
+    visibility: hidden;
+  }
+
+  @include mq(laptop) {
+    width: 464px;
+    height: 464px;
+    left: 133px;
+    top: 0px;
+    margin-top: 0;
+    z-index: 3;
+  }
+}
+
+.index-circle-six {
+  width: 248px;
+  height: 248px;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-style: solid;
+  border-width: 0.6px;
+  border-image-source: linear-gradient(
+    141deg,
+    rgba(255, 255, 255, 0.41) 14%,
+    rgba(255, 255, 255, 0.3) 26%,
+    rgba(85, 85, 85, 0) 86%
+  );
+  border-image-slice: 1;
+  background-image: linear-gradient(
+    324deg,
+    #000000 89%,
+    #aa423d 44%,
+    #f00000 15%
+  );
+
+  @include mq(phonel) {
+    visibility: hidden;
+  }
+
+  @include mq(laptop) {
+    width: 248px;
+    height: 248px;
+    left: 0px;
+    top: 204px;
+    margin-top: 0;
+    z-index: 2;
+  }
+}
+
+.index-circle-seven {
+  width: 172px;
+  height: 172px;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  border-style: solid;
+  border-width: 0.6px;
+  border-image-source: linear-gradient(
+    141deg,
+    rgba(255, 255, 255, 0.15) 14%,
+    rgba(255, 255, 255, 0.17) 36%,
+    rgba(85, 85, 85, 0) 86%
+  );
+  border-image-slice: 1;
+  background-image: linear-gradient(
+    138deg,
+    rgba(96, 37, 89, 0.5) 15%,
+    rgba(41, 29, 63, 0.5) 58%,
+    rgba(0, 0, 0, 0.5) 90%
+  );
+
+  @include mq(phonel) {
+    visibility: hidden;
+  }
+
+  @include mq(laptop) {
+    width: 172px;
+    height: 172px;
+    left: 1287px;
+    top: 430px;
+    margin-top: 0;
+    z-index: 1;
   }
 }
 
