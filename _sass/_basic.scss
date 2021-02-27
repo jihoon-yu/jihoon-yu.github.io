@@ -986,6 +986,94 @@ section {
   }
 }
 
+.index-circle__perspective {
+  @include mq(laptop) {
+    perspective: 200px;
+  }
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - new index animation
+@keyframes index-circle-show {
+  0% {
+    transform: translateY(60px);
+    transform: rotateY(340deg);
+    opacity: 0;
+  }
+
+  25% {
+    transform: rotateY(250deg);
+  }
+
+  50% {
+    transform: rotateY(160deg);
+  }
+
+  75% {
+    transform: rotateY(70deg);
+  }
+
+  100% {
+    transform: translateY(0px);
+    transform: rotateY(0deg);
+    opacity: 100%;
+  }
+}
+
+.index-circle-one {
+  animation-name: index-circle-show;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
+  animation-fill-mode: both;
+}
+
+.index-circle-two {
+  animation-name: index-circle-show;
+  animation-duration: 0.5s;
+  animation-delay: 0.6s;
+  animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
+  animation-fill-mode: both;
+}
+
+.index-circle-three {
+  animation-name: index-circle-show;
+  animation-duration: 0.5s;
+  animation-delay: 0.7s;
+  animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
+  animation-fill-mode: both;
+}
+
+.index-circle-four {
+  animation-name: index-circle-show;
+  animation-duration: 0.5s;
+  animation-delay: 0.7s;
+  animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
+  animation-fill-mode: both;
+}
+
+.index-circle-five {
+  animation-name: index-circle-show;
+  animation-duration: 0.5s;
+  animation-delay: 0.8s;
+  animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
+  animation-fill-mode: both;
+}
+
+.index-circle-six {
+  animation-name: index-circle-show;
+  animation-duration: 0.5s;
+  animation-delay: 0.9s;
+  animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
+  animation-fill-mode: both;
+}
+
+.index-circle-seven {
+  animation-name: index-circle-show;
+  animation-duration: 0.5s;
+  animation-delay: 0.9s;
+  animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
+  animation-fill-mode: both;
+}
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Index animation
 @keyframes index-title-show {
   from {
