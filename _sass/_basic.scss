@@ -989,7 +989,7 @@ section {
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - new index animation
 @keyframes index-circle-show-one {
   from {
-    transform: translateY(500px);
+    transform: translateY(1500px);
     opacity: 0;
   }
 
@@ -1001,7 +1001,7 @@ section {
 
 @keyframes index-circle-show-two {
   from {
-    transform: translateY(660px);
+    transform: translateY(1500px);
     opacity: 0;
   }
 
@@ -1013,7 +1013,7 @@ section {
 
 @keyframes index-circle-show-three {
   from {
-    transform: translateY(500px);
+    transform: translateY(1500px);
     opacity: 0;
   }
 
@@ -1025,7 +1025,7 @@ section {
 
 @keyframes index-circle-show-four {
   from {
-    transform: translateY(500px);
+    transform: translateY(1500px);
     opacity: 0;
   }
 
@@ -1037,7 +1037,7 @@ section {
 
 @keyframes index-circle-show-five {
   from {
-    transform: translateY(900px);
+    transform: translateY(1500px);
     opacity: 0;
   }
 
@@ -1049,7 +1049,7 @@ section {
 
 @keyframes index-circle-show-six {
   from {
-    transform: translateY(600px);
+    transform: translateY(1500px);
     opacity: 0;
   }
 
@@ -1061,7 +1061,7 @@ section {
 
 @keyframes index-circle-show-seven {
   from {
-    transform: translateY(550px);
+    transform: translateY(1500px);
     opacity: 0;
   }
 
@@ -1074,60 +1074,59 @@ section {
 .index-circle-one {
   animation-name: index-circle-show-one;
   animation-duration: 0.7s;
-  animation-delay: 1s;
-  animation-timing-function: cubic-bezier(0.42, 0.97, 0.65, 1.72);
-  animation-fill-mode: both;
+  animation-delay: 2s;
+  animation-timing-function: cubic-bezier(0, 0.75, 0.19, 0.98);
+  animation-fill-mode: backwards;
 }
 
 .index-circle-two {
   animation-name: index-circle-show-two;
-  animation-duration: 0.8s;
-  animation-delay: 1.3s;
-  animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
-  animation-fill-mode: both;
+  animation-duration: 0.7s;
+  animation-delay: 1.8s;
+  animation-timing-function: cubic-bezier(0, 0.75, 0.19, 0.98);
+  animation-fill-mode: backwards;
 }
 
 .index-circle-three {
   animation-name: index-circle-show-three;
   animation-duration: 0.7s;
-  animation-delay: 1.5s;
-  animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
-  animation-fill-mode: both;
+  animation-delay: 1.6s;
+  animation-timing-function: cubic-bezier(0, 0.75, 0.19, 0.98);
+  animation-fill-mode: backwards;
 }
 
 .index-circle-four {
   animation-name: index-circle-show-four;
-  animation-duration: 0.8s;
-  animation-delay: 1.5s;
-  animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
-  animation-fill-mode: both;
+  animation-duration: 0.7s;
+  animation-delay: 1.4s;
+  animation-timing-function: cubic-bezier(0, 0.75, 0.19, 0.98);
+  animation-fill-mode: backwards;
 }
 
 .index-circle-five {
   animation-name: index-circle-show-five;
   animation-duration: 0.7s;
-  animation-delay: 1.3s;
-  animation-timing-function: cubic-bezier(0.42, 0.97, 0.65, 1.72);
-  animation-fill-mode: both;
+  animation-delay: 1.2s;
+  animation-timing-function: cubic-bezier(0, 0.75, 0.19, 0.98);
+  animation-fill-mode: backwards;
 }
 
 .index-circle-six {
   animation-name: index-circle-show-six;
-  animation-duration: 0.5s;
-  animation-delay: 0.9s;
-  animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
-  animation-fill-mode: both;
+  animation-duration: 0.7s;
+  animation-delay: 1s;
+  animation-timing-function: cubic-bezier(0, 0.75, 0.19, 0.98);
+  animation-fill-mode: backwards;
 }
 
 .index-circle-seven {
   animation-name: index-circle-show-seven;
-  animation-duration: 0.5s;
-  animation-delay: 0.9s;
-  animation-timing-function: cubic-bezier(0.23, 0.99, 0.47, 0.78);
-  animation-fill-mode: both;
+  animation-duration: 0.7s;
+  animation-delay: 0.8s;
+  animation-timing-function: cubic-bezier(0, 0.75, 0.19, 0.98);
+  animation-fill-mode: backwards;
 }
 
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Index animation
 @keyframes index-title-show {
   from {
     transform: translateY(15px);
@@ -1141,29 +1140,31 @@ section {
   }
 }
 
-.Index__Title__One {
+.index-title-one {
   animation-name: index-title-show;
-  animation-duration: 0.4s;
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.5s;
+  animation-duration: 0.4;
+  animation-timing-function: cubic-bezier(0, 0.75, 0.19, 0.98);
+  animation-delay: 2.2s;
   animation-fill-mode: both;
 }
 
-.Index__Title__Two {
+.index-title-two {
   animation-name: index-title-show;
   animation-duration: 0.4s;
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.9s;
+  animation-timing-function: cubic-bezier(0, 0.75, 0.19, 0.98);
+  animation-delay: 2.4s;
   animation-fill-mode: both;
 }
 
-.Index__Body {
+.index-body {
   animation-name: index-title-show;
   animation-duration: 0.4s;
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 1.1s;
+  animation-timing-function: cubic-bezier(0, 0.75, 0.19, 0.98);
+  animation-delay: 2.6s;
   animation-fill-mode: both;
 }
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Index animation
 
 @keyframes portfolio-show {
   from {
@@ -1182,56 +1183,56 @@ section {
   animation-name: portfolio-show;
   animation-duration: 0.75s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.5s;
+  animation-delay: 2.1s;
   animation-fill-mode: both;
 }
 .portfolio-item:nth-child(2) {
   animation-name: portfolio-show;
   animation-duration: 0.75s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.65s;
+  animation-delay: 2.2s;
   animation-fill-mode: both;
 }
 .portfolio-item:nth-child(3) {
   animation-name: portfolio-show;
   animation-duration: 0.75s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.8s;
+  animation-delay: 2.3s;
   animation-fill-mode: both;
 }
 .portfolio-item:nth-child(4) {
   animation-name: portfolio-show;
   animation-duration: 0.75s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.95s;
+  animation-delay: 2.4s;
   animation-fill-mode: both;
 }
 .portfolio-item:nth-child(5) {
   animation-name: portfolio-show;
   animation-duration: 0.75s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
-  animation-delay: 1.03s;
+  animation-delay: 2.5s;
   animation-fill-mode: both;
 }
 .portfolio-item:nth-child(6) {
   animation-name: portfolio-show;
   animation-duration: 0.75s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
-  animation-delay: 1.13s;
+  animation-delay: 2.6s;
   animation-fill-mode: both;
 }
 .portfolio-item:nth-child(7) {
   animation-name: portfolio-show;
   animation-duration: 0.75s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
-  animation-delay: 1.23s;
+  animation-delay: 2.7s;
   animation-fill-mode: both;
 }
 .portfolio-item:nth-child(8) {
   animation-name: portfolio-show;
   animation-duration: 0.75s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.175);
-  animation-delay: 1.33s;
+  animation-delay: 2.8s;
   animation-fill-mode: both;
 }
 
@@ -1251,7 +1252,7 @@ section {
   animation-name: header-show;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.5s;
+  animation-delay: 2.2s;
   animation-fill-mode: both;
 }
 
@@ -1259,28 +1260,28 @@ section {
   animation-name: header-show;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.5s;
+  animation-delay: 2.3s;
   animation-fill-mode: both;
 }
 .menu__list__item:nth-child(2) {
   animation-name: header-show;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.6s;
+  animation-delay: 2.4s;
   animation-fill-mode: both;
 }
 .menu__list__item:nth-child(3) {
   animation-name: header-show;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.7s;
+  animation-delay: 2.5s;
   animation-fill-mode: both;
 }
 .menu__list__item:nth-child(4) {
   animation-name: header-show;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.8s;
+  animation-delay: 2.6s;
   animation-fill-mode: both;
 }
 
@@ -1288,6 +1289,6 @@ section {
   animation-name: header-show;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 0.8s;
+  animation-delay: 2.7s;
   animation-fill-mode: both;
 }
