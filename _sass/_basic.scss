@@ -1170,7 +1170,7 @@ section {
   animation-fill-mode: both;
 }
 
-@keyframes index-line {
+@keyframes index-line-show {
   from {
     transform: translateY(15px) scaleY(0.2);
     opacity: 0;
@@ -1183,10 +1183,10 @@ section {
 }
 
 .index-line {
-  animation-name: index-line;
-  animation-duration: 0.4;
+  animation-name: index-line-show;
+  animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0, 0.75, 0.19, 0.98);
-  animation-delay: 2.6;
+  animation-delay: 2.6s;
   animation-fill-mode: both;
 }
 
