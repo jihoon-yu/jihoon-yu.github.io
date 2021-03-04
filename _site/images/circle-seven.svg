@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="172px" height="172px" viewBox="0 0 172 172" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>circle-seven</title>
+    <defs>
+        <linearGradient x1="19.4214577%" y1="11.2344964%" x2="90.2281295%" y2="90.4133287%" id="linearGradient-1">
+            <stop stop-color="#602559" offset="0%"></stop>
+            <stop stop-color="#291D3F" offset="57.1956672%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="18.9988445%" y1="10.4671335%" x2="81.7996606%" y2="88.9955219%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.15" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.17" offset="30.1058683%"></stop>
+            <stop stop-color="#555555" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="circle-seven" stroke="url(#linearGradient-2)" stroke-width="0.6" fill="url(#linearGradient-1)" cx="86" cy="86" r="85.7"></circle>
+    </g>
+</svg>
