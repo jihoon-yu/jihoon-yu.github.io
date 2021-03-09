@@ -172,81 +172,103 @@
 			<!--Index 스타일은 Basic scss에서 관리-->
 
 <section class="intro">
-  <div class="intro__wraper">
-    <div class="badge__wraper">
-      <img class="badge-item" src="/images/badge.svg" />
-    </div>
-    <div class="index__wraper">
-      <div class="index-title-one">
-        <span class="title-one">Hello!</span>
-        <span class="title-one">I</span>
-        <span class="title-one">am</span>
-        <span class="title-one">Yu</span>
-        <span class="title-one">Ji</span>
-        <span class="title-one">Hoon</span>
+  <div class="index-wrap">
+    <div class="index-title-wrap">
+      <div class="index-title-one-wrap">
+        <img class="title-one-one" src="/images/00_index_title/Hello,.svg" />
+        <img class="title-one-two" src="/images/00_index_title/Iam.svg" />
+        <img class="title-one-three" src="/images/00_index_title/YuJiHoon.svg" />
       </div>
-      <div class="index-title-two">
-        <span class="title-two">Product</span>
-        <span class="title-two">designer</span>
-        <span class="title-two">based</span>
-        <span class="title-two">in</span>
-        <span class="title-two">Seoul.</span>
+      <div class="index-title-two-wrap">
+        <img class="title-two-one" src="/images/00_index_title/User.svg" />
+        <img class="title-two-two" src="/images/00_index_title/Interface.svg" />
+        <img class="title-two-three" src="/images/00_index_title/&.svg" />
+        <img class="title-two-four" src="/images/00_index_title/Interaction.svg" />
+        <img class="title-two-five" src="/images/00_index_title/Designer.svg" />
+        <div class="title-two-border-one"></div>
+        <div class="title-two-border-two"></div>
       </div>
-      <div class="index-line"></div>
     </div>
-    <div class="index__wraper">
-      <div class="index-body">
+    <div class="index-info-wrap">
+      <div class="index-info">
+        Based in Seoul, South Korea 
+      </br/>Currently in LINE Corp.
+      </div>
+    </div>
+    <div class="index-description-wrap">
+      <p class="index-description">
         I believe that good design is not a means of making a product beautiful,
-        <br />
-        but a value. I pursue intuitive design with typography, layout, and
-        color harmony,
-        <br />
-        I am very active in learning technology and culture for this.
+        but a value. 
+        </br>I pursue intuitive design with typography, layout, and
+        color harmony, I am very active in
+        </br> learning technology and culture for
+        this.
+      </p>
+      <div class="about-button-wrap">
+        <a href="/_pages/about.md"></a>
+        <button class="about-button">
+          <div class="about-button-label">See More</div> 
+          <img class="about-button-arrow" src="/images/00_index_title/Arrow.svg">
+        </button>
       </div>
     </div>
   </div>
-  <div class="index-circle__wraper" id="js-scene">
-    <img
-      src="/images/circle-one.svg"
-      class="index-circle-one"
-      data-depth="0.00"
-    />
-    <img
-      src="/images/circle-two.svg"
-      class="index-circle-two"
-      data-depth="1.20"
-    />
-    <img
-      src="/images/circle-three.svg"
-      class="index-circle-three"
-      data-depth="0.60"
-    />
-    <img
-      src="/images/circle-four.svg"
-      class="index-circle-four"
-      data-depth="0.70"
-    />
-    <img
-      src="/images/circle-five.svg"
-      class="index-circle-five"
-      data-depth="0.85"
-    />
-    <img
-      src="/images/circle-six.svg"
-      class="index-circle-six"
-      data-depth="0.56"
-    />
-    <img
-      src="/images/circle-seven.svg"
-      class="index-circle-seven"
-      data-depth="0.50"
-    />
+</section>
+
+<section class="portfolio">
+  <div class="portfolio-line"></div>
+  <div class="portfolio-wrap">
+    <div class="portfolio-item-">
+      <a class="portfolio-item-url" href="/_projects/Project_01.md">
+        <div class="portfolio-item-image">
+          <img src="/images/01_Project/project-thumbnail/Project_1.jpg">
+        </div>
+        <div class="portfolio-item-info">
+          <div class="portfolio-item-info-badge">
+            <div class="info-badge-label">
+              new
+            </div>
+          </div>
+          <div class="portfolio-item-info-text">
+            <div class="portfolio-item-title">
+              Seoulstore
+            </div>
+            <div class="portfoilo-item-description">
+              User Interface Design</br>Interaction Design</br>2018/01 - 2020/11
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="portfolio-item-">
+      <a class="portfolio-item-url" href="/_projects/Project_01.md">
+        <div class="portfolio-item-image">
+          <img src="/images/01_Project/project-thumbnail/Project_1.jpg">
+        </div>
+        <div class="portfolio-item-info">
+          <div class="portfolio-item-info-badge">
+            <div class="info-badge-label">
+              new
+            </div>
+          </div>
+          <div class="portfolio-item-info-text">
+            <div class="portfolio-item-title">
+              Seoulstore
+            </div>
+            <div class="portfoilo-item-description">
+              User Interface Design</br>Interaction Design</br>2018/01 - 2020/11
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
+
 </section>
 
 <!--Portfolio 스타일은 Portfolio scss에서 관리-->
 <!--content-wrap 제거-->
-<section class="portfolio">
+<!-- <section class="portfolio">
   <div class="content-wrap portfolio-wrap">
     
 
@@ -412,7 +434,7 @@
     </div>
     
   </div>
-</section>
+</section> -->
 
 
 		</div>
@@ -432,7 +454,7 @@
     margin-top: 4px;
   }
 </style>
-
+<!--
 <footer class="footer">
   <div class="wrap">
     
@@ -539,6 +561,7 @@
 </ul>
   </div>
 </footer>
+-->
 
 
 
