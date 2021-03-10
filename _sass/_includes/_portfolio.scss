@@ -15,6 +15,11 @@
   @include mq(tabletl) {
     margin-top: 230px;
   }
+
+  @include mq(laptop) {
+    margin-top: 0px;
+    top: 760px;
+  }
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Portfolio design

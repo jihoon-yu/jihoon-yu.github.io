@@ -628,6 +628,155 @@ section {
   }
 }
 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - portfolio new design
+.portfolio-hover-one {
+  @include mq(laptop) {
+    opacity: 1;
+    position: relative;
+    top: -570px;
+    width: 360px;
+    height: 570px;
+    background-color: #025442;
+    border: 1px solid rgba($color: #00a682, $alpha: 1);
+    border-radius: 24px;
+  }
+}
+
+.portfolio-one-badge {
+  @include mq(laptop) {
+    position: relative;
+    left: 28px;
+    top: 28px;
+    background-color: #ff0000;
+    border: 1px solid rgba($color: #720000, $alpha: 1);
+    border-radius: 27px;
+    width: 72px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.one-badge-label {
+  @include mq(laptop) {
+    font-size: 16px;
+    font-family: $title-font;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+
+.portfolio-one-info {
+  @include mq(laptop) {
+    position: relative;
+    display: flex;
+    left: 28px;
+    bottom: 40px;
+    width: 304px;
+    height: 127px;
+  }
+}
+
+.one-info-title {
+  @include mq(laptop) {
+    font-size: 22px;
+    font-family: $title-font;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}
+
+.one-info-description {
+  @include mq(laptop) {
+  }
+}
+
+.portfolio-hover-two {
+  opacity: 0;
+}
+
+.portfolio-hover-three {
+  opacity: 0;
+}
+
+.portfolio-hover-four {
+  opacity: 0;
+}
+
+.portfolio-line {
+  @include mq(laptop) {
+    position: relative;
+    margin: 0 auto;
+    width: 1590px;
+    height: 1px;
+    background-color: #222222;
+  }
+}
+
+.portfolio-wrap {
+  @include mq(laptop) {
+    width: 1590px;
+    left: 50%;
+    top: 90px;
+    transform: translate(-50%, 0%);
+  }
+}
+
+.portfolio-grid {
+  @include mq(laptop) {
+    font-size: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    position: relative;
+  }
+}
+
+.portfolio-item-style {
+  @include mq(laptop) {
+    width: 360px;
+    height: 570px;
+  }
+}
+
+.portfolio-image-style {
+  @include mq(laptop) {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+  }
+}
+
+.portfolio-item-one-image {
+  @include mq(laptop) {
+    background-image: url(/images/01_Project/project-thumbnail/Project_1.jpg);
+  }
+}
+
+.portfolio-item-two-image {
+  @include mq(laptop) {
+    background-image: url(/images/01_Project/project-thumbnail/Project_2.jpg);
+  }
+}
+
+.portfolio-item-three-image {
+  @include mq(laptop) {
+    background-image: url(/images/01_Project/project-thumbnail/Project_3.jpg);
+  }
+}
+
+.portfolio-item-four-image {
+  @include mq(laptop) {
+    background-image: url(/images/01_Project/project-thumbnail/Project_4.jpg);
+  }
+}
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - header animation
 @keyframes header-show {
   from {
