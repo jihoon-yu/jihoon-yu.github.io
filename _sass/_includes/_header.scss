@@ -50,11 +50,16 @@
   font-weight: $sitetitle-weight;
   letter-spacing: $sitetitle-spacing;
   line-height: 1;
-  color: $text-dark-color;
+  color: #ffffff;
+  letter-spacing: 0px;
+  transition: 0.3s ease-in-out;
 
   &:hover {
-    color: $accent-color;
+    color: #ffffff;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
   }
+
   @include mq(phonel) {
     font-size: 20px;
     top: 40%;
@@ -66,7 +71,7 @@
   }
 
   @include mq(laptop) {
-    font-size: $sitetitle-large;
+    font-size: 20px;
     top: 50%;
     width: 20%;
     position: absolute;
@@ -75,9 +80,6 @@
 
 .random__title {
   margin-left: 5px;
-  &:hover {
-    color: &accent-color;
-  }
 }
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Menu
 
@@ -105,7 +107,7 @@
     position: absolute;
     display: flex;
     width: 20%;
-    left: 130%;
+    left: 127%;
     -webkit-box-pack: end;
     justify-content: flex-end;
   }
@@ -259,11 +261,23 @@
   }
 }
 
+.contact-outlink {
+  @include mq(laptop) {
+    position: absolute;
+    right: -23px;
+    top: 18px;
+    margin-left: 0px;
+    transition: 0.3s ease-in-out;
+  }
+}
+
 .menu__list__item__link {
   font-size: $menu-small;
   font-weight: $menu-weight;
   color: $overlay-text-color;
   padding: 10px 0;
+  letter-spacing: 0px;
+  transition: 0.3s ease-in-out;
 
   &:hover {
     color: $overlay-accent-color;
@@ -276,7 +290,9 @@
     border-bottom: 3px solid transparent;
 
     &:hover {
-      color: $accent-color;
+      color: #ffffff;
+      letter-spacing: 1px;
+      transition: 0.3s ease-in-out;
     }
   }
 
@@ -290,7 +306,7 @@
 
     @include mq(tabletl) {
       color: $text-dark-color;
-      border-color: $accent-color;
+      border-color: #ffffff;
       font-weight: 700;
     }
   }

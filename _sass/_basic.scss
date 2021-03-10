@@ -602,12 +602,17 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #060606;
+    background-color: #090909;
     border: 1px solid rgba($color: #111111, $alpha: 1);
     border-radius: 12px;
-    width: 123px;
-    height: 44px;
+    width: 132px;
+    height: 50px;
     margin: 0 auto;
+
+    &:hover {
+      background-color: #111111;
+      border: 1px solid rgba($color: #222222, $alpha: 1);
+    }
   }
 }
 
@@ -631,7 +636,7 @@ section {
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - portfolio new design
 .portfolio-hover-one {
   @include mq(laptop) {
-    opacity: 1;
+    opacity: 0;
     position: relative;
     top: -570px;
     width: 360px;
@@ -644,7 +649,8 @@ section {
 
 .portfolio-one-badge {
   @include mq(laptop) {
-    position: relative;
+    opacity: 0;
+    position: absolute;
     left: 28px;
     top: 28px;
     background-color: #ff0000;
@@ -669,17 +675,15 @@ section {
 
 .portfolio-one-info {
   @include mq(laptop) {
-    position: relative;
-    display: flex;
+    position: absolute;
     left: 28px;
     bottom: 40px;
-    width: 304px;
-    height: 127px;
   }
 }
 
 .one-info-title {
   @include mq(laptop) {
+    opacity: 0;
     font-size: 22px;
     font-family: $title-font;
     font-weight: 700;
@@ -690,6 +694,12 @@ section {
 
 .one-info-description {
   @include mq(laptop) {
+    opacity: 0;
+    font-size: 20px;
+    font-family: $title-font;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #00a682;
   }
 }
 
@@ -704,6 +714,75 @@ section {
 .portfolio-hover-four {
   opacity: 0;
 }
+
+//---------- portfolio hover trigger
+
+@keyframes hover-card-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hover-badge-show {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes hover-contents-show {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.portfolio-item-one {
+  @include mq(laptop) {
+    &:hover {
+      .portfolio-hover-one {
+        animation-name: hover-card-show;
+        animation-duration: 0.5s;
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        animation-fill-mode: both;
+      }
+      .portfolio-one-badge {
+        animation-name: hover-badge-show;
+        animation-delay: 0.2s;
+        animation-duration: 0.3s;
+        animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        animation-fill-mode: both;
+      }
+      .one-info-title {
+        animation-name: hover-contents-show;
+        animation-delay: 0.35s;
+        animation-duration: 0.45s;
+        animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        animation-fill-mode: both;
+      }
+      .one-info-description {
+        animation-name: hover-contents-show;
+        animation-delay: 0.45s;
+        animation-duration: 0.45s;
+        animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        animation-fill-mode: both;
+      }
+    }
+  }
+}
+
+//------------------------------------
 
 .portfolio-line {
   @include mq(laptop) {
