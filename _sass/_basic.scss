@@ -635,7 +635,7 @@ section {
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - portfolio new design
 .portfolio-hover-one {
-  @include mq(laptop) { 
+  @include mq(laptop) {
     position: relative;
     top: -570px;
     width: 360px;
@@ -643,10 +643,10 @@ section {
     background-color: #025442;
     border: 1px solid rgba($color: #00a682, $alpha: 1);
     border-radius: 24px;
-    // Hover 
+    // Hover
     opacity: 0;
     transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
   }
 }
 
@@ -663,9 +663,9 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    // Hover 
+    // Hover
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(30px) scale(0.4);
     transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
     transition-duration: 0.3s;
   }
@@ -695,11 +695,11 @@ section {
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 20px;
-    //Hover 
-    opacity: 1;
+    //Hover
+    opacity: 0;
     transform: translateY(30px);
     transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-    transition-delay: 0.1s;
+    transition-delay: 0.15s;
     transition-duration: 0.3s;
   }
 }
@@ -712,12 +712,11 @@ section {
     line-height: 1.6;
     color: #00a682;
     //Hover
-    opacity: 1;
+    opacity: 0;
     transform: translateY(30px);
     transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-    transition-delay: 0.2s;
+    transition-delay: 0.1s;
     transition-duration: 0.3s;
-  }
   }
 }
 
@@ -735,37 +734,6 @@ section {
 
 //---------- portfolio hover trigger
 
-@keyframes hover-card-show {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes hover-badge-show {
-  from {
-    opacity: 0;
-    transform: scale(0.3);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes hover-contents-show {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
 .portfolio-item-one {
   @include mq(laptop) {
     &:hover {
@@ -776,23 +744,23 @@ section {
       }
       .portfolio-one-badge {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(0px) scale(1);
         transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
         transition-delay: 0.2s;
         transition-duration: 0.3s;
       }
       .one-info-title {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(0px) scale(1);
         transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
         transition-delay: 0.3s;
         transition-duration: 0.3s;
       }
       .one-info-description {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(0px) scale(1);
         transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-        transition-delay: 0.4s;
+        transition-delay: 0.35s;
         transition-duration: 0.3s;
       }
     }
