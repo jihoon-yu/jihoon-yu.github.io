@@ -259,3 +259,180 @@
   font-weight: 500;
   font-size: 16px;
 }
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Blog new design
+
+.blog-wrap {
+  @include mq(laptop) {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 1590px;
+    height: 176px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 89px;
+    //background-color: bisque;
+  }
+}
+
+.blog-title-one-wrap {
+  @include mq(laptop) {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 606px;
+    height: 79px;
+    //background-color: blueviolet;
+  }
+}
+
+.blog-title-one {
+  @include mq(laptop) {
+    position: relative;
+    display: inline;
+    top: 0;
+  }
+}
+
+.blog-title-two {
+  @include mq(laptop) {
+    position: relative;
+    display: inline;
+    top: 18px;
+    margin-left: 28px;
+  }
+}
+
+.blog-title-three {
+  @include mq(laptop) {
+    position: relative;
+    display: inline;
+    top: 17px;
+    margin-left: 27px;
+  }
+}
+
+.blog-title-two-wrap {
+  @include mq(laptop) {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 1044px;
+    height: 79px;
+    margin-top: 18px;
+    //background-color: chocolate;
+  }
+}
+
+.blog-title-four {
+  @include mq(laptop) {
+    position: relative;
+    display: inline;
+    top: 18px;
+    margin-left: 0px;
+  }
+}
+
+.blog-title-five {
+  @include mq(laptop) {
+    position: relative;
+    display: inline;
+    top: 0;
+    margin-left: 26px;
+  }
+}
+
+.blog-title-six {
+  @include mq(laptop) {
+    position: relative;
+    display: inline;
+    top: 18px;
+    margin-left: 21px;
+  }
+}
+
+.blog-title-seven {
+  @include mq(laptop) {
+    position: relative;
+    display: inline;
+    top: 0;
+    margin-left: 26px;
+  }
+}
+
+.blog-title-eight {
+  @include mq(laptop) {
+    position: relative;
+    display: inline;
+    top: 18px;
+    margin-left: 20px;
+  }
+}
+
+.blog-title-border-one {
+  @include mq(laptop) {
+    position: relative;
+    top: 8px;
+    left: 0px;
+    width: 67px;
+    height: 2px;
+    background-color: white;
+  }
+}
+
+.blog-title-border-two {
+  @include mq(laptop) {
+    position: relative;
+    top: 6px;
+    margin-left: 87px;
+    width: 532px;
+    height: 2px;
+    background-color: white;
+  }
+}
+
+.blog-title-border-three {
+  @include mq(laptop) {
+    position: relative;
+    top: 4px;
+    margin-left: 667px;
+    width: 256px;
+    height: 2px;
+    background-color: white;
+  }
+}
+
+.blog-title-border-four {
+  @include mq(laptop) {
+    position: relative;
+    top: 1px;
+    margin-left: 971px;
+    width: 74px;
+    height: 2px;
+    background-color: white;
+  }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Post new design
+
+.post-border {
+  @include mq(laptop) {
+    position: relative;
+    margin: 0 auto;
+    top: 140px;
+    width: 1590px;
+    height: 1px;
+    background-color: #222222;
+  }
+}
+
+.post-wrap {
+  @include mq(laptop) {
+    width: 1590px;
+    left: 50%;
+    top: 90px;
+    transform: translate(-50%, 0%);
+  }
+}
