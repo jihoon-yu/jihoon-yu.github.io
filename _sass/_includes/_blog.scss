@@ -476,6 +476,7 @@
     width: 496px;
     height: 350px;
     border-radius: 24px;
+    opacity: 0.8;
   }
 }
 
@@ -517,6 +518,7 @@
     font-weight: 700;
     line-height: 1.5;
     color: white;
+    opacity: 0.9;
   }
 }
 
@@ -528,6 +530,7 @@
     font-weight: 500;
     line-height: 1.8;
     color: white;
+    opacity: 0.9;
   }
 }
 
@@ -538,6 +541,7 @@
     font-size: 16px;
     font-weight: 700;
     color: white;
+    opacity: 0.9;
   }
 }
 
@@ -545,7 +549,7 @@
 
 .post-item-card-blue-style {
   @include mq(laptop) {
-    width: 486px;
+    width: 496px;
     height: 600px;
     border: 1px solid #0085ec;
     border-radius: 24px;
@@ -587,10 +591,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba($color: #0085ec, $alpha: 1);
     border-radius: 12px;
     width: 132px;
     height: 50px;
+  }
+}
+
+.post-blue-button-color {
+  @include mq(laptop) {
+    border: 1px solid rgba($color: #0085ec, $alpha: 1);
+    background-color: rgba($color: #000000, $alpha: 0);
   }
 }
 
@@ -599,14 +609,150 @@
     font-family: $title-font;
     font-size: 14px;
     font-weight: 700;
-    color: white;
   }
 }
 
-.post-card-button-label {
+.post-card-arrow {
+  @include mq(laptop) {
+    position: relative;
+    right: -7px;
+    top: -3px;
+  }
 }
 //Post 카드 아이템 텍스트 색상 관리
 
 .post-blue-color {
   color: #249fff;
+}
+
+//Post 전체 Hover 관리
+
+.post-item-one {
+  @include mq(laptop) {
+    &:hover {
+      .post-image-style {
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .post-title {
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-delay: 0.2s;
+      }
+      .post-description {
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-delay: 0.25s;
+      }
+      .post-date {
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-delay: 0.3s;
+      }
+    }
+  }
+}
+
+.post-item-two {
+  @include mq(laptop) {
+    &:hover {
+      .post-image-style {
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .post-title {
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-delay: 0.2s;
+      }
+      .post-description {
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-delay: 0.25s;
+      }
+      .post-date {
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-delay: 0.3s;
+      }
+    }
+  }
+}
+
+.post-item-three {
+  @include mq(laptop) {
+    &:hover {
+      .post-image-style {
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .post-title {
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-delay: 0.2s;
+      }
+      .post-description {
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-delay: 0.25s;
+      }
+      .post-date {
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-delay: 0.3s;
+      }
+    }
+  }
+}
+.post-item-four {
+  @include mq(laptop) {
+    &:hover {
+      .post-image-style {
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .post-title {
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-duration: 0.2s;
+        transition-delay: 0.2s;
+      }
+      .post-description {
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-duration: 0.2s;
+        transition-delay: 0.25s;
+      }
+      .post-date {
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-duration: 0.2s;
+        transition-delay: 0.3s;
+      }
+    }
+  }
+}
+
+.post-item-five {
+  @include mq(laptop) {
+    &:hover {
+      .post-blue-color {
+        color: rgba($color: #5db8ff, $alpha: 1);
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-duration: 0.2s;
+      }
+      .post-item-card-blue-style {
+        border: 2px solid rgba($color: #5db8ff, $alpha: 1);
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-duration: 0.3s;
+      }
+      .post-blue-button-color {
+        @include mq(laptop) {
+          border: 1px solid rgba($color: #0085ec, $alpha: 1);
+          transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+          transition-duration: 0.2s;
+        }
+      }
+    }
+  }
 }
