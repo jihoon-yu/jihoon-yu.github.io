@@ -1,34 +1,31 @@
 <!--Footer-contents로 관리-->
 
-<!--
-<footer class="footer">
-  <div class="wrap">
-    {% if site.data.settings.footer_settings.logo_image %}
-    <a href="/" class="footer__logo">
-      <img
-        src="{{ site.data.settings.footer_settings.logo_image }}"
-        class="footer__logo__img"
-      />
-    </a>
-    {% else %}
-    <a href="/" class="footer__title">
-      {{ site.data.settings.basic_settings.site_title }}
-    </a>
-    {% endif %}
-
-    <p class="footer__text">
-      {{ site.data.settings.footer_settings.footer_tagline }}
-    </p>
-
-    <div class="footer__copyright">
-      <span
-        >© {{ 'now' | date: "%Y" }} {{
-        site.data.settings.basic_settings.site_title }}</span
-      >
-      <a href="https://jekyllthemes.io" target="_blank"> </a>
+<footer class="footer-wrap">
+  <div class="footer-contents">
+    <div class="footer-border"></div>
+    <div class="footer-info">
+      <div class="footer-logo">Ji Hoon. Works</div>
+      <div class="footer-copyright">
+        Copyright 2021. Yu Ji Hoon all rights reserved.
+      </div>
+      <div class="footer-contact">jihoon.yuu@gmail.com</div>
     </div>
-
-    {% include socials.html %}
+    <div class="footer-outlink">
+      <a
+        class="outlink"
+        href="https://www.linkedin.com/in/%EC%A7%80%ED%9B%88-%EC%9C%A0-98598b149/"
+      >
+        <span class="footer-outlink-style">Linkedin</span>
+      </a>
+      <a class="outlink" href="https://github.com/jihoon-yu">
+        <span class="footer-outlink-style">Github</span>
+      </a>
+      <a class="outlink" href="https://www.behance.net/yujihoon">
+        <span class="footer-outlink-style">Behance</span>
+      </a>
+      <a class="outlink" href="https://www.instagram.com/jihoon__c/">
+        <span class="footer-outlink-style">Instagram</span>
+      </a>
+    </div>
   </div>
 </footer>
--->
