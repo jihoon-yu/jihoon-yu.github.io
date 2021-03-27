@@ -54,12 +54,6 @@
   letter-spacing: 0px;
   transition: 0.3s ease-in-out;
 
-  &:hover {
-    color: #ffffff;
-    letter-spacing: 1px;
-    transition: 0.3s ease-in-out;
-  }
-
   @include mq(phonel) {
     font-size: 18px;
     top: 40%;
@@ -75,6 +69,11 @@
     top: 50%;
     width: 20%;
     position: absolute;
+    &:hover {
+      color: #ffffff;
+      letter-spacing: 1px;
+      transition: 0.3s ease-in-out;
+    }
   }
 }
 

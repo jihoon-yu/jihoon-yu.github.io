@@ -95,6 +95,7 @@
 
 .footer-wrap {
   @include mq(phonel) {
+    margin-top: 80px;
   }
   @include mq(laptop) {
     margin-top: 200px;
@@ -102,6 +103,11 @@
 }
 
 .footer-contents {
+  @include mq(phonel) {
+    width: 335px;
+    height: 200px;
+    margin: 0 auto;
+  }
   @include mq(laptop) {
     width: 1590px;
     height: 260px;
@@ -110,6 +116,11 @@
 }
 
 .footer-border {
+  @include mq(phonel) {
+    width: 335px;
+    height: 1px;
+    background-color: #222222;
+  }
   @include mq(laptop) {
     width: 1590px;
     height: 1px;
@@ -118,6 +129,9 @@
 }
 
 .footer-info {
+  @include mq(phonel) {
+    margin-top: 32px;
+  }
   @include mq(laptop) {
     width: 70%;
     margin-top: 50px;
@@ -125,6 +139,13 @@
 }
 
 .footer-logo {
+  @include mq(phonel) {
+    font-family: $title-font;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 8px;
+  }
   @include mq(laptop) {
     font-family: $title-font;
     font-size: 20px;
@@ -135,6 +156,13 @@
 }
 
 .footer-copyright {
+  @include mq(phonel) {
+    font-family: $title-font;
+    font-size: 12px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 6px;
+  }
   @include mq(laptop) {
     font-family: $title-font;
     font-size: 16px;
@@ -145,6 +173,12 @@
 }
 
 .footer-contact {
+  @include mq(phonel) {
+    font-family: $title-font;
+    font-size: 12px;
+    font-weight: 500;
+    color: #333333;
+  }
   @include mq(laptop) {
     font-family: $title-font;
     font-size: 16px;
@@ -154,7 +188,11 @@
 }
 
 .footer-outlink {
+  @include mq(phonel) {
+    margin-top: 40px;
+  }
   @include mq(laptop) {
+    margin-top: 0px;
     position: absolute;
     top: 50px;
     margin-left: 1155px;
@@ -162,6 +200,12 @@
 }
 
 .footer-outlink-style {
+  @include mq(phonel) {
+    font-family: $title-font;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+  }
   @include mq(laptop) {
     font-family: $title-font;
     font-size: 20px;
@@ -174,18 +218,27 @@
 }
 
 .outlink:nth-child(2) {
+  @include mq(phonel) {
+    margin-left: 20px;
+  }
   @include mq(laptop) {
     margin-left: 40px;
   }
 }
 
 .outlink:nth-child(3) {
+  @include mq(phonel) {
+    margin-left: 20px;
+  }
   @include mq(laptop) {
     margin-left: 40px;
   }
 }
 
 .outlink:nth-child(4) {
+  @include mq(phonel) {
+    margin-left: 20px;
+  }
   @include mq(laptop) {
     margin-left: 40px;
   }
