@@ -874,7 +874,7 @@ section {
   animation-name: header-show;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 2.2s;
+  //animation-delay: 2.2s;
   animation-fill-mode: both;
 }
 
@@ -882,28 +882,28 @@ section {
   animation-name: header-show;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 2.3s;
+  //animation-delay: 2.3s;
   animation-fill-mode: both;
 }
 .menu__list__item:nth-child(2) {
   animation-name: header-show;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 2.4s;
+  //animation-delay: 2.4s;
   animation-fill-mode: both;
 }
 .menu__list__item:nth-child(3) {
   animation-name: header-show;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 2.5s;
+  //animation-delay: 2.5s;
   animation-fill-mode: both;
 }
 .menu__list__item:nth-child(4) {
   animation-name: header-show;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 2.6s;
+  //animation-delay: 2.6s;
   animation-fill-mode: both;
 }
 
@@ -911,6 +911,236 @@ section {
   animation-name: header-show;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-delay: 2.7s;
+  //animation-delay: 2.7s;
   animation-fill-mode: both;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - about new design
+
+.about-group {
+  @include mq(laptop) {
+    float: left;
+    clear: both;
+    width: 100%;
+    height: 1750px;
+  }
+}
+
+.about-profile {
+  @include mq(laptop) {
+  }
+}
+
+.about-profile-image {
+  @include mq(laptop) {
+    width: 90px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 82px;
+  }
+}
+
+.profile-title {
+  @include mq(laptop) {
+    font-family: $title-font;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    margin-top: 24px;
+  }
+}
+
+.profile-location {
+  @include mq(laptop) {
+    font-family: $title-font;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    margin-top: 14px;
+  }
+}
+
+.profile-contact {
+  @include mq(laptop) {
+    font-family: $title-font;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    line-height: 1.6;
+    margin-top: 32px;
+  }
+}
+
+.profile-description {
+  @include mq(laptop) {
+    font-family: $body-font;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #666666;
+    line-height: 2.1;
+  }
+}
+
+.profile-description-one {
+  @include mq(laptop) {
+    margin-top: 40px;
+  }
+}
+
+.profile-description-two {
+  @include mq(laptop) {
+    margin-top: 24px;
+  }
+}
+
+.about-line {
+  @include mq(laptop) {
+    margin: 0 auto;
+    width: 1590px;
+    height: 1px;
+    background-color: #222222;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+.work-title {
+  @include mq(laptop) {
+    font-family: $title-font;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    margin-top: 24px;
+  }
+}
+
+.experience-one {
+  @include mq(laptop) {
+    margin-top: 36px;
+  }
+}
+
+.experiecne-two {
+  @include mq(laptop) {
+    margin-top: 40px;
+  }
+}
+
+.experience-title {
+  @include mq(laptop) {
+    font-family: $title-font;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+  }
+}
+
+.experience-date {
+  @include mq(laptop) {
+    font-family: $title-font;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+  }
+}
+
+.experiecnce-project {
+  @include mq(laptop) {
+    font-family: $body-font;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #666666;
+    margin-top: 20px;
+    line-height: 1.8;
+  }
+}
+
+.about-work-skills {
+  @include mq(laptop) {
+    margin-top: 100px;
+  }
+}
+
+.skills-info {
+  @include mq(laptop) {
+    font-family: $body-font;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #666666;
+    margin-top: 20px;
+    line-height: 1.8;
+  }
+}
+
+.about-work-education {
+  @include mq(laptop) {
+    margin-top: 100px;
+  }
+}
+
+.education-info {
+  @include mq(laptop) {
+    font-family: $body-font;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #666666;
+    margin-top: 20px;
+    line-height: 1.8;
+  }
+}
+
+.about-work-resume {
+  @include mq(laptop) {
+    margin-top: 100px;
+  }
+}
+
+.korean-link {
+  @include mq(laptop) {
+    font-family: $body-font;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #666666;
+    margin-top: 20px;
+    line-height: 1.8;
+    margin-right: 6px;
+    text-decoration: underline;
+  }
+}
+
+.english-link {
+  @include mq(laptop) {
+    font-family: $body-font;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #666666;
+    margin-top: 20px;
+    line-height: 1.8;
+    margin-left: 6px;
+    text-decoration: underline;
+  }
+}
+
+.resume-link {
+  @include mq(laptop) {
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 110px;
+  }
 }
