@@ -94,6 +94,8 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  Footer new design
 
 .footer-wrap {
+  @include mq(phonel) {
+  }
   @include mq(laptop) {
     margin-top: 200px;
   }
