@@ -43,6 +43,15 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Blog new design
 
 .blog-wrap {
+  @include mq(phonel) {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 335px;
+    height: 145px;
+    justify-content: center;
+    align-items: center;
+  }
   @include mq(laptop) {
     position: absolute;
     left: 50%;
@@ -57,7 +66,24 @@
   }
 }
 
+.blog-title-wrap {
+  @include mq(phonel) {
+    margin-top: 40px;
+  }
+  @include mq(laptop) {
+    margin-top: 0px;
+  }
+}
+
 .blog-title-one-wrap {
+  @include mq(phonel) {
+    position: relative;
+    width: 296px;
+    height: 40px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    //background-color: #249fff;
+  }
   @include mq(laptop) {
     position: relative;
     left: 50%;
@@ -69,32 +95,63 @@
 }
 
 .blog-title-one {
+  @include mq(phonel) {
+    position: relative;
+    display: inline;
+    width: 109px;
+    top: -9px;
+  }
   @include mq(laptop) {
     position: relative;
     display: inline;
+    width: 221px;
     top: 0;
   }
 }
 
 .blog-title-two {
+  @include mq(phonel) {
+    position: relative;
+    display: inline;
+    width: 39px;
+    top: 0px;
+    margin-left: 12px;
+  }
   @include mq(laptop) {
     position: relative;
     display: inline;
+    width: 79px;
     top: 18px;
     margin-left: 28px;
   }
 }
 
 .blog-title-three {
+  @include mq(phonel) {
+    position: relative;
+    display: inline;
+    width: 117px;
+    top: 0px;
+    margin-left: 11px;
+  }
   @include mq(laptop) {
     position: relative;
     display: inline;
+    width: 238px;
     top: 17px;
     margin-left: 27px;
   }
 }
 
 .blog-title-two-wrap {
+  @include mq(phonel) {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 292px;
+    height: 90px;
+    //background-color: #249fff;
+  }
   @include mq(laptop) {
     position: relative;
     left: 50%;
@@ -107,51 +164,103 @@
 }
 
 .blog-title-four {
+  @include mq(phonel) {
+    position: relative;
+    display: inline;
+    width: 158px;
+    top: 0px;
+    margin-left: 50px;
+    margin-top: 8px;
+  }
   @include mq(laptop) {
     position: relative;
     display: inline;
+    width: 346px;
     top: 18px;
     margin-left: 0px;
+    margin-top: 0px;
   }
 }
 
 .blog-title-five {
+  @include mq(phonel) {
+    position: relative;
+    display: inline;
+    width: 21px;
+    top: -8px;
+    margin-left: 7px;
+  }
   @include mq(laptop) {
     position: relative;
     display: inline;
+    width: 44px;
     top: 0;
     margin-left: 26px;
   }
 }
 
 .blog-title-six {
+  @include mq(phonel) {
+    position: relative;
+    display: inline;
+    width: 119px;
+    top: 0px;
+    margin-left: 0px;
+    margin-top: 8px;
+  }
   @include mq(laptop) {
     position: relative;
     display: inline;
+    width: 242px;
     top: 18px;
     margin-left: 21px;
+    margin-top: 0px;
   }
 }
 
 .blog-title-seven {
+  @include mq(phonel) {
+    position: relative;
+    display: inline;
+    width: 21px;
+    top: -8px;
+    margin-left: 10px;
+  }
   @include mq(laptop) {
     position: relative;
     display: inline;
+    width: 44px;
     top: 0;
     margin-left: 26px;
   }
 }
 
 .blog-title-eight {
+  @include mq(phonel) {
+    position: relative;
+    display: inline;
+    width: 124px;
+    top: 0px;
+    margin-left: 10px;
+  }
   @include mq(laptop) {
     position: relative;
     display: inline;
+    width: 252px;
     top: 18px;
     margin-left: 20px;
   }
 }
 
 .blog-title-border-one {
+  @include mq(phonel) {
+    position: relative;
+    top: -52px;
+    left: 49px;
+    width: 32px;
+    height: 1px;
+    background-color: white;
+  }
   @include mq(laptop) {
     position: relative;
     top: 8px;
@@ -163,6 +272,14 @@
 }
 
 .blog-title-border-two {
+  @include mq(phonel) {
+    position: relative;
+    top: -53px;
+    margin-left: 89px;
+    width: 152px;
+    height: 1px;
+    background-color: white;
+  }
   @include mq(laptop) {
     position: relative;
     top: 6px;
@@ -174,6 +291,14 @@
 }
 
 .blog-title-border-three {
+  @include mq(phonel) {
+    position: relative;
+    top: -7px;
+    margin-left: 0px;
+    width: 85px;
+    height: 1px;
+    background-color: white;
+  }
   @include mq(laptop) {
     position: relative;
     top: 4px;
@@ -185,6 +310,14 @@
 }
 
 .blog-title-border-four {
+  @include mq(phonel) {
+    position: relative;
+    top: -8px;
+    margin-left: 108px;
+    width: 124px;
+    height: 1px;
+    background-color: white;
+  }
   @include mq(laptop) {
     position: relative;
     top: 1px;
@@ -195,9 +328,30 @@
   }
 }
 
+.blog-title-border-five {
+  @include mq(phonel) {
+    position: relative;
+    top: -9px;
+    margin-left: 255px;
+    width: 38px;
+    height: 1px;
+    background-color: white;
+  }
+  @include mq(laptop) {
+    display: none;
+  }
+}
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Post new design
 
 .post-border {
+  @include mq(phonel) {
+    position: relative;
+    margin: 0 auto;
+    width: 335px;
+    height: 1px;
+    background-color: #222222;
+  }
   @include mq(laptop) {
     position: relative;
     margin: 0 auto;
@@ -210,15 +364,23 @@
 
 .post {
   @include mq(laptop) {
-    padding: 0 $grid-spacing/2;
+    //padding: 0 $grid-spacing/2;
     margin-top: 0px;
     top: 0px;
   }
 }
 
 .post-wrap {
+  @include mq(phonel) {
+    position: relative;
+    margin-top: 50px;
+    width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   @include mq(laptop) {
     position: relative;
+    margin: 0;
     width: 1590px;
     left: 50%;
     top: 360px;
@@ -242,6 +404,9 @@
 
 //post item 전체 크기 관리
 .post-item-style {
+  @include mq(phonel) {
+    width: 335px;
+  }
   @include mq(laptop) {
     width: 496px;
     height: 600px;
@@ -250,6 +415,12 @@
 
 //----------post image 전체 이미지 관리
 .post-image-style-one {
+  @include mq(phonel) {
+    width: 335px;
+    height: 236px;
+    border-radius: 24px;
+    overflow: hidden;
+  }
   @include mq(laptop) {
     width: 496px;
     height: 350px;
@@ -259,6 +430,11 @@
 }
 
 .post-image-dim {
+  @include mq(phonel) {
+    width: 335px;
+    height: 236px;
+    border-radius: 24px;
+  }
   @include mq(laptop) {
     width: 496px;
     height: 350px;
@@ -272,6 +448,11 @@
 }
 
 .post-hover-image {
+  @include mq(phonel) {
+    width: 335px;
+    height: 236px;
+    border-radius: 24px;
+  }
   @include mq(laptop) {
     width: 496px;
     height: 350px;
@@ -306,6 +487,10 @@
 }
 
 .post-info-wrap {
+  @include mq(phonel) {
+    margin-top: 14px;
+    text-align: left;
+  }
   @include mq(laptop) {
     margin-top: 28px;
     text-align: left;
@@ -313,6 +498,13 @@
 }
 
 .post-title {
+  @include mq(phonel) {
+    font-family: $body-font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: white;
+  }
   @include mq(laptop) {
     font-family: $body-font;
     font-size: 24px;
@@ -327,7 +519,17 @@
 }
 
 .post-description {
+  @include mq(phonel) {
+    width: 310px;
+    margin-top: 20px;
+    font-family: $body-font;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+
   @include mq(laptop) {
+    width: 480px;
     margin-top: 20px;
     font-family: $body-font;
     font-size: 14px;
@@ -339,6 +541,14 @@
 }
 
 .post-date {
+  @include mq(phonel) {
+    margin-top: 24px;
+    font-family: $title-font;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 50px;
+  }
   @include mq(laptop) {
     margin-top: 34px;
     font-family: $title-font;
@@ -346,12 +556,22 @@
     font-weight: 700;
     color: white;
     opacity: 1;
+    margin-bottom: 0px;
   }
 }
 
 //Post 카드 아이템 스타일 관리
 
 .post-item-card-blue-style {
+  @include mq(phonel) {
+    width: 335px;
+    height: 454px;
+    border: 1px solid #0085ec;
+    border-radius: 24px;
+    background-color: #003f70;
+    padding-left: 24px;
+    padding-top: 32px;
+  }
   @include mq(laptop) {
     width: 496px;
     height: 600px;
@@ -365,12 +585,21 @@
 }
 
 .post-card-info-wrap {
+  @include mq(phonel) {
+    text-align: left;
+  }
   @include mq(laptop) {
     text-align: left;
   }
 }
 
 .post-card-title {
+  @include mq(phonel) {
+    font-family: $title-font;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
   @include mq(laptop) {
     font-family: $title-font;
     font-size: 32px;
@@ -380,7 +609,15 @@
 }
 
 .post-card-description {
+  @include mq(phonel) {
+    width: 287px;
+    margin-top: 20px;
+    font-family: $body-font;
+    font-size: 12px;
+    line-height: 1.8;
+  }
   @include mq(laptop) {
+    width: 430px;
     margin-top: 36px;
     font-family: $body-font;
     font-size: 14px;
@@ -390,6 +627,15 @@
 }
 
 .post-card-button {
+  @include mq(phonel) {
+    margin-top: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    width: 123px;
+    height: 44px;
+  }
   @include mq(laptop) {
     margin-top: 270px;
     display: flex;
@@ -402,13 +648,16 @@
 }
 
 .post-blue-button-color {
-  @include mq(laptop) {
-    border: 1px solid rgba($color: #0085ec, $alpha: 1);
-    background-color: rgba($color: #000000, $alpha: 0);
-  }
+  border: 1px solid rgba($color: #0085ec, $alpha: 1);
+  background-color: rgba($color: #000000, $alpha: 0);
 }
 
 .post-card-button-label {
+  @include mq(phonel) {
+    font-family: $title-font;
+    font-size: 14px;
+    font-weight: 700;
+  }
   @include mq(laptop) {
     font-family: $title-font;
     font-size: 14px;
@@ -417,10 +666,17 @@
 }
 
 .post-card-arrow {
+  @include mq(phonel) {
+    position: relative;
+    right: -3px;
+    top: -2px;
+    width: 8px;
+  }
   @include mq(laptop) {
     position: relative;
     right: -7px;
     top: -3px;
+    width: 8px;
   }
 }
 //Post 카드 아이템 텍스트 색상 관리
