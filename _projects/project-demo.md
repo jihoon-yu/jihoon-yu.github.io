@@ -10,11 +10,11 @@ featured_image: "/images/Test/01.png"
 
 ### 2019 Posters
 
-<div class="image-warp" style="width: 60%; margin-top: 10px; margin: 0 auto;">
-  <img src="/images/01_Project/Project_01/Poster_01.jpg" style="margin-top: 10px;">
-  <img src="/images/01_Project/Project_01/Poster_02.jpg" style="margin-top: 10px;">
-  <img src="/images/01_Project/Project_01/Poster_03.jpg" style="margin-top: 10px;">
-</div>
+![](/images/01_Project/Project_01/Poster_01.jpg)
+
+![](/images/01_Project/Project_01/Poster_02.jpg)
+
+![](/images/01_Project/Project_01/Poster_03.jpg)
 
 ### 2018 Posters
 

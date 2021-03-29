@@ -26,6 +26,12 @@
 }
 
 .single {
+  @include mq(laptop) {
+    margin-top: 60px;
+  }
+}
+
+.single {
   h1,
   h2,
   h3,
@@ -52,7 +58,7 @@
     }
 
     @include mq(laptop) {
-      max-width: 60%;
+      max-width: 1590px;
     }
   }
 
@@ -196,18 +202,20 @@
   }
 }
 
+// 이미지, 비디오 간격 관리
 .image-wrap,
 .video-wrap {
   position: relative;
-  max-width: 90%;
-  margin: 20px auto;
+  max-width: 100%;
 
-  @include mq(tabletp) {
-    margin: 30px auto;
+  @include mq(phonel) {
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   @include mq(laptop) {
-    margin: 40px auto;
+    max-width: 1590px;
+    margin: 0 auto;
   }
 
   &:first-child {
