@@ -411,7 +411,7 @@
 
 .project-line {
   @include mq(phonel) {
-    width: 335px;
+    max-width: 90%;
     height: 1px;
     background-color: #222222;
     margin-top: 60px;
