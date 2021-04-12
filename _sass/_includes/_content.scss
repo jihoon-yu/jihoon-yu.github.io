@@ -26,6 +26,9 @@
 }
 
 .single {
+  @include mq(phonel) {
+    margin-top: 0;
+  }
   @include mq(laptop) {
     position: relative;
     width: 1590px;
@@ -250,23 +253,63 @@
 //------------------------------------------------------------Project New Design
 //project 전체 스타일 관리
 
-.project-title {
+.project-hero {
+  @include mq(laptop) {
+    margin: 0 auto;
+  }
+}
+.project-cover-image {
   @include mq(phonel) {
+    display: none;
   }
   @include mq(laptop) {
-    position: relative;
-    font-family: $body-font;
-    font-weight: 300;
-    font-size: 56px;
-    line-height: 1.1;
-    color: white;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
   }
 }
 
-.project-info-wrap {
+.project-cover-image-mobile {
+  @include mq(phonel) {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+  }
   @include mq(laptop) {
-    margin-top: 64px;
-    font-size: 0;
+    display: none;
+  }
+}
+
+.project-intro {
+  @include mq(phonel) {
+    margin-top: 24px;
+  }
+  @include mq(laptop) {
+    margin-top: 56px;
+  }
+}
+
+.project-wrap-group {
+  @include mq(phonel) {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include mq(laptop) {
+    padding: 0;
+    position: relative;
+    max-width: 1590px;
+    margin: 0 auto;
+  }
+}
+.project-wrap {
+  @include mq(phonel) {
+    display: block;
+  }
+  @include mq(laptop) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
@@ -275,60 +318,131 @@
   }
 }
 
-.project-info-spec-skill {
-  @include mq(laptop) {
-    position: relative;
+.project-title {
+  @include mq(phonel) {
     font-family: $body-font;
-    font-weight: 700;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: white;
+  }
+  @include mq(laptop) {
+    font-family: $body-font;
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: white;
+  }
+}
+
+.project-info-spec {
+  @include mq(phonel) {
+    font-family: $body-font;
     font-size: 14px;
+    font-weight: 700;
     line-height: 1.8;
     color: white;
+    margin-top: 24px;
+    margin-bottom: 8px;
   }
-}
-
-.porject-info-spec-date {
   @include mq(laptop) {
-    position: relative;
     font-family: $body-font;
-    font-weight: 400;
     font-size: 14px;
+    font-weight: 700;
+    line-height: 1.8;
     color: white;
-    margin-top: 12px;
+    margin-bottom: 18px;
+    margin-top: 8px;
   }
 }
 
-.project-info-description-about {
+.project-info-date {
+  @include mq(phonel) {
+    font-family: $body-font;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 24px;
+  }
   @include mq(laptop) {
     font-family: $body-font;
-    font-weight: 400;
     font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 32px;
+  }
+}
+
+.project-info-description {
+  @include mq(phonel) {
+    font-family: $body-font;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #666666;
+    margin-bottom: 24px;
+  }
+  @include mq(laptop) {
+    font-family: $body-font;
+    font-size: 14px;
+    font-weight: 400;
     line-height: 2.1;
     color: #666666;
-  }
-}
-
-.project-info-description-link {
-  @include mq(laptop) {
-    margin-top: 24px;
+    margin-bottom: 24px;
   }
 }
 
 .project-link {
+  @include mq(phonel) {
+    font-family: $body-font;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    text-decoration: underline;
+  }
   @include mq(laptop) {
     font-family: $body-font;
-    font-weight: 500;
     font-size: 14px;
+    font-weight: 500;
     color: white;
     text-decoration: underline;
   }
 }
 
 .project-line {
+  @include mq(phonel) {
+    width: 335px;
+    height: 1px;
+    background-color: #222222;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   @include mq(laptop) {
     width: 1590px;
     height: 1px;
     background-color: #222222;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.box {
+  @include mq(phonel) {
+    position: relative;
+    width: 375px;
+    height: 500px;
+    background-color: blanchedalmond;
+    margin: 0 auto;
+  }
+  @include mq(laptop) {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    background-color: blanchedalmond;
+    margin: 0 auto;
   }
 }
