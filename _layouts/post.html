@@ -2,19 +2,25 @@
 layout: default
 ---
 
+<!--blog scss에서 관리-->
+<!--디자인 반영을 위해서 html을 새로 구성함-->
 <section class="intro">
-
-	<div class="wrap">
-
-		<h1>{{ page.title }}</h1>
-		<p>{{ page.date | date_to_long_string }}</p>
-
-	</div>
-
+  <div class="article-wrap">
+    <div class="article-hero">
+      <img class="article-hero-image" src="{{ page.featured_image}}" />
+    </div>
+    <div class="article-info">
+      <div class="article-info-title">{{ page.title }}</div>
+      <div class="article-info-description">
+        <span class="article-date">{{ page.date | date_to_long_string }}</span>
+        <span class="article-info-description-line"></span>
+        <span class="article-writer">Yu Ji Hoon</span>
+      </div>
+    </div>
+    <div class="article-line"></div>
+  </div>
 </section>
 
 <section class="single">
-
-	{{ page.content }}
-
+  <div class="article-content-wrap">{{ page.content }}</div>
 </section>

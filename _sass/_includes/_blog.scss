@@ -737,3 +737,87 @@
     }
   }
 }
+
+//-------------------------------------------------- Article New Design
+
+.article-wrap {
+  @include mq(laptop) {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+
+.article-hero-image {
+  @include mq(laptop) {
+    width: 640px;
+    height: 340px;
+    border-radius: 12px;
+  }
+}
+
+.article-info {
+  @include mq(laptop) {
+    margin-top: 24px;
+  }
+}
+
+.article-info-title {
+  @include mq(laptop) {
+    font-family: $body-font;
+    font-size: 44px;
+    font-weight: 300;
+    color: white;
+    line-height: 1.2;
+  }
+}
+
+.article-info-description {
+  @include mq(laptop) {
+    margin-top: 21px;
+  }
+}
+
+.article-date {
+  @include mq(laptop) {
+    font-family: $body-font;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+  }
+}
+.article-info-description-line {
+  @include mq(laptop) {
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.article-writer {
+  @include mq(laptop) {
+    font-family: $body-font;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+  }
+}
+
+.article-line {
+  @include mq(laptop) {
+    width: 640px;
+    height: 1px;
+    background-color: #222222;
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+}
+
+.article-content-wrap {
+  @include mq(laptop) {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}

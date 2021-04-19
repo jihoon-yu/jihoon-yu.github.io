@@ -17,19 +17,19 @@
 
 	<!-- Page Info -->
 	<link rel="shortcut icon" href="/images/favicon.png">
-	<title>Demo Post – Ji Hoon. Works</title>
+	<title>데모 아티클을 테스트해보고 있습니다 테스트입니다. – Ji Hoon. Works</title>
 	<meta name="description" content="This page is a demo that shows everything you can do inside portfolio and blog posts.">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Demo Post – Ji Hoon. Works">
+	<meta name="twitter:title" content="데모 아티클을 테스트해보고 있습니다 테스트입니다. – Ji Hoon. Works">
 	<meta name="twitter:description" content="This page is a demo that shows everything you can do inside portfolio and blog posts.">
-	<meta name="twitter:image:src" content="http://localhost:4000/images/demo/demo-square.jpg">
+	<meta name="twitter:image:src" content="http://localhost:4000/images/02_Post/post-demo/cover.png">
 
 	<!-- Facebook OpenGraph -->
-	<meta property="og:title" content="Demo Post – Ji Hoon. Works" />
+	<meta property="og:title" content="데모 아티클을 테스트해보고 있습니다 테스트입니다. – Ji Hoon. Works" />
 	<meta property="og:description" content="This page is a demo that shows everything you can do inside portfolio and blog posts." />
-	<meta property="og:image" content="http://localhost:4000/images/demo/demo-square.jpg" />
+	<meta property="og:image" content="http://localhost:4000/images/02_Post/post-demo/cover.png" />
 
 	
 	<!-- Font Embed Code -->
@@ -130,22 +130,29 @@
 	
 	<div class="page">
 
-		<div class="page__content" data-page-title="Demo Post – Ji Hoon. Works">
+		<div class="page__content" data-page-title="데모 아티클을 테스트해보고 있습니다 테스트입니다. – Ji Hoon. Works">
 
-			<section class="intro">
-
-	<div class="wrap">
-
-		<h1>Demo Post</h1>
-		<p>30 June 2018</p>
-
-	</div>
-
+			<!--blog scss에서 관리-->
+<!--디자인 반영을 위해서 html을 새로 구성함-->
+<section class="intro">
+  <div class="article-wrap">
+    <div class="article-hero">
+      <img class="article-hero-image" src="/images/02_Post/post-demo/cover.png" />
+    </div>
+    <div class="article-info">
+      <div class="article-info-title">데모 아티클을 테스트해보고 있습니다 테스트입니다.</div>
+      <div class="article-info-description">
+        <span class="article-date">17 April 2021</span>
+        <span class="article-info-description-line"></span>
+        <span class="article-writer">Yu Ji Hoon</span>
+      </div>
+    </div>
+    <div class="article-line"></div>
+  </div>
 </section>
 
 <section class="single">
-
-	<p><img src="/images/demo/demo-landscape.jpg" alt="" /></p>
+  <div class="article-content-wrap"><!--![](/images/demo/demo-landscape.jpg) -->
 
 <h2 id="demo-content">Demo content</h2>
 
@@ -218,7 +225,7 @@
 
 <p>Here’s a really neat custom feature we added – galleries:</p>
 
-<div class="gallery" data-columns="3">
+<div class="gallery" data-columns="2">
 	<img src="/images/demo/demo-portrait.jpg" />
 	<img src="/images/demo/demo-landscape.jpg" />
 	<img src="/images/demo/demo-square.jpg" />
@@ -227,13 +234,33 @@
 
 <p>Inspired by the Galleries feature from WordPress, we’ve made it easy to create grid layouts for your images. Just use a bit of simple HTML in your post to create a masonry grid image layout:</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gallery"</span> <span class="na">data-columns=</span><span class="s">"3"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/images/demo/demo-portrait.jpg"</span> <span class="nt">/&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/images/demo/demo-landscape.jpg"</span> <span class="nt">/&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/images/demo/demo-square.jpg"</span> <span class="nt">/&gt;</span>
-  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/images/demo/demo-landscape-2.jpg"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
+<pre class="prettyprint">
+setText(newText) {
+		  const oldText = this.el.innerText
+		  const length = Math.max(oldText.length, newText.length)
+		  const promise = new Promise((resolve) =&gt; this.resolve = resolve)
+		  this.queue = []
+		  for (let i = 0; i &lt; length; i++) {
+			const from = oldText[i] || ''
+			const to = newText[i] || ''
+			const start = Math.floor(Math.random() * 40)
+			const end = start + Math.floor(Math.random() * 40)
+			this.queue.push({ from, to, start, end })
+		  }
+		  cancelAnimationFrame(this.frameRequest)
+		  this.frame = 0
+		  this.update()
+		  return promise
+		}
+</pre>
+
+<pre><code class="language-html">&lt;div class="gallery" data-columns="3"&gt;
+  &lt;img src="/images/demo/demo-portrait.jpg" /&gt;
+  &lt;img src="/images/demo/demo-landscape.jpg" /&gt;
+  &lt;img src="/images/demo/demo-square.jpg" /&gt;
+  &lt;img src="/images/demo/demo-landscape-2.jpg" /&gt;
+&lt;/div&gt;
+</code></pre>
 
 <p><em>See what we did there? Code and syntax highlighting is built-in too!</em></p>
 
@@ -267,9 +294,9 @@
 <p>Why not put them to use on your new portfolio?</p>
 
 <p><a href="https://jekyllthemes.io/theme/duet-portfolio-jekyll-theme" class="button button--large">Get This Theme</a></p>
-
-
+</div>
 </section>
+
 
 		</div>
 
@@ -313,83 +340,87 @@
 	<!-- Javascript Assets -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/duet-min.js"></script>
+	<!--code prettify-->
+	<!--<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
+	<!--헤더 text scramble-->
 	<script>
-class TextScramble {
-  constructor(el) {
-    this.el = el
-    this.chars = 'Km90lxGfW83jVD75'
-    this.update = this.update.bind(this)
-  }
-  setText(newText) {
-    const oldText = this.el.innerText
-    const length = Math.max(oldText.length, newText.length)
-    const promise = new Promise((resolve) => this.resolve = resolve)
-    this.queue = []
-    for (let i = 0; i < length; i++) {
-      const from = oldText[i] || ''
-      const to = newText[i] || ''
-      const start = Math.floor(Math.random() * 40)
-      const end = start + Math.floor(Math.random() * 40)
-      this.queue.push({ from, to, start, end })
-    }
-    cancelAnimationFrame(this.frameRequest)
-    this.frame = 0
-    this.update()
-    return promise
-  }
-  update() {
-    let output = ''
-    let complete = 0
-    for (let i = 0, n = this.queue.length; i < n; i++) {
-      let { from, to, start, end, char } = this.queue[i]
-      if (this.frame >= end) {
-        complete++
-        output += to
-      } else if (this.frame >= start) {
-        if (!char || Math.random() < 0.28) {
-          char = this.randomChar()
-          this.queue[i].char = char
-        }
-        output += `<span class="dud">${char}</span>`
-      } else {
-        output += from
-      }
-    }
-    this.el.innerHTML = output
-    if (complete === this.queue.length) {
-      this.resolve()
-    } else {
-      this.frameRequest = requestAnimationFrame(this.update)
-      this.frame++
-    }
-  }
-  randomChar() {
-    return this.chars[Math.floor(Math.random() * this.chars.length)]
-  }
-}
-
-const phrases = [
-  'Works',
-  'Designs',
-  'Graphic',
-  'Interface',
-  'Thoughts',
-  'Interaction',
-  'Code'
-]
-
-const el = document.querySelector('.random__title')
-const fx = new TextScramble(el)
-
-let counter = 0
-const next = () => {
-  fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 3400)
-  })
-  counter = (counter + 1) % phrases.length
-}
-
-next()
+	class TextScramble {
+		constructor(el) {
+		  this.el = el
+		  this.chars = 'Km90lxGfW83jVD75'
+		  this.update = this.update.bind(this)
+		}
+		setText(newText) {
+		  const oldText = this.el.innerText
+		  const length = Math.max(oldText.length, newText.length)
+		  const promise = new Promise((resolve) => this.resolve = resolve)
+		  this.queue = []
+		  for (let i = 0; i < length; i++) {
+			const from = oldText[i] || ''
+			const to = newText[i] || ''
+			const start = Math.floor(Math.random() * 40)
+			const end = start + Math.floor(Math.random() * 40)
+			this.queue.push({ from, to, start, end })
+		  }
+		  cancelAnimationFrame(this.frameRequest)
+		  this.frame = 0
+		  this.update()
+		  return promise
+		}
+		update() {
+		  let output = ''
+		  let complete = 0
+		  for (let i = 0, n = this.queue.length; i < n; i++) {
+			let { from, to, start, end, char } = this.queue[i]
+			if (this.frame >= end) {
+			  complete++
+			  output += to
+			} else if (this.frame >= start) {
+			  if (!char || Math.random() < 0.28) {
+				char = this.randomChar()
+				this.queue[i].char = char
+			  }
+			  output += `<span class="dud">${char}</span>`
+			} else {
+			  output += from
+			}
+		  }
+		  this.el.innerHTML = output
+		  if (complete === this.queue.length) {
+			this.resolve()
+		  } else {
+			this.frameRequest = requestAnimationFrame(this.update)
+			this.frame++
+		  }
+		}
+		randomChar() {
+		  return this.chars[Math.floor(Math.random() * this.chars.length)]
+		}
+	  }
+	  
+	  const phrases = [
+		'Works',
+		'Designs',
+		'Graphic',
+		'Interface',
+		'Thoughts',
+		'Interaction',
+		'Code'
+	  ]
+	  
+	  const el = document.querySelector('.random__title')
+	  const fx = new TextScramble(el)
+	  
+	  let counter = 0
+	  const next = () => {
+		fx.setText(phrases[counter]).then(() => {
+		  setTimeout(next, 3400)
+		})
+		counter = (counter + 1) % phrases.length
+	  }
+	  
+	  next()
+		
 	</script>
 	
 	<script>

@@ -28,8 +28,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $title-font;
-  color: $text-dark-color;
+  font-family: $body-font;
+  color: #ffffff;
 
   &:first-child {
     margin-top: 0;
@@ -137,10 +137,23 @@ h6,
   }
 }
 
+p {
+  margin-top: 24px;
+}
+
+ul {
+  margin-top: 15px;
+}
+
+ol {
+  margin-top: 15px;
+}
+
 p,
 ul,
 ol {
-  margin-top: 15px;
+  color: white;
+  //margin-top: 15px;
   font-size: $p-small;
   font-weight: $p-weight;
   line-height: $p-lineheight;
@@ -169,23 +182,27 @@ ol {
 }
 
 blockquote {
-  margin-top: 15px;
-  border-left: 2px solid $text-dark-color;
-  padding: 10px 0 10px 20px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  //border-left: 2px solid $text-dark-color;
+  //padding: 10px 0 10px 20px;
   font-size: $blockquote-small;
   font-weight: $blockquote-weight;
   letter-spacing: $blockquote-spacing;
   line-height: $blockquote-lineheight;
 
   @include mq(tabletp) {
-    border-left-width: 3px;
-    padding: 15px 0 15px 30px;
+    //border-left-width: 3px;
+    //padding: 15px 0 15px 30px;
     font-size: $blockquote-medium;
   }
 
   @include mq(laptop) {
-    border-left-width: 4px;
-    padding: 20px 0 20px 40px;
+    //border-left-width: 4px;
+    //padding: 20px 0 20px 40px;
     font-size: $blockquote-large;
   }
 
