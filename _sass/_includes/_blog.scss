@@ -741,6 +741,10 @@
 //-------------------------------------------------- Article New Design
 
 .article-wrap {
+  @include mq(phonel) {
+    max-width: 335px;
+    margin: 0 auto;
+  }
   @include mq(laptop) {
     max-width: 640px;
     margin: 0 auto;
@@ -756,12 +760,22 @@
 }
 
 .article-info {
+  @include mq(phonel) {
+    margin-top: 24px;
+  }
   @include mq(laptop) {
     margin-top: 24px;
   }
 }
 
 .article-info-title {
+  @include mq(phonel) {
+    font-family: $body-font;
+    font-size: 28px;
+    font-weight: 300;
+    color: white;
+    line-height: 1.3;
+  }
   @include mq(laptop) {
     font-family: $body-font;
     font-size: 44px;
@@ -772,12 +786,21 @@
 }
 
 .article-info-description {
+  @include mq(phonel) {
+    margin-top: 20px;
+  }
   @include mq(laptop) {
     margin-top: 21px;
   }
 }
 
 .article-date {
+  @include mq(phonel) {
+    font-family: $body-font;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+  }
   @include mq(laptop) {
     font-family: $body-font;
     font-size: 14px;
@@ -786,6 +809,14 @@
   }
 }
 .article-info-description-line {
+  @include mq(phonel) {
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   @include mq(laptop) {
     display: inline-block;
     width: 1px;
@@ -797,6 +828,12 @@
 }
 
 .article-writer {
+  @include mq(phonel) {
+    font-family: $body-font;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+  }
   @include mq(laptop) {
     font-family: $body-font;
     font-size: 14px;
@@ -806,6 +843,13 @@
 }
 
 .article-line {
+  @include mq(phonel) {
+    width: 335px;
+    height: 1px;
+    background-color: #222222;
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
   @include mq(laptop) {
     width: 640px;
     height: 1px;
@@ -816,6 +860,10 @@
 }
 
 .article-content-wrap {
+  @include mq(phonel) {
+    max-width: 335px;
+    margin: 0 auto;
+  }
   @include mq(laptop) {
     max-width: 640px;
     margin: 0 auto;

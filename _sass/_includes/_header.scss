@@ -4,6 +4,18 @@
 
 // - - - - - - - - - - - - - - - - - -
 
+//animation 속성 추가
+@keyframes header-title-show {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header
 
 .header {
@@ -52,7 +64,7 @@
   line-height: 1;
   color: #ffffff;
   letter-spacing: 0px;
-  transition: 0.3s ease-in-out;
+  //transition: 0.3s ease-in-out;
 
   @include mq(phonel) {
     font-size: 18px;
@@ -71,6 +83,13 @@
     width: 20%;
     position: absolute;
     margin-left: 70px;
+    //애니메이션 요소
+    animation-name: header-title-show;
+    animation-duration: 0.7s;
+    animation-delay: 0.4s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
+
     &:hover {
       color: #ffffff;
       letter-spacing: 1px;
@@ -111,6 +130,14 @@
     left: 120%;
     -webkit-box-pack: end;
     justify-content: flex-end;
+  }
+  //애니메이션 요소
+  @include mq(laptop) {
+    animation-name: header-title-show;
+    animation-duration: 0.7s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
 }
 
@@ -255,6 +282,37 @@
   }
 }
 
+//menu__list__item 애니메이션 관리
+.menu__list__item:nth-child(1) {
+  @include mq(laptop) {
+    animation-name: header-title-show;
+    animation-duration: 0.7s;
+    animation-delay: 0.5s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
+  }
+}
+
+.menu__list__item:nth-child(2) {
+  @include mq(laptop) {
+    animation-name: header-title-show;
+    animation-duration: 0.7s;
+    animation-delay: 0.6s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
+  }
+}
+
+.menu__list__item:nth-child(3) {
+  @include mq(laptop) {
+    animation-name: header-title-show;
+    animation-duration: 0.7s;
+    animation-delay: 0.7s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
+  }
+}
+
 .menu__list__sub__item {
   @include mq(tabletl) {
     display: flex;
@@ -266,7 +324,7 @@
   @include mq(laptop) {
     position: absolute;
     right: -23px;
-    top: 18px;
+    top: 8px;
     margin-left: 0px;
     transition: 0.3s ease-in-out;
   }
