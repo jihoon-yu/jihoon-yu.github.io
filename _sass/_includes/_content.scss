@@ -277,11 +277,30 @@
 }
 
 //------------------------------------------------------------Project New Design
+
+//Project animation 관리
+@keyframes project-hero-show {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 //project 전체 스타일 관리
 
 .project-hero {
   @include mq(laptop) {
     margin: 0 auto;
+    //애니메이션 요소
+    animation-name: project-hero-show;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+    animation-fill-mode: both;
   }
 }
 .project-cover-image {
@@ -466,9 +485,38 @@
   }
   @include mq(laptop) {
     position: relative;
+    top: 0px;
     width: 1000px;
     height: 500px;
     background-color: blanchedalmond;
     margin: 0 auto;
+  }
+}
+
+//프로젝트 스크롤 애니메이션 관리
+
+@keyframes scroll-animate-in {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.animate-in {
+  @include mq(laptop) {
+    animation-name: scroll-animate-in;
+    animation-duration: 0.7s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+  }
+}
+
+.animate-out {
+  @include mq(laptop) {
+    opacity: 0;
   }
 }
