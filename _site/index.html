@@ -279,7 +279,7 @@
           </a>
         </article>
 
-        <article class="portfolio-item-five portfolio-item-style">
+        <article class="portfolio-item-five portfolio-item-style" data-scroll>
           <a class="portfolio-link" href="/project/project-demo">
             <div class="portfolio-image-style">
               <img class="portfolio-image" src="/images/01_Project/project-thumbnail/Project_5.jpg">
@@ -411,11 +411,15 @@
 			modal.classList.remove("popup-hidden");
 			modalContents.classList.add("popup-show");
 			overlay.classList.add("popup-overlay-dim");
+			//popup open인 경우 스크롤 불가
+			document.body.classList.add("body-stop-scroll");
 		}
 		const closeModal = () => {
 			modal.classList.add("popup-hidden");
 			modalContents.classList.remove("popup-show");
 			overlay.classList.remove("popup-overlay-dim");
+			//popup close클 경우 스크롤 가능
+			document.body.classList.remove("body-stop-scroll");
 		}
 
 		openButton.addEventListener("click", openModal);

@@ -20,6 +20,14 @@ body {
   color: $text-medium-color;
 }
 
+//팝업 스크롤 조절
+.body-stop-scroll {
+  @include mq(laptop) {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Typography
 
 h1,
