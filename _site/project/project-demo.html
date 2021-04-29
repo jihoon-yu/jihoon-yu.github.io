@@ -40,7 +40,6 @@
 	<!-- animation css 추가-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/css/style.css" href="/css/animation.css">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	
 	<!-- Icons -->
 	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
@@ -61,16 +60,11 @@
 	<!-- Extra Header JS Code -->
 	
 	
-	<!---<script src="https://unpkg.com/scrollreveal"></script>
-	<script>ScrollReveal({
-		scale: 0.85,
-		duration: 1000,});
-	</script>
-    -->
+
 </head>
 
 
-<body class="loading ajax-loading" data-site-url="http://localhost:4000" data-page-url="/project/project-demo">
+<body class="loading" data-site-url="http://localhost:4000" data-page-url="/project/project-demo">
 
 
 	<header class="header">
@@ -105,19 +99,10 @@
           </li>
         </ul>
       </div>
-      <div class="sub__menu">
-        <div class="menu__sub__wrap">
-          <ul class="menu__list__sub__item">
-            <li class="menu__list">
-              <a href="/contact" class="menu__list__item__link">Contact</a>
-              <img
-                class="contact-outlink"
-                src="/images/00_header/outlink.svg"
-              />
-            </li>
-          </ul>
-        </div>
-      </div>
+      <button id="sub-menu">
+        Contact
+        <img class="sub-menu-img" src="/images/00_header/outlink.svg" />
+      </button>
     </div>
   </div>
 </header>
@@ -228,13 +213,32 @@
 </footer>
 
 
+	<div class="global-popup popup-hidden">
+		<div class="popup-overlay"></div>
+		<div class="popup-contents">
+			<img class="popup-title" src="/images/99_Popup/popup_title.svg">
+			<div class="popup-description">
+				This feature is still being prepared. If you 
+				<br>would like to contact me, please check the 
+				<br>contact details below.
+			</div>
+			<div class="popup-contact">
+				jihoon.yuu@gmail.com
+				<br>+82 10 3894 9395
+			</div>
+			<div class="popup-button-close">
+				<button id="popup-close">Okay</button>
+			</div>
+		</div>
+	</div>
+
 
 	<!-- Javascript Assets -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="/js/duet-min.js"></script>
 	<!--Scroll Animation-->
 	<!--1.0 = 100%-->
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!--<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
     <script>
 			const scrollTrigger = new ScrollTrigger.default();
@@ -256,8 +260,31 @@
    
     </script>
 
-	<!--code prettify-->
-	<!--<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>-->
+	<!--Popup-->
+	<script>
+
+		const openButton = document.getElementById("sub-menu");
+		const modal = document.querySelector(".global-popup");
+		const modalContents = document.querySelector(".popup-contents")
+		const overlay = modal.querySelector(".popup-overlay");
+		const closeButton = modal.querySelector("button");
+
+		const openModal = () => {
+			modal.classList.remove("popup-hidden");
+			modalContents.classList.add("popup-show");
+			overlay.classList.add("popup-overlay-dim");
+		}
+		const closeModal = () => {
+			modal.classList.add("popup-hidden");
+			modalContents.classList.remove("popup-show");
+			overlay.classList.remove("popup-overlay-dim");
+		}
+
+		openButton.addEventListener("click", openModal);
+		closeButton.addEventListener("click", closeModal);
+	
+	</script>
+
 	<!--헤더 text scramble-->
 	<script>
 	class TextScramble {

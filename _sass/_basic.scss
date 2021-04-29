@@ -1019,7 +1019,7 @@ section {
     align-items: center;
     // Hover
     opacity: 0;
-    transform: translateY(30px) scale(0.4);
+    transform: translateY(40px) scale(1);
     transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
     transition-duration: 0.3s;
   }
@@ -1094,28 +1094,28 @@ section {
       .portfolio-hover-one {
         opacity: 1;
         transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-        transition-duration: 0.3s;
+        transition-duration: 0.5s;
       }
       .portfolio-one-badge {
         opacity: 1;
         transform: translateY(0px) scale(1);
         transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
         transition-delay: 0.2s;
-        transition-duration: 0.3s;
+        transition-duration: 0.5s;
       }
       .one-info-title {
         opacity: 1;
         transform: translateY(0px) scale(1);
         transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-        transition-delay: 0.3s;
-        transition-duration: 0.3s;
+        transition-delay: 0.4s;
+        transition-duration: 0.5s;
       }
       .one-info-description {
         opacity: 1;
         transform: translateY(0px) scale(1);
         transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-        transition-delay: 0.35s;
-        transition-duration: 0.3s;
+        transition-delay: 0.5s;
+        transition-duration: 0.5s;
       }
     }
   }
@@ -1726,5 +1726,149 @@ section {
     left: 50%;
     transform: translate(-50%, 0);
     width: 110px;
+  }
+}
+
+// Popup new Design
+
+@keyframes popup-show {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+    transform: scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    transform: scale(1);
+  }
+}
+
+@keyframes overlay-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.global-popup {
+  @include mq(laptop) {
+    z-index: 999999;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.popup-overlay {
+  @include mq(laptop) {
+  }
+}
+
+.popup-overlay-dim {
+  @include mq(laptop) {
+    background-color: rgba($color: #000, $alpha: 0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999998;
+    //애니메이션 요소
+    animation-name: overlay-show;
+    animation-duration: 0.3s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+}
+
+.popup-contents {
+  @include mq(laptop) {
+    //애니메이션 요소
+  }
+}
+
+.popup-show {
+  @include mq(laptop) {
+    position: relative;
+    //left: 50%;
+    //top: 50%;
+    //transform: translate(-50%, -50%);
+    background-color: rgba($color: #111111, $alpha: 1);
+    border-radius: 24px;
+    border: solid #333333 1px;
+    z-index: 9999999;
+    padding-top: 50px;
+    padding-left: 36px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    //애니메이션 요소
+    animation-name: popup-show;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
+  }
+}
+
+.popup-title {
+  @include mq(laptop) {
+    width: 108px;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+}
+
+.popup-description {
+  @include mq(laptop) {
+    font-family: $title-font;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba($color: #bbbbbb, $alpha: 1);
+    margin-bottom: 16px;
+  }
+}
+
+.popup-contact {
+  @include mq(laptop) {
+    font-family: $title-font;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.7;
+    color: rgba($color: #bbbbbb, $alpha: 1);
+    margin-bottom: 36px;
+  }
+}
+
+.popup-button-close {
+  @include mq(laptop) {
+    width: 100%;
+  }
+}
+
+#popup-close {
+  @include mq(laptop) {
+    font-family: $title-font;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba($color: #ffffff, $alpha: 1);
+    margin: 0 auto;
+
+    &:hover {
+      color: #ffffff;
+      letter-spacing: 1px;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+.popup-hidden {
+  @include mq(laptop) {
+    display: none;
   }
 }

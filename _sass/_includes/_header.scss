@@ -141,6 +141,49 @@
   }
 }
 
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+#sub-menu {
+  @include mq(phonel) {
+    display: none;
+  }
+  @include mq(laptop) {
+    position: absolute;
+    display: flex;
+    width: 20%;
+    left: 120%;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba($color: #ffffff, $alpha: 1);
+    letter-spacing: 0px;
+    transition: 0.3s ease-in-out;
+    //애니메이션 요소
+    animation-name: header-title-show;
+    animation-duration: 0.7s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
+
+    &:hover {
+      color: #ffffff;
+      letter-spacing: 1px;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+.sub-menu-img {
+  @include mq(laptop) {
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+}
+
 .menu__toggle {
   position: absolute;
   z-index: 100;
