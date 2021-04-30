@@ -42,6 +42,54 @@
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Blog new design
 
+@keyframes blog-title-show {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes blog-border-show {
+  from {
+    transform: scale(0);
+    opacity: 0;
+    background-color: #249fff;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+    background-color: #ffffff;
+  }
+}
+
+@keyframes post-border-show {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes post-item-show {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+    scale: 1.2;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+    scale: 1;
+  }
+}
+
 .blog-wrap {
   @include mq(phonel) {
     position: absolute;
@@ -106,6 +154,12 @@
     display: inline;
     width: 221px;
     top: 0;
+    //애니메이션 요소
+    animation-name: blog-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
 }
 
@@ -123,6 +177,12 @@
     width: 79px;
     top: 18px;
     margin-left: 28px;
+    //애니메이션 요소
+    animation-name: blog-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.1s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
 }
 
@@ -140,6 +200,12 @@
     width: 238px;
     top: 17px;
     margin-left: 27px;
+    //애니메이션 요소
+    animation-name: blog-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.2s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
 }
 
@@ -179,6 +245,12 @@
     top: 18px;
     margin-left: 0px;
     margin-top: 0px;
+    //애니메이션 요소
+    animation-name: blog-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.3s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
 }
 
@@ -196,6 +268,12 @@
     width: 44px;
     top: 0;
     margin-left: 26px;
+    //애니메이션 요소
+    animation-name: blog-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.4s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
 }
 
@@ -215,6 +293,12 @@
     top: 18px;
     margin-left: 21px;
     margin-top: 0px;
+    //애니메이션 요소
+    animation-name: blog-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.5s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
 }
 
@@ -232,6 +316,12 @@
     width: 44px;
     top: 0;
     margin-left: 26px;
+    //애니메이션 요소
+    animation-name: blog-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.6s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
 }
 
@@ -249,6 +339,12 @@
     width: 252px;
     top: 18px;
     margin-left: 20px;
+    //애니메이션 요소
+    animation-name: blog-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.7s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
 }
 
@@ -268,6 +364,12 @@
     width: 67px;
     height: 2px;
     background-color: white;
+    //애니메이션 요소
+    animation-name: blog-border-show;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
 }
 
@@ -284,9 +386,15 @@
     position: relative;
     top: 6px;
     margin-left: 87px;
-    width: 532px;
+    width: 530px;
     height: 2px;
     background-color: white;
+    //애니메이션 요소
+    animation-name: blog-border-show;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
 }
 
@@ -302,10 +410,16 @@
   @include mq(laptop) {
     position: relative;
     top: 4px;
-    margin-left: 667px;
-    width: 256px;
+    margin-left: 663px;
+    width: 252px;
     height: 2px;
     background-color: white;
+    //애니메이션 요소
+    animation-name: blog-border-show;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
 }
 
@@ -321,10 +435,16 @@
   @include mq(laptop) {
     position: relative;
     top: 1px;
-    margin-left: 971px;
+    margin-left: 966px;
     width: 74px;
     height: 2px;
     background-color: white;
+    //애니메이션 요소
+    animation-name: blog-border-show;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
 }
 
@@ -359,6 +479,12 @@
     width: 1590px;
     height: 1px;
     background-color: #222222;
+    //애니메이션 요소
+    animation-name: post-border-show;
+    animation-duration: 0.6s;
+    animation-delay: 0.7s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
 }
 
@@ -403,18 +529,9 @@
 //--------------------Post 기본 아이템 스타일 관리
 
 //post item 전체 크기 관리
-.post-item-style {
-  @include mq(phonel) {
-    width: 335px;
-  }
-  @include mq(laptop) {
-    width: 496px;
-    height: 600px;
-  }
-}
 
 //----------post image 전체 이미지 관리
-.post-image-style-one {
+.post-image-style {
   @include mq(phonel) {
     width: 335px;
     height: 236px;
@@ -735,6 +852,57 @@
         }
       }
     }
+  }
+}
+
+//애니메이션 관리
+.post-item-one {
+  @include mq(laptop) {
+    animation-name: post-item-show;
+    animation-duration: 0.8s;
+    animation-delay: 0.4s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
+  }
+}
+
+.post-item-two {
+  @include mq(laptop) {
+    animation-name: post-item-show;
+    animation-duration: 0.8s;
+    animation-delay: 0.5s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
+  }
+}
+
+.post-item-three {
+  @include mq(laptop) {
+    animation-name: post-item-show;
+    animation-duration: 0.8s;
+    animation-delay: 0.6s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
+  }
+}
+
+.post-item-four {
+  @include mq(laptop) {
+    animation-name: post-item-show;
+    animation-duration: 0.8s;
+    animation-delay: 0.7s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
+  }
+}
+
+.post-item-five {
+  @include mq(laptop) {
+    animation-name: post-item-show;
+    animation-duration: 0.8s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
 }
 

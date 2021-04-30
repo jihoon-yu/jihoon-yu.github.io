@@ -467,6 +467,19 @@ section {
   from {
     transform: scale(0);
     opacity: 0;
+    background-color: #249fff;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+    background-color: #ffffff;
+  }
+}
+
+@keyframes portfolio-border-show {
+  from {
+    transform: scale(0);
+    opacity: 0;
   }
   to {
     transform: scale(1);
@@ -500,44 +513,21 @@ section {
 
 .index-wrap {
   @include mq(phonel) {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 335px;
-    height: 470px;
-    //display: flex;
-    justify-content: center;
-    align-items: center;
   }
   @include mq(laptop) {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 1590px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 1070px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
   }
 }
 
 .index-title-wrap {
   @include mq(phonel) {
-    position: relative;
-    width: 335px;
-    left: 50%;
-    margin-top: 40px;
-    transform: translate(-50%, 0%);
     //background-color: red;
   }
   @include mq(laptop) {
-    position: absolute;
-    width: 1070px;
-    height: 158px;
-    left: 50%;
-    top: 111px;
-    margin-top: 0px;
-    transform: translate(-50%, 0);
+    max-width: 100%;
     //background-color: rosybrown;
   }
 }
@@ -546,12 +536,9 @@ section {
 
 .index-title-one-wrap {
   @include mq(laptop) {
-    position: relative;
-    width: 660px;
-    height: 74px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    //background-color: red;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -559,6 +546,7 @@ section {
   @include mq(phonel) {
     position: relative;
     width: 87px;
+
     display: inline;
     top: 0px;
     margin-left: 3px;
@@ -628,13 +616,9 @@ section {
 
 .index-title-two-wrap {
   @include mq(laptop) {
-    position: relative;
-    width: 1070px;
-    height: 74px;
-    left: 50%;
-    margin-top: 10px;
-    transform: translate(-50%, 0);
-    //background-color: red;
+    max-width: 1070px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -827,9 +811,10 @@ section {
     display: block;
   }
   @include mq(laptop) {
-    position: absolute;
-    margin-top: 0px;
-    top: 365px;
+    max-width: 1070px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
     //애니메이션 요소
     animation-name: index-description-show;
     animation-duration: 0.6s;
@@ -863,9 +848,7 @@ section {
     margin-top: 56px;
   }
   @include mq(laptop) {
-    position: absolute;
-    margin-top: 0px;
-    top: 481px;
+    max-width: 100%;
   }
 }
 
@@ -907,19 +890,16 @@ section {
 
 .about-button-wrap {
   @include mq(phonel) {
-    position: relative;
     margin-top: 40px;
     width: 104px;
     margin-left: auto;
     margin-right: auto;
   }
   @include mq(laptop) {
-    position: relative;
     width: 132px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 0px;
-    top: 40px;
+    margin-top: 40px;
     //애니메이션 요소
     animation-name: index-description-show;
     animation-duration: 0.6s;
@@ -1146,7 +1126,7 @@ section {
     height: 1px;
     background-color: #222222;
     //애니메이션 요소
-    animation-name: index-border-show;
+    animation-name: portfolio-border-show;
     animation-duration: 0.6s;
     animation-delay: 0.7s;
     animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
