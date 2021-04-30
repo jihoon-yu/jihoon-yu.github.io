@@ -1275,13 +1275,21 @@ section {
 
 //---------- portfolio hover trigger
 
+.portfolio-image-one-hover {
+  @include mq(laptop) {
+    opacity: 1;
+  }
+}
+
 .portfolio-item-one {
   @include mq(laptop) {
     &:hover {
       .portfolio-hover-one {
         opacity: 1;
+        transition-delay: 0s;
         transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
         transition-duration: 0.5s;
+        //transform: translateY(-10px);
       }
       .portfolio-one-badge {
         opacity: 1;

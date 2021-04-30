@@ -812,7 +812,7 @@
   @include mq(laptop) {
     &:hover {
       .post-title {
-        letter-spacing: 0.015em;
+        letter-spacing: 0.008em;
         transition-duration: 0.3s;
         transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
       }
@@ -825,7 +825,7 @@
         background-color: black;
         opacity: 1;
         transition-duration: 0.3s;
-        transition-timing-function: ubic-bezier(0.22, 1, 0.36, 1);
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
       }
     }
   }
