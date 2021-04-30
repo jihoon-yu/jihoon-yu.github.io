@@ -511,8 +511,19 @@ section {
   }
 }
 
+@keyframes index-title-fill {
+  from {
+    fill: rgba($color: #249fff, $alpha: 1);
+  }
+
+  to {
+    fill: rgba($color: #ffffff, $alpha: 1);
+  }
+}
+
 .index-wrap {
   @include mq(phonel) {
+    margin-top: 40px;
   }
   @include mq(laptop) {
     max-width: 1070px;
@@ -535,6 +546,11 @@ section {
 // 모바일은 각 줄 타이틀 wrap 무시 직접 조정해서 수치를 맞춘다.
 
 .index-title-one-wrap {
+  @include mq(phonel) {
+    max-width: 322px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   @include mq(laptop) {
     max-width: 650px;
     margin-left: auto;
@@ -546,15 +562,22 @@ section {
   @include mq(phonel) {
     position: relative;
     width: 87px;
-
+    height: 35px;
     display: inline;
     top: 0px;
     margin-left: 3px;
+    //애니메이션 요소
+    animation-name: index-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
     display: inline;
     width: 162px;
+    height: 72px;
     top: 0px;
     margin-left: 10px;
     //애니메이션 요소
@@ -570,13 +593,21 @@ section {
   @include mq(phonel) {
     position: relative;
     width: 64px;
+    height: 28px;
     display: inline;
     top: -5px;
-    margin-left: 10px;
+    margin-left: 4px;
+    //애니메이션 요소
+    animation-name: index-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.1s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
     width: 117px;
+    height: 56px;
     display: inline;
     top: -11px;
     margin-left: 27px;
@@ -593,14 +624,22 @@ section {
   @include mq(phonel) {
     position: relative;
     width: 152px;
+    height: 32px;
     display: inline;
     top: 0px;
-    margin-left: 10px;
+    margin-left: 4px;
+    //애니메이션 요소
+    animation-name: index-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.2s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
     display: inline;
     width: 302px;
+    height: 67px;
     top: 0px;
     margin-left: 24px;
     //애니메이션 요소
@@ -615,6 +654,11 @@ section {
 // 모바일은 각 줄 타이틀 wrap 무시 직접 조정해서 수치를 맞춘다.
 
 .index-title-two-wrap {
+  @include mq(phonel) {
+    max-width: 312px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   @include mq(laptop) {
     max-width: 1070px;
     margin-left: auto;
@@ -626,15 +670,23 @@ section {
   @include mq(phonel) {
     position: relative;
     width: 64px;
+    height: 28px;
     display: inline;
     top: 0px;
-    margin-left: 53px;
+    margin-left: 39px;
     margin-top: 12px;
+    //애니메이션 요소
+    animation-name: index-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.3s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
     display: inline;
     width: 124px;
+    height: 56px;
     top: -6px;
     margin-left: 0px;
     //애니메이션 요소
@@ -650,13 +702,21 @@ section {
   @include mq(phonel) {
     position: relative;
     width: 122px;
+    height: 31px;
     display: inline;
     top: 0px;
     margin-left: 10px;
+    //애니메이션 요소
+    animation-name: index-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.4s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
     width: 240px;
+    height: 62px;
     display: inline;
     top: -6px;
     margin-left: 24px;
@@ -674,13 +734,21 @@ section {
     position: relative;
     display: inline;
     width: 23px;
+    height: 28px;
     top: 0px;
     margin-left: 10px;
+    //애니메이션 요소
+    animation-name: index-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.5s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
     display: inline;
     width: 44px;
+    height: 58px;
     top: -6px;
     margin-left: 24px;
     //애니메이션 요소
@@ -698,14 +766,22 @@ section {
     position: relative;
     display: inline;
     width: 147px;
+    height: 28px;
     top: 0px;
-    margin-left: 24px;
+    margin-left: 14px;
     margin-top: 15px;
+    //애니메이션 요소
+    animation-name: index-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.6s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
     display: inline;
     width: 287px;
+    height: 56px;
     top: -7px;
     margin-left: 24px;
     //애니메이션 요소
@@ -722,13 +798,21 @@ section {
     position: relative;
     display: inline;
     width: 127px;
+    height: 36px;
     top: 10px;
     margin-left: 10px;
+    //애니메이션 요소
+    animation-name: index-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.7s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
     display: inline;
     width: 257px;
+    height: 74px;
     top: 11px;
     margin-left: 24px;
     //애니메이션 요소
@@ -742,17 +826,23 @@ section {
 
 .title-two-border-one {
   @include mq(phonel) {
-    position: relative;
-    top: -41px;
-    left: 51px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -39px;
     width: 240px;
     height: 1px;
     background-color: white;
+    //애니메이션 요소
+    animation-name: index-border-show;
+    animation-duration: 1s;
+    animation-delay: 0.75s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
-    position: relative;
-    top: 1px;
-    left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 3px;
     width: 920px;
     height: 2px;
     background-color: white;
@@ -767,18 +857,23 @@ section {
 
 .title-two-border-two {
   @include mq(phonel) {
-    position: relative;
-    top: 2px;
-    left: 24px;
+    margin-left: 14px;
+    margin-right: 0px;
+    margin-top: 43px;
     width: 216px;
     height: 1px;
     background-color: white;
+    //애니메이션 요소
+    animation-name: index-border-show;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
-    position: relative;
-    top: -1px;
-    left: 0px;
     margin-left: 966px;
+    margin-right: 0px;
+    margin-top: -2px;
     width: 99px;
     height: 2px;
     background-color: white;
@@ -793,15 +888,101 @@ section {
 
 .title-two-border-three {
   @include mq(phonel) {
-    position: relative;
-    top: 1px;
-    left: 265px;
+    margin-left: 253px;
+    margin-top: -2px;
     width: 48px;
     height: 1px;
     background-color: white;
+    //애니메이션 요소
+    animation-name: index-border-show;
+    animation-duration: 1s;
+    animation-delay: 0.85s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     display: none;
+  }
+}
+
+//타이틀 svg 애니메이션 관리
+#hello {
+  @include mq(laptop) {
+    animation-name: index-title-fill;
+    animation-duration: 0.5s;
+    animation-delay: 0.2s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+}
+
+#iam {
+  @include mq(laptop) {
+    animation-name: index-title-fill;
+    animation-duration: 0.5s;
+    animation-delay: 0.3s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+}
+
+#yujihoon {
+  @include mq(laptop) {
+    animation-name: index-title-fill;
+    animation-duration: 0.4s;
+    animation-delay: 0.4s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+}
+
+#user {
+  @include mq(laptop) {
+    animation-name: index-title-fill;
+    animation-duration: 0.4s;
+    animation-delay: 0.5s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+}
+
+#interface {
+  @include mq(laptop) {
+    animation-name: index-title-fill;
+    animation-duration: 0.4s;
+    animation-delay: 0.6s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+}
+
+#and {
+  @include mq(laptop) {
+    animation-name: index-title-fill;
+    animation-duration: 0.4s;
+    animation-delay: 0.7s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+}
+
+#interaction {
+  @include mq(laptop) {
+    animation-name: index-title-fill;
+    animation-duration: 0.3s;
+    animation-delay: 0.7s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+}
+
+#designer {
+  @include mq(laptop) {
+    animation-name: index-title-fill;
+    animation-duration: 0.3s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
 }
 
@@ -809,6 +990,12 @@ section {
   @include mq(phonel) {
     margin-top: 48px;
     display: block;
+    //애니메이션 요소
+    animation-name: index-description-show;
+    animation-duration: 0.6s;
+    animation-delay: 0.6s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     max-width: 1070px;
@@ -860,6 +1047,12 @@ section {
     line-height: 1.8;
     color: white;
     text-align: center;
+    //애니메이션 요소
+    animation-name: index-description-show;
+    animation-duration: 0.6s;
+    animation-delay: 0.7s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     display: none;
@@ -894,6 +1087,12 @@ section {
     width: 104px;
     margin-left: auto;
     margin-right: auto;
+    //애니메이션 요소
+    animation-name: index-description-show;
+    animation-duration: 0.6s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     width: 132px;
@@ -1118,6 +1317,12 @@ section {
     width: 335px;
     height: 1px;
     background-color: #222222;
+    //애니메이션 요소
+    animation-name: portfolio-border-show;
+    animation-duration: 0.6s;
+    animation-delay: 0.7s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
@@ -1175,6 +1380,14 @@ section {
 
 //포트폴리오 애니메이션 요소 관리
 .portfolio-item-style:nth-child(1) {
+  @include mq(phonel) {
+    animation-name: portfolio-item-show;
+    animation-duration: 0.8s;
+    animation-delay: 0.4s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
+  }
+
   @include mq(laptop) {
     animation-name: portfolio-item-show;
     animation-duration: 0.8s;
