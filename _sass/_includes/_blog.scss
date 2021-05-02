@@ -6,10 +6,6 @@
 
 .blog-group {
   @include mq(laptop) {
-    float: left;
-    clear: both;
-    width: 100%;
-    height: 1980px;
   }
 }
 
@@ -20,12 +16,6 @@
   @include mq(tabletl) {
     margin-top: 100px;
   }
-}
-
-.blog-wrap {
-  //---- 이상하게, div 자체에 스타일이 적용되서 !important로 우선 적용
-  position: relative !important;
-  height: 100% !important;
 }
 
 .pagination {
@@ -44,11 +34,11 @@
 
 @keyframes blog-title-show {
   from {
-    transform: translateY(40px);
+    transform: translateY(50px) scaleY(1.3);
     opacity: 0;
   }
   to {
-    transform: translateY(0px);
+    transform: translateY(0px) scaleY(1);
     opacity: 1;
   }
 }
@@ -57,12 +47,23 @@
   from {
     transform: scale(0);
     opacity: 0;
-    background-color: #249fff;
+    background-color: #00ff6f;
   }
   to {
     transform: scale(1);
     opacity: 1;
     background-color: #ffffff;
+  }
+}
+
+@keyframes blog-description-show {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 
@@ -90,55 +91,49 @@
   }
 }
 
-.blog-wrap {
+@keyframes blog-title-fill {
+  from {
+    fill: rgba($color: #00ff6f, $alpha: 1);
+  }
+  to {
+    fill: rgba($color: #ffffff, $alpha: 1);
+  }
+}
+
+.blog-wraper {
   @include mq(phonel) {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 335px;
-    height: 145px;
-    justify-content: center;
-    align-items: center;
+    max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
   }
   @include mq(laptop) {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 1590px;
-    height: 176px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 89px;
-    //background-color: bisque;
+    max-width: 1036px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
   }
 }
 
 .blog-title-wrap {
   @include mq(phonel) {
-    margin-top: 40px;
+    max-width: 100%;
   }
   @include mq(laptop) {
-    margin-top: 0px;
+    max-width: 100%;
   }
 }
 
 .blog-title-one-wrap {
   @include mq(phonel) {
-    position: relative;
-    width: 297px;
-    height: 40px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    //background-color: #249fff;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
   @include mq(laptop) {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 606px;
-    height: 79px;
-    //background-color: blueviolet;
+    max-width: 601px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -147,12 +142,20 @@
     position: relative;
     display: inline;
     width: 109px;
+    height: 30px;
     top: -9px;
+    //애니메이션 요소
+    animation-name: blog-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
     display: inline;
     width: 221px;
+    height: 61px;
     top: 0;
     //애니메이션 요소
     animation-name: blog-title-show;
@@ -168,13 +171,21 @@
     position: relative;
     display: inline;
     width: 39px;
+    height: 26px;
     top: 0px;
     margin-left: 12px;
+    //애니메이션 요소
+    animation-name: blog-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.1s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
     display: inline;
     width: 79px;
+    height: 54px;
     top: 18px;
     margin-left: 28px;
     //애니메이션 요소
@@ -191,13 +202,21 @@
     position: relative;
     display: inline;
     width: 117px;
+    height: 40px;
     top: 0px;
     margin-left: 11px;
+    //애니메이션 요소
+    animation-name: blog-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.2s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
     display: inline;
     width: 238px;
+    height: 80px;
     top: 17px;
     margin-left: 27px;
     //애니메이션 요소
@@ -211,21 +230,16 @@
 
 .blog-title-two-wrap {
   @include mq(phonel) {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 293px;
-    height: 90px;
-    //background-color: #249fff;
+    max-width: 295px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
   }
   @include mq(laptop) {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 1044px;
-    height: 79px;
-    margin-top: 18px;
-    //background-color: chocolate;
+    max-width: 1036px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
   }
 }
 
@@ -234,14 +248,22 @@
     position: relative;
     display: inline;
     width: 158px;
+    height: 37px;
     top: 0px;
     margin-left: 50px;
     margin-top: 8px;
+    //애니메이션 요소
+    animation-name: blog-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.3s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
     display: inline;
     width: 346px;
+    height: 75px;
     top: 18px;
     margin-left: 0px;
     margin-top: 0px;
@@ -258,14 +280,22 @@
   @include mq(phonel) {
     position: relative;
     display: inline;
-    width: 21px;
+    width: 22px;
+    height: 28px;
     top: -8px;
     margin-left: 7px;
+    //애니메이션 요소
+    animation-name: blog-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.4s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
     display: inline;
     width: 44px;
+    height: 58px;
     top: 0;
     margin-left: 26px;
     //애니메이션 요소
@@ -282,14 +312,22 @@
     position: relative;
     display: inline;
     width: 119px;
+    height: 38px;
     top: 0px;
     margin-left: 0px;
     margin-top: 8px;
+    //애니메이션 요소
+    animation-name: blog-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.5s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
     display: inline;
     width: 242px;
+    height: 76px;
     top: 18px;
     margin-left: 21px;
     margin-top: 0px;
@@ -306,14 +344,22 @@
   @include mq(phonel) {
     position: relative;
     display: inline;
-    width: 21px;
+    width: 22px;
+    height: 28px;
     top: -8px;
     margin-left: 10px;
+    //애니메이션 요소
+    animation-name: blog-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.6s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
     display: inline;
     width: 44px;
+    height: 58px;
     top: 0;
     margin-left: 26px;
     //애니메이션 요소
@@ -330,13 +376,21 @@
     position: relative;
     display: inline;
     width: 124px;
+    height: 39px;
     top: 0px;
     margin-left: 10px;
+    //애니메이션 요소
+    animation-name: blog-title-show;
+    animation-duration: 1.2s;
+    animation-delay: 0.7s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
     display: inline;
     width: 252px;
+    height: 79px;
     top: 18px;
     margin-left: 20px;
     //애니메이션 요소
@@ -350,17 +404,21 @@
 
 .blog-title-border-one {
   @include mq(phonel) {
-    position: relative;
-    top: -52px;
-    left: 49px;
+    margin-top: -53px;
+    margin-left: 49px;
     width: 32px;
     height: 1px;
     background-color: white;
+    //애니메이션 요소
+    animation-name: blog-border-show;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
-    position: relative;
-    top: 8px;
-    left: 0px;
+    margin-top: 5px;
+    margin-left: 0px;
     width: 67px;
     height: 2px;
     background-color: white;
@@ -375,17 +433,21 @@
 
 .blog-title-border-two {
   @include mq(phonel) {
-    position: relative;
-    top: -53px;
-    margin-left: 89px;
+    margin-top: -1px;
+    margin-left: 90px;
     width: 152px;
     height: 1px;
     background-color: white;
+    //애니메이션 요소
+    animation-name: blog-border-show;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
-    position: relative;
-    top: 6px;
-    margin-left: 87px;
+    margin-top: -1px;
+    margin-left: 84px;
     width: 530px;
     height: 2px;
     background-color: white;
@@ -400,17 +462,21 @@
 
 .blog-title-border-three {
   @include mq(phonel) {
-    position: relative;
-    top: -7px;
+    margin-top: 45px;
     margin-left: 0px;
     width: 85px;
     height: 1px;
     background-color: white;
+    //애니메이션 요소
+    animation-name: blog-border-show;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
-    position: relative;
-    top: 4px;
-    margin-left: 663px;
+    margin-top: -1px;
+    margin-left: 665px;
     width: 252px;
     height: 2px;
     background-color: white;
@@ -425,17 +491,21 @@
 
 .blog-title-border-four {
   @include mq(phonel) {
-    position: relative;
-    top: -8px;
-    margin-left: 108px;
+    margin-top: -1px;
+    margin-left: 109px;
     width: 124px;
     height: 1px;
     background-color: white;
+    //애니메이션 요소
+    animation-name: blog-border-show;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
-    position: relative;
-    top: 1px;
-    margin-left: 966px;
+    margin-top: -2px;
+    margin-left: 963px;
     width: 74px;
     height: 2px;
     background-color: white;
@@ -450,15 +520,139 @@
 
 .blog-title-border-five {
   @include mq(phonel) {
-    position: relative;
-    top: -9px;
-    margin-left: 255px;
+    margin-top: -1px;
+    margin-left: 257px;
     width: 38px;
     height: 1px;
     background-color: white;
+    //애니메이션 요소
+    animation-name: blog-border-show;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
     display: none;
+  }
+}
+
+.blog-description {
+  @include mq(phonel) {
+    width: 335px;
+    font-family: $title-font;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: center;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 56px;
+    //애니메이션 요소
+    animation-name: blog-description-show;
+    animation-duration: 0.6s;
+    animation-delay: 0.7s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+  @include mq(laptop) {
+    width: 680px;
+    font-family: $title-font;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.8;
+    text-align: center;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    //애니메이션 요소
+    animation-name: blog-description-show;
+    animation-duration: 0.6s;
+    animation-delay: 0.7s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+}
+
+#records {
+  @include mq(laptop) {
+    animation-name: blog-title-fill;
+    animation-duration: 0.5s;
+    animation-delay: 0.2s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+}
+
+#my {
+  @include mq(laptop) {
+    animation-name: blog-title-fill;
+    animation-duration: 0.5s;
+    animation-delay: 0.3s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+}
+
+#personal {
+  @include mq(laptop) {
+    animation-name: blog-title-fill;
+    animation-duration: 0.5s;
+    animation-delay: 0.3s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+}
+
+#experience {
+  @include mq(laptop) {
+    animation-name: blog-title-fill;
+    animation-duration: 0.5s;
+    animation-delay: 0.4s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+}
+
+#post-and-one {
+  @include mq(laptop) {
+    animation-name: blog-title-fill;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+}
+
+#writings {
+  @include mq(laptop) {
+    animation-name: blog-title-fill;
+    animation-duration: 0.5s;
+    animation-delay: 0.6s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+}
+
+#post-and-two {
+  @include mq(laptop) {
+    animation-name: blog-title-fill;
+    animation-duration: 0.5s;
+    animation-delay: 0.6s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
+  }
+}
+
+#thoughts {
+  @include mq(laptop) {
+    animation-name: blog-title-fill;
+    animation-duration: 0.5s;
+    animation-delay: 0.7s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
 }
 
@@ -466,16 +660,21 @@
 
 .post-border {
   @include mq(phonel) {
-    position: relative;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 335px;
     height: 1px;
     background-color: #222222;
+    //애니메이션 요소
+    animation-name: post-border-show;
+    animation-duration: 0.6s;
+    animation-delay: 0.7s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
   @include mq(laptop) {
-    position: relative;
-    margin: 0 auto;
-    top: 296px;
+    margin-left: auto;
+    margin-right: auto;
     width: 1590px;
     height: 1px;
     background-color: #222222;
@@ -490,27 +689,23 @@
 
 .post {
   @include mq(laptop) {
-    //padding: 0 $grid-spacing/2;
-    margin-top: 0px;
-    top: 0px;
+    max-width: 100%;
+    margin-top: 130px;
   }
 }
 
 .post-wrap {
   @include mq(phonel) {
-    position: relative;
     margin-top: 50px;
     width: 335px;
     margin-left: auto;
     margin-right: auto;
   }
   @include mq(laptop) {
-    position: relative;
-    margin: 0;
     width: 1590px;
-    left: 50%;
-    top: 360px;
-    transform: translate(-50%, 0%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
   }
 }
 
@@ -857,6 +1052,13 @@
 
 //애니메이션 관리
 .post-item-one {
+  @include mq(phonel) {
+    animation-name: post-item-show;
+    animation-duration: 0.8s;
+    animation-delay: 0.4s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
+  }
   @include mq(laptop) {
     animation-name: post-item-show;
     animation-duration: 0.8s;
@@ -888,6 +1090,52 @@
 
 //-------------------------------------------------- Article New Design
 
+@keyframes article-image-show {
+  from {
+    transform: translateY(-50px);
+    transform: scale(2);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes article-title-show {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes article-line-show {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes article-contents-show {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 .article-wrap {
   @include mq(phonel) {
     max-width: 335px;
@@ -904,6 +1152,12 @@
     width: 640px;
     height: 340px;
     border-radius: 12px;
+    //애니메이션 요소
+    animation-name: article-image-show;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
 }
 
@@ -930,6 +1184,12 @@
     font-weight: 300;
     color: white;
     line-height: 1.2;
+    //애니메이션 요소
+    animation-name: article-title-show;
+    animation-duration: 0.8s;
+    animation-delay: 0.2s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
 }
 
@@ -939,6 +1199,12 @@
   }
   @include mq(laptop) {
     margin-top: 21px;
+    //애니메이션 요소
+    animation-name: article-title-show;
+    animation-duration: 0.8s;
+    animation-delay: 0.4s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
 }
 
@@ -1004,6 +1270,12 @@
     background-color: #222222;
     margin-top: 48px;
     margin-bottom: 48px;
+    //애니메이션 요소
+    animation-name: article-line-show;
+    animation-duration: 0.8s;
+    animation-delay: 0.4s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
 }
 
@@ -1015,5 +1287,11 @@
   @include mq(laptop) {
     max-width: 640px;
     margin: 0 auto;
+    //애니메이션 요소
+    animation-name: article-contents-show;
+    animation-duration: 0.8s;
+    animation-delay: 0.4s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+    animation-fill-mode: both;
   }
 }

@@ -143,6 +143,9 @@
 		const modalContents = document.querySelector(".popup-contents")
 		const overlay = modal.querySelector(".popup-overlay");
 		const closeButton = modal.querySelector("button");
+		//모바일 모달 
+		const openButtonMobile = document.getElementById("mobile-modal");
+		
 
 		const openModal = () => {
 			modal.classList.remove("popup-hidden");
@@ -160,7 +163,10 @@
 		}
 
 		openButton.addEventListener("click", openModal);
+		openButtonMobile.addEventListener("click", openModal);
 		closeButton.addEventListener("click", closeModal);
+		//모바일 모달 열기
+		
 	
 	</script>
 

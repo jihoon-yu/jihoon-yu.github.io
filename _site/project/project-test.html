@@ -95,7 +95,7 @@
             <a href="/about" class="menu__list__item__link">About</a>
           </li>
           <li class="menu__list__item">
-            <a href="/contact" class="menu__list__item__link">Contact</a>
+            <div id="mobile-modal" class="menu__list__item__link">Contact</div>
           </li>
         </ul>
       </div>
@@ -276,6 +276,9 @@
 		const modalContents = document.querySelector(".popup-contents")
 		const overlay = modal.querySelector(".popup-overlay");
 		const closeButton = modal.querySelector("button");
+		//모바일 모달 
+		const openButtonMobile = document.getElementById("mobile-modal");
+		
 
 		const openModal = () => {
 			modal.classList.remove("popup-hidden");
@@ -293,7 +296,10 @@
 		}
 
 		openButton.addEventListener("click", openModal);
+		openButtonMobile.addEventListener("click", openModal);
 		closeButton.addEventListener("click", closeModal);
+		//모바일 모달 열기
+		
 	
 	</script>
 
