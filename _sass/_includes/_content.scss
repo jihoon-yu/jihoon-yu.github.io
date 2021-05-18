@@ -31,7 +31,7 @@
   }
   @include mq(laptop) {
     position: relative;
-    width: 1590px;
+    //width: 1590px;
     justify-content: center;
     align-items: center;
     margin-top: 0;
@@ -519,4 +519,210 @@
   @include mq(laptop) {
     opacity: 0;
   }
+}
+
+//---------- 서을스토어 프로젝트 스타일 관리
+
+.seoulstore-project-detail-title-center {
+  @include mq(laptop) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    font-family: $title-font;
+    font-weight: 900;
+    font-size: 17px;
+    color: rgba($color: #ffffff, $alpha: 1);
+    text-align: center;
+  }
+}
+
+.seoulstore-project-detail-text-center {
+  @include mq(laptop) {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $title-font;
+    font-weight: 400;
+    font-size: 17px;
+    color: rgba($color: #ffffff, $alpha: 1);
+    text-align: center;
+    line-height: 1.9;
+  }
+}
+
+.seoulstore-project-detail-title {
+  @include mq(laptop) {
+    font-size: 16px;
+    font-family: $title-font;
+    font-weight: 900;
+    color: rgba($color: #ffffff, $alpha: 1);
+    margin-bottom: 20px;
+  }
+}
+
+.seoulstore-project-detail-text {
+  @include mq(laptop) {
+    width: 800px;
+    font-size: 15px;
+    font-family: $title-font;
+    font-weight: 400;
+    color: rgba($color: #ffffff, $alpha: 1);
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+}
+
+.project-detail-line {
+  @include mq(laptop) {
+    width: 1590px;
+    height: 1px;
+    background-color: rgba($color: #333333, $alpha: 1);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+//서울스토어 색션 01
+.seoulstore-section-one {
+  @include mq(laptop) {
+    margin-top: 0px;
+    margin-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1590px;
+  }
+}
+
+.seoulstore-text-one {
+  @include mq(laptop) {
+    margin-top: -40px;
+    padding-top: 40px;
+  }
+}
+
+.seoulstore-image-two {
+  @include mq(laptop) {
+    width: 219px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+  }
+}
+
+//서울스토어 색션 02
+.seoulstore-section-two {
+  @include mq(laptop) {
+    margin-top: 140px;
+    margin-bottom: 140px;
+    width: 1590px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+//서울스토어 색션 03
+.seoulstore-section-three {
+  @include mq(laptop) {
+    margin-bottom: 140px;
+    width: 1590px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.seoulstore-image-wrap-one {
+  @include mq(laptop) {
+    width: 1590px;
+    display: flex;
+  }
+}
+
+.seoulstore-image-four {
+  @include mq(laptop) {
+    width: 795px;
+  }
+}
+
+.seoulstore-image-five {
+  @include mq(laptop) {
+    width: 795px;
+  }
+}
+
+//서울스토어 색션 04
+.seoulstore-section-four {
+  @include mq(laptop) {
+    width: 100%;
+    background-color: rgba($color: #151515, $alpha: 1);
+    padding-top: 70px;
+    margin-bottom: 150px;
+  }
+}
+
+.seoulstore-text-four {
+  @include mq(laptop) {
+    width: 1590px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.seoulstore-image-seven {
+  @include mq(laptop) {
+    width: 1824px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -460px;
+  }
+}
+
+.seoulstore-image-seven-black-gradiant {
+  @include mq(laptop) {
+    position: relative;
+    top: 715px;
+    width: 100%;
+    height: 430px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
+  }
+}
+
+.seoulstore-image-wrap-two {
+  @include mq(laptop) {
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 1);
+  }
+}
+
+.seoulstore-image-eight {
+  @include mq(laptop) {
+    width: 1590px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+//서울스토어 색션 05
+.seoulstore-section-five {
+  @include mq(laptop) {
+    width: 1590px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+  }
+}
+
+//서울스토어 색션 06
+.seoulstore-section-six {
+  @include mq(laptop) {
+    width: 1590px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px;
+  }
+}
+
+.seoulstore-image-eleven {
+  margin-top: 180px;
+  margin-bottom: 120px;
 }
