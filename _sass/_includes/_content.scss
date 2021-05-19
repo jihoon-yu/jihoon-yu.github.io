@@ -524,6 +524,14 @@
 //---------- 서을스토어 프로젝트 스타일 관리
 
 .seoulstore-project-detail-title-center {
+  @include mq(phonel) {
+    margin-bottom: 24px;
+    font-family: $title-font;
+    font-weight: 900;
+    font-size: 14px;
+    color: rgba($color: #ffffff, $alpha: 1);
+    text-align: center;
+  }
   @include mq(laptop) {
     margin-left: auto;
     margin-right: auto;
@@ -537,6 +545,16 @@
 }
 
 .seoulstore-project-detail-text-center {
+  @include mq(phonel) {
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $title-font;
+    font-size: 14px;
+    color: rgba($color: #ffffff, $alpha: 1);
+    text-align: center;
+    line-height: 1.7;
+  }
   @include mq(laptop) {
     width: 850px;
     margin-left: auto;
@@ -551,6 +569,13 @@
 }
 
 .seoulstore-project-detail-title {
+  @include mq(phonel) {
+    font-size: 14px;
+    font-family: $title-font;
+    font-weight: 900;
+    color: rgba($color: #ffffff, $alpha: 1);
+    margin-bottom: 20px;
+  }
   @include mq(laptop) {
     font-size: 16px;
     font-family: $title-font;
@@ -561,6 +586,15 @@
 }
 
 .seoulstore-project-detail-text {
+  @include mq(phonel) {
+    width: 330px;
+    font-size: 13px;
+    font-family: $title-font;
+    font-weight: 400;
+    color: rgba($color: #ffffff, $alpha: 1);
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
   @include mq(laptop) {
     width: 800px;
     font-size: 15px;
@@ -573,8 +607,19 @@
 }
 
 .project-detail-line {
+  @include mq(phonel) {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 90%;
+    height: 1px;
+    background-color: rgba($color: #333333, $alpha: 1);
+    margin-left: auto;
+    margin-right: auto;
+  }
   @include mq(laptop) {
+    padding: 0px;
     width: 1590px;
+    max-width: 100%;
     height: 1px;
     background-color: rgba($color: #333333, $alpha: 1);
     margin-left: auto;
@@ -584,7 +629,13 @@
 
 //서울스토어 색션 01
 .seoulstore-section-one {
+  @include mq(phonel) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 120px;
+  }
   @include mq(laptop) {
+    padding: 0px;
     margin-top: 0px;
     margin-bottom: 140px;
     margin-left: auto;
@@ -601,6 +652,12 @@
 }
 
 .seoulstore-image-two {
+  @include mq(phonel) {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+  }
   @include mq(laptop) {
     width: 219px;
     margin-left: auto;
@@ -611,7 +668,14 @@
 
 //서울스토어 색션 02
 .seoulstore-section-two {
+  @include mq(phonel) {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   @include mq(laptop) {
+    padding: 0px;
     margin-top: 140px;
     margin-bottom: 140px;
     width: 1590px;
@@ -622,7 +686,13 @@
 
 //서울스토어 색션 03
 .seoulstore-section-three {
+  @include mq(phonel) {
+    margin-bottom: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   @include mq(laptop) {
+    padding: 0px;
     margin-bottom: 140px;
     width: 1590px;
     margin-left: auto;
@@ -651,6 +721,12 @@
 
 //서울스토어 색션 04
 .seoulstore-section-four {
+  @include mq(phonel) {
+    width: 100%;
+    background-color: rgba($color: #151515, $alpha: 1);
+    padding-top: 50px;
+    margin-bottom: 120px;
+  }
   @include mq(laptop) {
     width: 100%;
     background-color: rgba($color: #151515, $alpha: 1);
@@ -660,6 +736,12 @@
 }
 
 .seoulstore-text-four {
+  @include mq(phonel) {
+    width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
   @include mq(laptop) {
     width: 1590px;
     margin-left: auto;
@@ -669,6 +751,13 @@
 }
 
 .seoulstore-image-seven {
+  @include mq(phonel) {
+    width: 120%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    z-index: 9999;
+  }
   @include mq(laptop) {
     width: 1824px;
     margin-left: auto;
@@ -679,6 +768,8 @@
 }
 
 .seoulstore-image-seven-black-gradiant {
+  @include mq(phonel) {
+  }
   @include mq(laptop) {
     position: relative;
     top: 715px;
@@ -706,7 +797,13 @@
 
 //서울스토어 색션 05
 .seoulstore-section-five {
+  @include mq(phonel) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 120px;
+  }
   @include mq(laptop) {
+    padding: 0px;
     width: 1590px;
     margin-left: auto;
     margin-right: auto;
@@ -716,7 +813,13 @@
 
 //서울스토어 색션 06
 .seoulstore-section-six {
+  @include mq(phonel) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 120px;
+  }
   @include mq(laptop) {
+    padding: 0px;
     width: 1590px;
     margin-left: auto;
     margin-right: auto;
@@ -725,6 +828,12 @@
 }
 
 .seoulstore-image-eleven {
-  margin-top: 180px;
-  margin-bottom: 120px;
+  @include mq(phonel) {
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+  @include mq(laptop) {
+    margin-top: 180px;
+    margin-bottom: 120px;
+  }
 }
