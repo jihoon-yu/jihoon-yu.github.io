@@ -827,6 +827,15 @@
   }
 }
 
+.seoulstore-video-one {
+  @include mq(phonel) {
+    width: 100%;
+  }
+  @include mq(laptop) {
+    width: 1590px;
+  }
+}
+
 .seoulstore-image-eleven {
   @include mq(phonel) {
     margin-top: 80px;

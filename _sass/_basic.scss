@@ -572,6 +572,11 @@ section {
     animation-delay: 0s;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     animation-fill-mode: both;
+    -webkit-animation-name: index-title-show;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
@@ -681,6 +686,11 @@ section {
     animation-delay: 0.3s;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     animation-fill-mode: both;
+    -webkit-animation-name: index-title-show;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-delay: 0.3s;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-animation-fill-mode: both;
   }
   @include mq(laptop) {
     position: relative;
