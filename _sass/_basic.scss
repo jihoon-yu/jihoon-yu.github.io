@@ -561,9 +561,9 @@ section {
 .title-one-one {
   @include mq(phonel) {
     position: relative;
+    display: inline;
     width: 87px;
     height: 35px;
-    display: inline;
     top: 0px;
     margin-left: 3px;
     //애니메이션 요소
@@ -674,9 +674,9 @@ section {
 .title-two-one {
   @include mq(phonel) {
     position: relative;
+    display: inline;
     width: 64px;
     height: 28px;
-    display: inline;
     top: 0px;
     margin-left: 39px;
     margin-top: 12px;
