@@ -315,6 +315,17 @@
   }
 }
 
+.project-cover-video {
+  @include mq(phonel) {
+    display: none;
+  }
+  @include mq(laptop) {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .project-cover-image-mobile {
   @include mq(phonel) {
     display: block;
@@ -844,5 +855,231 @@
   @include mq(laptop) {
     margin-top: 180px;
     margin-bottom: 120px;
+  }
+}
+
+//----------seoulstore BX 2.0 스타일 관리
+
+.seoulBX2-project-detail-title {
+  @include mq(phonel) {
+    font-size: 14px;
+    font-family: $title-font;
+    font-weight: 900;
+    color: rgba($color: #ffffff, $alpha: 1);
+    margin-bottom: 20px;
+  }
+  @include mq(laptop) {
+    font-size: 16px;
+    font-family: $title-font;
+    font-weight: 900;
+    color: rgba($color: #ffffff, $alpha: 1);
+    margin-bottom: 20px;
+  }
+}
+
+.seoulBX2-project-detail-text {
+  @include mq(phonel) {
+    width: 330px;
+    font-size: 13px;
+    font-family: $title-font;
+    font-weight: 400;
+    color: rgba($color: #ffffff, $alpha: 1);
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+  @include mq(laptop) {
+    width: 800px;
+    font-size: 15px;
+    font-family: $title-font;
+    font-weight: 400;
+    color: rgba($color: #ffffff, $alpha: 1);
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+}
+
+.seoulBX2-section-one {
+  @include mq(phonel) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 120px;
+  }
+  @include mq(laptop) {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1590px;
+  }
+}
+
+.seoulBX2-video-one {
+  @include mq(phonel) {
+    width: 100%;
+  }
+}
+
+.seoulBX2-image-wrap-one {
+  @include mq(laptop) {
+    width: 1590px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.seoulBX2-image-four {
+  @include mq(laptop) {
+    width: 785px;
+  }
+}
+
+.seoulBX2-image-five {
+  @include mq(laptop) {
+    width: 785px;
+  }
+}
+
+.seoulBX2-section-two {
+  @include mq(phonel) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 120px;
+  }
+  @include mq(laptop) {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1590px;
+  }
+}
+
+.seoulBX2-image-seven {
+  @include mq(laptop) {
+    margin-top: 1px;
+  }
+}
+
+.seoulBX2-image-eight {
+  @include mq(laptop) {
+    margin-top: 1px;
+  }
+}
+
+.seoulBX2-section-three {
+  @include mq(phonel) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 120px;
+  }
+  @include mq(laptop) {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1590px;
+  }
+}
+
+.seoulBX2-image-nine {
+  @include mq(laptop) {
+    margin-top: 40px;
+  }
+}
+
+.seoulBX2-image-ten {
+  @include mq(phonel) {
+    margin-top: 32px;
+  }
+  @include mq(laptop) {
+    margin-top: 64px;
+  }
+}
+
+.seoulBX2-section-four {
+  @include mq(phonel) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 120px;
+  }
+  @include mq(laptop) {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1590px;
+  }
+}
+
+.seoulBX2-section-five {
+  @include mq(phonel) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 120px;
+    margin-bottom: 40px;
+  }
+  @include mq(laptop) {
+    padding: 0px;
+    margin-top: 140px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1590px;
+  }
+}
+
+.seoulBX2-image-twelve {
+  @include mq(laptop) {
+    width: 100%;
+    margin-bottom: 140px;
+  }
+}
+
+.seoulBX2-section-six {
+  @include mq(phonel) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  @include mq(laptop) {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1590px;
+  }
+}
+
+.seoulBX2-section-seven {
+  @include mq(phonel) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 120px;
+  }
+  @include mq(laptop) {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1590px;
+  }
+}
+
+.seoulBX2-image-fifteen {
+  @include mq(laptop) {
+    margin-top: 40px;
+  }
+}
+
+.seoulBX2-image-sixteen {
+  @include mq(laptop) {
+    margin-top: 250px;
   }
 }
