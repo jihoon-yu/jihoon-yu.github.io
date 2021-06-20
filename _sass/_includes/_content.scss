@@ -1320,3 +1320,132 @@
     width: 100%;
   }
 }
+
+//----------bucket 스타일 관리
+
+.bucket-project-detail-title {
+  @include mq(phonel) {
+    font-size: 14px;
+    font-family: $title-font;
+    font-weight: 900;
+    color: rgba($color: #ffffff, $alpha: 1);
+    margin-bottom: 20px;
+  }
+  @include mq(laptop) {
+    font-size: 16px;
+    font-family: $title-font;
+    font-weight: 900;
+    color: rgba($color: #ffffff, $alpha: 1);
+    margin-bottom: 20px;
+  }
+}
+
+.bucket-project-detail-text {
+  @include mq(phonel) {
+    width: 330px;
+    font-size: 13px;
+    font-family: $title-font;
+    font-weight: 400;
+    color: rgba($color: #ffffff, $alpha: 1);
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+  @include mq(laptop) {
+    width: 800px;
+    font-size: 15px;
+    font-family: $title-font;
+    font-weight: 400;
+    color: rgba($color: #ffffff, $alpha: 1);
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+}
+
+.bucket-section-one {
+  @include mq(phonel) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 120px;
+  }
+  @include mq(laptop) {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1590px;
+  }
+}
+
+.bucket-section-two {
+  @include mq(phonel) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 120px;
+  }
+  @include mq(laptop) {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1590px;
+  }
+}
+
+.bucket-image-wrap-one {
+  @include mq(laptop) {
+    width: 1590px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+  }
+}
+
+.bucket-section-three {
+  @include mq(phonel) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 120px;
+  }
+  @include mq(laptop) {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1590px;
+  }
+}
+
+.bucket-section-four {
+  @include mq(phonel) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 120px;
+  }
+  @include mq(laptop) {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1590px;
+  }
+}
+
+.bucket-section-five {
+  @include mq(phonel) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 120px;
+  }
+  @include mq(laptop) {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1590px;
+  }
+}

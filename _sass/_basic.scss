@@ -1457,8 +1457,96 @@ section {
   }
 }
 
+//hover-four 관리
 .portfolio-hover-four {
-  opacity: 0;
+  @include mq(phonel) {
+    display: none;
+  }
+  @include mq(laptop) {
+    display: block;
+    position: relative;
+    top: -570px;
+    width: 360px;
+    height: 570px;
+    background-color: rgba($color: #007aff, $alpha: 1);
+    border: 1px solid rgba($color: #54b7ff, $alpha: 1);
+    border-radius: 24px;
+    // Hover
+    opacity: 0;
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    transition-duration: 0.5s;
+  }
+}
+
+.portfolio-four-badge {
+  @include mq(laptop) {
+    position: absolute;
+    left: 28px;
+    top: 28px;
+    background-color: #ff0000;
+    border: 1px solid rgba($color: #720000, $alpha: 1);
+    border-radius: 27px;
+    width: 72px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // Hover
+    opacity: 0;
+    transform: translateY(40px) scale(1);
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    transition-duration: 0.3s;
+  }
+}
+
+.four-badge-label {
+  @include mq(laptop) {
+    font-size: 16px;
+    font-family: $title-font;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+
+.portfolio-four-info {
+  @include mq(laptop) {
+    position: absolute;
+    left: 28px;
+    bottom: 40px;
+  }
+}
+
+.four-info-title {
+  @include mq(laptop) {
+    font-size: 22px;
+    font-family: $title-font;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    //Hover
+    opacity: 0;
+    transform: translateY(30px);
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: 0.15s;
+    transition-duration: 0.3s;
+  }
+}
+
+.four-info-description {
+  @include mq(laptop) {
+    font-size: 20px;
+    font-family: $title-font;
+    font-weight: 700;
+    line-height: 1.6;
+    color: rgba($color: #001d81, $alpha: 1);
+    //Hover
+    opacity: 0;
+    transform: translateY(30px);
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+  }
 }
 
 //---------- portfolio hover trigger
@@ -1580,6 +1668,42 @@ section {
   }
 }
 
+//hover-four
+
+.portfolio-item-four {
+  @include mq(laptop) {
+    &:hover {
+      .portfolio-hover-four {
+        opacity: 1;
+        transition-delay: 0s;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-duration: 0.5s;
+        //transform: translateY(-10px);
+      }
+      .portfolio-four-badge {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-delay: 0.2s;
+        transition-duration: 0.5s;
+      }
+      .four-info-title {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-delay: 0.4s;
+        transition-duration: 0.5s;
+      }
+      .four-info-description {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        transition-delay: 0.5s;
+        transition-duration: 0.5s;
+      }
+    }
+  }
+}
 //------------------------------------
 
 .portfolio-line {
