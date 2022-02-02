@@ -8,13 +8,13 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: "🔥 Projects"
+    - title: "Projects"
       url: "/"
-    - title: "💬 Blog"
+    - title: "Blog"
       url: "/blog/"
-    - title: "👀 About"
+    - title: "About"
       url: "/about"
-    - title: "📮 Contact"
+    - title: "Contact"
       url: "/contact"
 
 footer_settings:

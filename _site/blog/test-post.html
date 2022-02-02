@@ -18,19 +18,19 @@
 
 	<!-- Page Info -->
 	<link rel="shortcut icon" href="/images/favicon.png">
-	<title>Demo Project – Ji Hoon. Works</title>
+	<title>데모 아티클을 테스트해보고 있습니다 테스트입니다. – Ji Hoon. Works</title>
 	<meta name="description" content="This page is a demo that shows everything you can do inside portfolio and blog posts.">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Demo Project – Ji Hoon. Works">
+	<meta name="twitter:title" content="데모 아티클을 테스트해보고 있습니다 테스트입니다. – Ji Hoon. Works">
 	<meta name="twitter:description" content="This page is a demo that shows everything you can do inside portfolio and blog posts.">
-	<meta name="twitter:image:src" content="http://localhost:4000/images/Test/02.png">
+	<meta name="twitter:image:src" content="http://localhost:4000/images/02_Post/post-demo/cover.png">
 
 	<!-- Facebook OpenGraph -->
-	<meta property="og:title" content="Demo Project – Ji Hoon. Works" />
+	<meta property="og:title" content="데모 아티클을 테스트해보고 있습니다 테스트입니다. – Ji Hoon. Works" />
 	<meta property="og:description" content="This page is a demo that shows everything you can do inside portfolio and blog posts." />
-	<meta property="og:image" content="http://localhost:4000/images/Test/02.png" />
+	<meta property="og:image" content="http://localhost:4000/images/02_Post/post-demo/cover.png" />
 
 	
 	<!-- Font Embed Code -->
@@ -65,7 +65,7 @@
 </head>
 
 
-<body class="loading" data-site-url="http://localhost:4000" data-page-url="/project/project-02">
+<body class="loading" data-site-url="http://localhost:4000" data-page-url="/blog/test-post">
 
 
 	<header class="header">
@@ -117,22 +117,29 @@
 	
 	<div class="page">
 
-		<div class="page__content" data-page-title="Demo Project – Ji Hoon. Works">
+		<div class="page__content" data-page-title="데모 아티클을 테스트해보고 있습니다 테스트입니다. – Ji Hoon. Works">
 
-			<section class="intro">
-
-	<div class="wrap">
-
-		<h1>Demo Project</h1>
-		<p>This is a demo</p>
-
-	</div>
-
+			<!--blog scss에서 관리-->
+<!--디자인 반영을 위해서 html을 새로 구성함-->
+<section class="intro">
+  <div class="article-wrap">
+    <div class="article-hero">
+      <img class="article-hero-image" src="/images/02_Post/post-demo/cover.png" />
+    </div>
+    <div class="article-info">
+      <div class="article-info-title">데모 아티클을 테스트해보고 있습니다 테스트입니다.</div>
+      <div class="article-info-description">
+        <span class="article-date">17 April 2021</span>
+        <span class="article-info-description-line"></span>
+        <span class="article-writer">Yu Ji Hoon</span>
+      </div>
+    </div>
+    <div class="article-line"></div>
+  </div>
 </section>
 
 <section class="single">
-
-	<p><img src="/images/Test/Project_test.jpg" alt="" /></p>
+  <div class="article-content-wrap"><!--![](/images/demo/demo-landscape.jpg) -->
 
 <h2 id="demo-content">Demo content</h2>
 
@@ -205,7 +212,7 @@
 
 <p>Here’s a really neat custom feature we added – galleries:</p>
 
-<div class="gallery" data-columns="3">
+<div class="gallery" data-columns="2">
 	<img src="/images/demo/demo-portrait.jpg" />
 	<img src="/images/demo/demo-landscape.jpg" />
 	<img src="/images/demo/demo-square.jpg" />
@@ -254,9 +261,9 @@
 <p>Why not put them to use on your new portfolio?</p>
 
 <p><a href="https://jekyllthemes.io/theme/duet-portfolio-jekyll-theme" class="button button--large">Get This Theme</a></p>
-
-
+</div>
 </section>
+
 
 		</div>
 
