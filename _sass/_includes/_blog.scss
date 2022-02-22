@@ -1150,7 +1150,7 @@
 .article-hero-image {
   @include mq(laptop) {
     width: 640px;
-    height: 340px;
+    height: 350px;
     border-radius: 12px;
     //애니메이션 요소
     animation-name: article-image-show;
