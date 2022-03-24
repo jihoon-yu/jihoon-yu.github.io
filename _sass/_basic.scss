@@ -167,6 +167,8 @@ ol {
   font-weight: $p-weight;
   line-height: $p-lineheight;
   letter-spacing: $p-spacing;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 
   @include mq(tabletp) {
     font-size: $p-medium;
