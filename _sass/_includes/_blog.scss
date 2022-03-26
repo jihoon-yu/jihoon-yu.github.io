@@ -1148,6 +1148,9 @@
 }
 
 .article-hero-image {
+  @include mq(phonel) {
+    border-radius: 12px;
+  }
   @include mq(laptop) {
     width: 640px;
     height: 350px;
