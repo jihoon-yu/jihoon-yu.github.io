@@ -135,11 +135,12 @@
 
     @include mq(phonel) {
       max-width: 335px;
+      padding: 4px 10px 4px 10px;
       margin-top: 24px;
       margin-left: auto;
       margin-right: auto;
       background-color: rgba($color: #0c0f22, $alpha: 1);
-      border-radius: 12px;
+      border-radius: 6px;
       border: solid 1px #13193d;
     }
 
@@ -151,9 +152,10 @@
       margin-top: 24px;
       margin-left: auto;
       margin-right: auto;
+      padding: 4px 10px 4px 10px;
       max-width: 100%;
       background-color: rgba($color: #0c0f22, $alpha: 1);
-      border-radius: 12px;
+      border-radius: 6px;
       border: solid 1px #13193d;
     }
   }
@@ -189,10 +191,10 @@
       }
 
       @include mq(laptop) {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        padding-left: 32px;
-        padding-right: 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
       }
     }
   }

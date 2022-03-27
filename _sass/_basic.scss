@@ -161,10 +161,10 @@ ol {
 p,
 ul,
 ol {
-  color: rgba($color: #ffffff, $alpha: 0.8);
+  color: rgba($color: #ffffff, $alpha: 0.9);
   //margin-top: 15px;
   font-size: $p-small;
-  font-weight: $p-weight;
+  font-weight: 300;
   line-height: $p-lineheight;
   letter-spacing: $p-spacing;
   word-break: keep-all;
@@ -2571,7 +2571,7 @@ section {
   }
   @include mq(laptop) {
     font-family: $title-font;
-    font-size: 38px;
+    font-size: 28px;
     font-weight: 300;
     text-align: center;
     color: white;
@@ -2590,7 +2590,7 @@ section {
   }
   @include mq(laptop) {
     font-family: $title-font;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     text-align: center;
     color: white;
@@ -2611,7 +2611,7 @@ section {
   @include mq(laptop) {
     font-family: $title-font;
     font-style: italic;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
     text-align: center;
     color: white;
@@ -2630,7 +2630,7 @@ section {
   }
   @include mq(laptop) {
     font-family: $title-font;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     text-align: center;
     color: white;
@@ -2645,7 +2645,7 @@ section {
   @include mq(laptop) {
     display: block;
     font-family: $body-font;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 400;
     text-align: center;
     color: #ffffff;

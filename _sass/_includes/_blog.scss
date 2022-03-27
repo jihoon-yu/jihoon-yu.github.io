@@ -941,6 +941,7 @@
 
 .post-card-button {
   @include mq(phonel) {
+    opacity: 0%;
     margin-top: 160px;
     display: flex;
     align-items: center;
@@ -950,6 +951,7 @@
     height: 44px;
   }
   @include mq(laptop) {
+    opacity: 0%;
     margin-top: 270px;
     display: flex;
     align-items: center;
