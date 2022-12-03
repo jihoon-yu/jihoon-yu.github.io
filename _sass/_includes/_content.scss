@@ -101,7 +101,7 @@
 
   blockquote,
   figure {
-    max-width: 90%;
+    max-width: 100%;
     margin: 20px auto;
 
     @include mq(tabletp) {
@@ -119,8 +119,8 @@
   }
 
   p a {
-    font-weight: $bold-weight;
-    border-bottom: 2px solid $accent-color;
+    font-weight: 400;
+    border-bottom: 0.5px solid #ffffff;
   }
 
   p .button {
