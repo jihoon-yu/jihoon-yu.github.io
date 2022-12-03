@@ -48,7 +48,7 @@ h1,
 .h1 {
   margin-top: 40px;
   font-size: $h1-small;
-  font-weight: $h1-weight;
+  font-weight: 500;
   line-height: $h1-lineheight;
   letter-spacing: $h1-spacing;
 
@@ -65,7 +65,7 @@ h2,
 .h2 {
   margin-top: 40px;
   font-size: $h2-small;
-  font-weight: $h2-weight;
+  font-weight: 500;
   line-height: $h2-lineheight;
   letter-spacing: $h2-spacing;
 
@@ -195,13 +195,11 @@ ol {
 blockquote {
   margin-top: 48px;
   margin-bottom: 48px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  //border-left: 2px solid $text-dark-color;
-  //padding: 10px 0 10px 20px;
-  font-size: $blockquote-small;
-  font-weight: $blockquote-weight;
+  text-align: left;
+  border-left: 2px solid $text-dark-color;
+  padding: 5px 0 5px 15px;
+  font-size: 16;
+  font-weight: 500;
   letter-spacing: $blockquote-spacing;
   line-height: $blockquote-lineheight;
 
@@ -218,17 +216,17 @@ blockquote {
   }
 
   p {
-    font-size: $blockquote-small;
-    font-weight: $blockquote-weight;
+    font-size: 16;
+    font-weight: 500;
     letter-spacing: $blockquote-spacing;
     line-height: $blockquote-lineheight;
 
     @include mq(tabletp) {
-      font-size: $blockquote-medium;
+      font-size: 16;
     }
 
     @include mq(laptop) {
-      font-size: $blockquote-large;
+      font-size: 16;
     }
   }
 }

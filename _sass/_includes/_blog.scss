@@ -774,30 +774,6 @@
   }
 }
 
-.post-item-one-image {
-  @include mq(laptop) {
-    background-image: url(/images/02_Post/Post-thumbnail/Post_1.png);
-  }
-}
-
-.post-item-two-image {
-  @include mq(laptop) {
-    background-image: url(/images/02_Post/Post-thumbnail/Post_2.png);
-  }
-}
-
-.post-item-three-image {
-  @include mq(laptop) {
-    background-image: url(/images/02_Post/Post-thumbnail/Post_3.png);
-  }
-}
-
-.post-item-four-image {
-  @include mq(laptop) {
-    background-image: url(/images/02_Post/Post-thumbnail/Post_4.png);
-  }
-}
-
 .post-info-wrap {
   @include mq(phonel) {
     margin-top: 14px;
@@ -1005,7 +981,8 @@
 .post-item-one,
 .post-item-two,
 .post-item-three,
-.post-item-four {
+.post-item-four,
+.post-item-six {
   @include mq(laptop) {
     &:hover {
       .post-title {
@@ -1057,7 +1034,7 @@
   @include mq(phonel) {
     animation-name: post-item-show;
     animation-duration: 0.8s;
-    animation-delay: 0.4s;
+    animation-delay: 0.5s;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     animation-fill-mode: both;
   }
@@ -1074,7 +1051,7 @@
   @include mq(laptop) {
     animation-name: post-item-show;
     animation-duration: 0.8s;
-    animation-delay: 0.5s;
+    animation-delay: 0.6s;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     animation-fill-mode: both;
   }
@@ -1084,7 +1061,17 @@
   @include mq(laptop) {
     animation-name: post-item-show;
     animation-duration: 0.8s;
-    animation-delay: 0.6s;
+    animation-delay: 0.7s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: both;
+  }
+}
+
+.post-item-six {
+  @include mq(laptop) {
+    animation-name: post-item-show;
+    animation-duration: 0.8s;
+    animation-delay: 0.4s;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     animation-fill-mode: both;
   }
